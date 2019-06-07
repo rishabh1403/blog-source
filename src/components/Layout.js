@@ -1,14 +1,15 @@
-import React from 'react'
-import Header from './Header';
-import Footer from './Footer';
+import React from "react"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+import "./layout.css"
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <React.Fragment>
-      <Header />
+    <main>
+      <Navbar />
       {children}
       <Footer />
-    </React.Fragment>
+    </main>
   )
 }
 
