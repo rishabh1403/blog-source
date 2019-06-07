@@ -1,7 +1,36 @@
-import React, { Component } from "react"
+import React from "react"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
-export default class tours extends Component {
-  render() {
-    return <Layout>hello from tours page!!!!!</Layout>
+import StyledHero from "../components/StyledHero"
+import Banner from "../components/Banner"
+import About from "../components/Home/About"
+import Services from "../components/Home/Services"
+
+export default ({data}) => (
+  <Layout>
+    <StyledHero home={false} img={data.indexImage.childImageSharp.fluid}>
+      <Banner
+        title="continue exploring"
+        info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
+      >
+        <Link to="/tours" className="btn-white">
+          explore tours
+        </Link>
+      </Banner>
+    </StyledHero>
+    <About />
+    <Services />
+  </Layout>
+)
+
+export const query = graphql`
+query{
+  indexImage:file(relativePath:{eq:"bc.png"}){
+    childImageSharp{
+      fluid(quality: 90, maxWidth:100){
+        ...GatsbyImageSharpFluid
+      }
+    }
   }
 }
+`;
