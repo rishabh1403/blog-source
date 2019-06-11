@@ -33,7 +33,7 @@ const Tour = (props) => {
           <h4 className={styles.country}>
             {props.edge.node.frontmatter.description}
           </h4>
-          <div className={styleMedia.details}>
+          <div className={styles.details}>
             <h6>{props.edge.node.fields.readingTime.text}</h6>
             {props.edge.node.frontmatter.tags.map((tag,index)=> <h6>#{tag}</h6>)}
           </div>
