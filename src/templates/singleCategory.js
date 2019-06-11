@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby';
 
-const categories = ({data, pageContext}) => {
+const singlecategories = ({data, pageContext}) => {
   console.log(pageContext)
   return (
     <div>
@@ -20,4 +20,4 @@ const categories = ({data, pageContext}) => {
 //     }
 //   }
 // `
-export default categories
+export default singlecategories
