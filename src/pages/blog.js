@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
-import BlogList from '../components/Blog__temp/BlogList';
+import BlogList from '../components/Blog/BlogList';
 
 export default ({data}) => (
   <Layout>

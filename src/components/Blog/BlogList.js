@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogCard from './BlogCard'
+import BlogCard from '../Blog/BlogCard'
 import styles from '../../css/blog.module.css'
 import { graphql, useStaticQuery } from 'gatsby';
 
