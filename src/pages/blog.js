@@ -5,6 +5,7 @@ import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
+import BlogList from '../components/Blog/BlogList';
 
 export default ({data}) => (
   <Layout>
@@ -18,8 +19,7 @@ export default ({data}) => (
         </Link>
       </Banner>
     </StyledHero>
-    <About />
-    <Services />
+    <BlogList/>
   </Layout>
 )
 
