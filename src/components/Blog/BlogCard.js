@@ -8,7 +8,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 let getAbout = graphql`
 query tourImage{
-  aboutImage:file(relativePath:{eq:"defaultBcg.jpeg"}){
+  aboutImage:file(relativePath:{eq:"bc.png"}){
     childImageSharp{
       fluid(maxWidth:600){
         ...GatsbyImageSharpFluid

@@ -4,10 +4,6 @@ export default [
     text: "home",
   },
   {
-    path: "/tours",
-    text: "tours",
-  },
-  {
     path: "/blog",
     text: "blog",
   },
