@@ -17,7 +17,8 @@ query tourImage{
   }
 }
 `;
-const Tour = () => {
+const Tour = (props) => {
+  console.log(props.edge.node.frontmatter)
   const { aboutImage } = useStaticQuery(getAbout);
   return (
     <article className={styles.blog} >
@@ -30,11 +31,11 @@ const Tour = () => {
         <h3>Some blog name</h3>
         <div className={styles.info}>
           <h4 className={styles.country}>
-            Some country
+            {props.edge.node.frontmatter.description}
           </h4>
           <div className={styleMedia.details}>
-            <h6>some</h6>
-            <h6>some</h6>
+            <h6>{props.edge.node.fields.readingTime.text}</h6>
+            {props.edge.node.frontmatter.tags.map((tag,index)=> <h6>#{tag}</h6>)}
           </div>
         </div>
       </div>

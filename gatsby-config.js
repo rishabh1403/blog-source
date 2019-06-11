@@ -10,7 +10,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-reading-time`,
+          // ...
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

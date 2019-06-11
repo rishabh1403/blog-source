@@ -10,6 +10,13 @@ let query = graphql`
       node{
         frontmatter{
           title
+          description
+          tags
+        }
+        fields{
+          readingTime{
+            text
+          }
         }
       }
     }
@@ -24,7 +31,7 @@ const BlogList = () => {
     <section className={styles.blog}>
       <div className={styles.center}>
         {edges.map((edge,index)=> {
-          return <BlogCard />
+          return <BlogCard edge={edge} key={index} />
         })}
       </div>
     </section>
