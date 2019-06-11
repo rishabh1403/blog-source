@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
