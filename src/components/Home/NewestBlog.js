@@ -2,7 +2,7 @@ import React from "react"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
 // import img from "../../images/defaultBcg.jpeg"
-import {useStaticQuery, graphql} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 
 let getAbout = graphql`
@@ -14,10 +14,29 @@ query aboutImage{
       }
     }
   }
+  blogs:allMarkdownRemark(limit:1,sort:{order:DESC,fields:frontmatter___date}){
+    edges{
+      node{
+        frontmatter{
+          title
+          date
+          description
+          categories
+        }
+        fields{
+          readingTime{
+            text
+          }
+        }
+      }
+    }
+  }
 }
 `;
 const About = () => {
-  const {aboutImage} = useStaticQuery(getAbout);
+  const { aboutImage,blogs:{edges} } = useStaticQuery(getAbout);
+  // console.log(blogs)
+  const {node:{frontmatter,fields}} = edges[0]; 
   return (
     <section className={styles.about}>
       <Title title="Latest" subtitle="updates" />
@@ -25,18 +44,19 @@ const About = () => {
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
             {/* <img src={img} alt="about company" /> */}
-            <Img fluid={aboutImage.childImageSharp.fluid}/>
+            <Img fluid={aboutImage.childImageSharp.fluid} />
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>explore the difference</h4>
+          <h4>{frontmatter.title}</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-            doloribus enim necessitatibus?
+            {frontmatter.description}
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-            doloribus enim necessitatibus?
+            {fields.readingTime.text}
+            {frontmatter.categories.map((cat,index) => {
+              return <p>{cat}</p>
+            })}
           </p>
           <button type="button" className="btn-primary">
             read more

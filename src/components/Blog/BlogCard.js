@@ -18,28 +18,28 @@ query tourImage{
 }
 `;
 const Tour = (props) => {
-  console.log(props.edge.node.frontmatter)
+  console.log(props.edge.node)
   const { aboutImage } = useStaticQuery(getAbout);
   return (
     <article className={styles.blog} >
       <div className={styles.imgContainer}>
         <Img className={styles.img} fluid={aboutImage.childImageSharp.fluid} />
         <AniLink to="/" fade className={styles.link} >Button</AniLink>
-        <h6 className={styles.date}>may 15th, 2016</h6>
+        <h6 className={styles.date}>{props.edge.node.frontmatter.date}</h6>
       </div>
       <div className={styles.footer}>
-        <h3>Some blog name</h3>
+        <h3>{props.edge.node.frontmatter.title}</h3>
         <div className={styles.info}>
           <h4 className={styles.country}>
             {props.edge.node.frontmatter.description}
           </h4>
           <div className={styles.details}>
             <h6>{props.edge.node.fields.readingTime.text}</h6>
-            {props.edge.node.frontmatter.tags.map((tag,index)=> <h6>#{tag}</h6>)}
+            {props.edge.node.frontmatter.categories && props.edge.node.frontmatter.categories.map((tag,index)=> <h6>#{tag}</h6>)}
           </div>
         </div>
       </div>
-    </article>
+     </article>
   )
 }
 

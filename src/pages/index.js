@@ -17,8 +17,8 @@ export default ({data}) => (
         </Link>
       </Banner>
     </StyledHero>
-    {/* <NewestBlog /> */}
-    {/* <LatestBlogs /> */}
+    <NewestBlog />
+    <LatestBlogs />
   </Layout>
 )
 
