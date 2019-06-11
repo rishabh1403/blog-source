@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from '../../css/tour.module.css'
+import styles from '../../css/blog-card.module.css'
+// import styles from '../../css/tour.module.css'
 import img from "../../images/defaultBcg.jpeg"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
@@ -19,10 +20,11 @@ query tourImage{
 const Tour = () => {
   const { aboutImage } = useStaticQuery(getAbout);
   return (
-    <article className={styles.tour} >
+    <article className={styles.blog} >
       <div className={styles.imgContainer}>
         <Img className={styles.img} fluid={aboutImage.childImageSharp.fluid} />
         <AniLink to="/" fade className={styles.link} >Button</AniLink>
+        <h6 className={styles.date}>may 15th, 2016</h6>
       </div>
       <div className={styles.footer}>
         <h3>Some blog name</h3>

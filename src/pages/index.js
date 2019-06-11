@@ -3,9 +3,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
-import About from "../components/Home/About"
-import Services from "../components/Home/Services"
-import FeaturedTours from '../components/Home/FeaturedTours'
+import NewestBlog from "../components/Home/NewestBlog"
+import LatestBlogs from '../components/Home/LatestBlogs'
 export default ({data}) => (
   <Layout>
     <StyledHero home={true} img={data.indexImage.childImageSharp.fluid}>
@@ -18,9 +17,8 @@ export default ({data}) => (
         </Link>
       </Banner>
     </StyledHero>
-    <About />
-    {/* <Services /> */}
-    <FeaturedTours />
+    <NewestBlog />
+    <LatestBlogs />
   </Layout>
 )
 
