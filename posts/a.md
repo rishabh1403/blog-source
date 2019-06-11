@@ -9,3 +9,9 @@ description: "Lorem Ipsum is simply dummy text of the printing and typesetting i
 dedede
 dede
 dede
+```js
+
+var a = 3;
+let de4 = 33;
+
+```

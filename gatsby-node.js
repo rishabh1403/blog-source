@@ -1,5 +1,5 @@
-exports.createPages = async ({graphql, actions: { createPage } }) => {  
-  const {data:{allMarkdownRemark:{edges}}} = await graphql(`
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
+  const { data: { allMarkdownRemark: { edges } } } = await graphql(`
   {
     allMarkdownRemark(sort:{order:DESC,fields:frontmatter___date}){
       edges{
@@ -25,8 +25,10 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
     createPage({
       path: edge.node.frontmatter.path,
       component: require.resolve("./src/templates/blog.js"),
-      context: { edge },
+      context: {
+        slug: edge.node.frontmatter.path
+      },
     })
   });
-  
+
 }
