@@ -1,10 +1,12 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby';
+import Layout from "../components/Layout"
 
 const blog = (props) => {
   console.log(props.pageContext)
   console.log(props.data.markdownRemark)
   return (
+    <Layout>
     <div>
       {props.data.markdownRemark.frontmatter.title}
       <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
@@ -15,6 +17,7 @@ const blog = (props) => {
         <Link to={props.pageContext.prev.frontmatter.path}>
           {props.pageContext.prev.frontmatter.title}</Link>}
     </div>
+    </Layout>
   )
 }
 
