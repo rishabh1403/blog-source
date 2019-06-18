@@ -4,6 +4,7 @@ description: "It's been a month since I started writing and uploading youtube vi
 author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","rishabh1403","blog","life","youtube","thank you"]
 tags: ["life","youtube"]
+path: "posts/life/2018/09/new-mornings-new-subscribers/"
 categories: ["life"]
 date: 2018-09-20T21:35:47+05:30
 draft: false

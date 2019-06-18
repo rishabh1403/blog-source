@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","life","rishabh1403","intro","blog"]
 tags: ["life"]
 categories: ["life"]
+path: "posts/life/2018/08/new-blog-new-beginnings/"
 date: 2018-08-21T01:17:37+05:30
 draft: false
 ---

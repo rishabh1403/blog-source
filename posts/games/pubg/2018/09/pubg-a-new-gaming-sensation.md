@@ -4,6 +4,7 @@ description: "I know I am late late to the party, still a bit about PUBG."
 author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","tech","technology","games","pubg","fortnite"]
 tags: ["games"]
+path: "posts/games/pubg/2018/09/pubg-a-new-gaming-sensation/"
 categories: ["games"]
 date: 2018-09-17T23:13:22+05:30
 draft: false

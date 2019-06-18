@@ -4,6 +4,7 @@ description: "Today, space technology has evolved to an extent that mankind can 
 author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","agc","smartphone","moon","apollo mission"]
 tags: ["general","space"]
+path: "posts/general/2018/10/from-the-agc-to-smartphones-and-beyond/"
 categories: ["general"]
 date: 2018-10-06T10:56:20+05:30
 draft: false

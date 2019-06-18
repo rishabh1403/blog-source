@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","programming","tech","technology","docker","introduction"]
 tags: ["docker"]
 categories: ["docker"]
+path: "posts/docker/2018/09/a-brief-introduction-to-docker/"
 date: 2018-09-17T23:01:36+05:30
 draft: false
 ---
