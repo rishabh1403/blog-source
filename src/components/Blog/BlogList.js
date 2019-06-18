@@ -1,5 +1,4 @@
 import React from 'react'
-import BlogCard from '../Blog/BlogCard'
 import styles from '../../css/blog.module.css'
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -10,8 +9,8 @@ let query = graphql`
       node{
         frontmatter{
           title
-          description
-          tags
+          path
+          date(formatString: "MMMM Do, YYYY")
         }
         fields{
           readingTime{
@@ -31,7 +30,7 @@ const BlogList = () => {
     <section className={styles.blog}>
       <div className={styles.center}>
         {edges.map((edge,index)=> {
-          return <BlogCard edge={edge} key={index} />
+          return <p>{edge.node.frontmatter.title}</p>
         })}
       </div>
     </section>
