@@ -21,6 +21,7 @@ query someImage{
           title
           date(formatString: "MMMM Do, YYYY")
           description
+          path
           categories
         }
         fields{

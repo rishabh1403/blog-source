@@ -4,6 +4,7 @@ import styles from "../../css/about.module.css"
 // import img from "../../images/defaultBcg.jpeg"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 let getAbout = graphql`
 query aboutImage{
@@ -19,9 +20,10 @@ query aboutImage{
       node{
         frontmatter{
           title
-          date
+          date(formatString: "MMMM Do, YYYY")
           description
           categories
+          path
         }
         fields{
           readingTime{
@@ -49,18 +51,17 @@ const About = () => {
         </article>
         <article className={styles.aboutInfo}>
           <h4>{frontmatter.title}</h4>
+          <p>{frontmatter.date}</p>
           <p>
             {frontmatter.description}
           </p>
           <p>
             {fields.readingTime.text}
-            {frontmatter.categories.map((cat,index) => {
-              return <p>{cat}</p>
+            {frontmatter.categories.map((category,index) => {
+              return <p>#{category}</p>
             })}
           </p>
-          <button type="button" className="btn-primary">
-            read more
-          </button>
+          <AniLink to={frontmatter.path} fade className="btn-primary" >Read More</AniLink>
         </article>
       </div>
     </section>

@@ -24,7 +24,7 @@ const Tour = (props) => {
     <article className={styles.blog} >
       <div className={styles.imgContainer}>
         <Img className={styles.img} fluid={aboutImage.childImageSharp.fluid} />
-        <AniLink to="/" fade className={styles.link} >Button</AniLink>
+        <AniLink to={props.edge.node.frontmatter.path} fade className={styles.link} >Read More</AniLink>
         <h6 className={styles.date}>{props.edge.node.frontmatter.date}</h6>
       </div>
       <div className={styles.footer}>

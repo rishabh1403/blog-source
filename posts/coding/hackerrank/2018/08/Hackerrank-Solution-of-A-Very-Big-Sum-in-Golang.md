@@ -6,7 +6,6 @@ keywords: ["rishabh","rishabh jain","very","big","sum","rishabh1403","hackerrank
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-08-26T18:45:09+05:30
-path: "test/"
 draft: false
 ---
 Solution for hackerrank warmup question a very big sum in golang. This question is very similar to simple array sum problem. The only difference being that the input array is huge. Let's tackle that in this blog post.
