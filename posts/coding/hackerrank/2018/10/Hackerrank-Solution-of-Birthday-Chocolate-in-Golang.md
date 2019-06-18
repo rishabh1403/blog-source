@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","go","golang","hackerrank","hackerrank solutions","solutions in golang","birthday chocolate"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
+path: "posts/coding/hackerrank/2018/10/hackerrank-solution-of-birthday-chocolate-in-golang/"
 date: 2018-10-05T01:05:59+05:30
 draft: false
 ---

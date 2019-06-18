@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","go","golang","hackerrank","solution","tutorial","staircase"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
+path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-staircase-in-golang/"
 date: 2018-09-01T16:45:26+05:30
 draft: false
 ---

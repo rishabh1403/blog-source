@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["solution","hackerrank","go","golang","mini-max sum","sorting","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
+path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-mini-max-sum-in-golang/"
 date: 2018-09-02T18:35:00+05:30
 draft: false
 ---

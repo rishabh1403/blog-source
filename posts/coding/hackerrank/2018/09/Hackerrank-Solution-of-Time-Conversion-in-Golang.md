@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","hackerrank","go","golang","solutions in golang","hackerrank solutions","time conversion hackerrank solution"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
+path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-time-conversion-in-golang/"
 date: 2018-09-11T21:55:09+05:30
 draft: false
 ---

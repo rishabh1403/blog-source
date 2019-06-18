@@ -6,6 +6,7 @@ keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","c
 tags: ["hackerrank","golang","coding"]
 categories: ["hackerrank","golang","coding"]
 date: 2018-10-02T18:25:16+05:30
+path: "posts/coding/hackerrank/2018/10/hackerrank-solution-of-breaking-the-records-in-golang/"
 draft: false
 ---
 In this one we will solve question breaking the records from hackerrank in golang. Let's dive right into it.

@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","simple","array","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
+path: "posts/coding/hackerrank/2018/08/hackerrank-solution-of-simple-array-sum-in-golang/"
 date: 2018-08-25T00:55:09+05:30
 draft: false
 ---

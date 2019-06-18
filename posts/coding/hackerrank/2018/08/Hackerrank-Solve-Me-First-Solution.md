@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","solve","me","first","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
+path: "posts/coding/hackerrank/2018/08/hackerrank-solve-me-first-solution/"
 date: 2018-08-22T12:32:09+05:30
 draft: false
 ---

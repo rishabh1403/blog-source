@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","hackerrank","golang","coding","rishabh1403","solution","blog"]
 tags: ["hackerrank","golang","coding"]
 categories: ["hackerrank","golang","coding"]
+path: "posts/coding/hackerrank/2018/08/hackerrank-solutions-in-golang/"
 date: 2018-08-21T12:32:25+05:30
 draft: false
 ---

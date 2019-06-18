@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","go","golang","hackerrank solutions","solutions in golang","between two sets hackerrank","blog","competitive","coding","programming","tech","technology"]
 tags: ["coding","golang","hackerrank"]
 categories: ["coding","golang","hackerrank"]
+path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-between-two-sets-in-golang/"
 date: 2018-09-21T18:39:04+05:30
 draft: false
 ---
