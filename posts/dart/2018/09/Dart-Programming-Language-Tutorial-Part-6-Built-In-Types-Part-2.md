@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["dart","dartlang","built-in types","list","maps","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology"]
 tags: ["dart","tutorial"]
 categories: ["dart"]
+path: "posts/dart/2018/09/dart-programming-language-tutorial-part-6-built-in-types-part-2/"
 date: 2018-09-07T19:45:11+05:30
 draft: false
 ---

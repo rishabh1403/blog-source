@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","rishabh1403","blog","dart","series","programming","language","intro","introduction"]
 tags: ["dart","tutorial"]
 categories: ["dart"]
+path: "posts/dart/2018/08/dart-programming-language-tutorial-part-1-series-introduction/"
 date: 2018-08-27T20:15:08+05:30
 draft: false
 ---

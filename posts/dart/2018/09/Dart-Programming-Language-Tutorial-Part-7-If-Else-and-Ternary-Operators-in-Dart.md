@@ -5,6 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","dart","dartlang","if-else","ternary","operators","syntax"]
 tags: ["dart","tutorial"]
 categories: ["dart"]
+path: "posts/dart/2018/09/dart-programming-language-tutorial-part-7-if-else-and-ternary-operators-in-dart/"
 date: 2018-09-10T19:45:19+05:30
 draft: false
 ---

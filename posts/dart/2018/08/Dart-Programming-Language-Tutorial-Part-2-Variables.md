@@ -4,6 +4,7 @@ description: "In this post we will look into various ways in which we can declar
 author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","rishabh1403","blog","dart","variables","declaration","initialization","dynamic","var","int"]
 tags: ["dart","tutorial"]
+path: "posts/dart/2018/08/dart-programming-language-tutorial-part-2-variables/"
 categories: ["dart"]
 date: 2018-08-28T20:00:01+05:30
 draft: false
