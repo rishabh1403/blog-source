@@ -1,16 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import StyledHero from "../components/StyledHero"
 
 export default class BlogList extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     return (
-      <div>
+      <Layout>
+        <StyledHero home={true} img={this.props.data.stubImage.childImageSharp.fluid}>
+        </StyledHero>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return <div key={node.fields.slug}>{node.fields.slug}</div>
         })}
-      </div>
+      </Layout>
     )
   }
 }
@@ -30,6 +34,13 @@ export const blogListQuery = graphql`
           frontmatter {
             title
           }
+        }
+      }
+    }
+    stubImage:file(relativePath:{eq:"bc.png"}){
+      childImageSharp{
+        fluid(quality: 90, maxWidth:100){
+          ...GatsbyImageSharpFluid
         }
       }
     }

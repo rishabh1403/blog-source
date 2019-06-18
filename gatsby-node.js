@@ -116,17 +116,3 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   })
 
 }
-// function limit (i){
-//   if(i === 0){
-//     10
-//   }else{
-//     9
-//   }
-// }
-// function skip (i){
-//   if(i === 0){
-//     (i * post ) +1
-//   }else{
-//     9
-//   }
-// }
