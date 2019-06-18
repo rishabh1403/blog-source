@@ -100,15 +100,15 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       }
     `)
   const paginatedposts = paginated.data.allMarkdownRemark.edges
-  const postsPerPage = 2
+  const postsPerPage = 9
   const numPages = Math.ceil(paginatedposts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: `/blog/${i + 1}`,
+      path: `/page/${i + 1}`,
       component: require.resolve("./src/templates/blogList.js"),
       context: {
         limit: postsPerPage,
-        skip: i * postsPerPage,
+        skip: (i * postsPerPage) + 1,
         numPages,
         currentPage: i + 1,
       },
@@ -116,3 +116,17 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   })
 
 }
+// function limit (i){
+//   if(i === 0){
+//     10
+//   }else{
+//     9
+//   }
+// }
+// function skip (i){
+//   if(i === 0){
+//     (i * post ) +1
+//   }else{
+//     9
+//   }
+// }

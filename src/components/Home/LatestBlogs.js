@@ -14,7 +14,7 @@ query someImage{
       }
     }
   }
-  blogs:allMarkdownRemark(limit:3,skip:1sort:{order:DESC,fields:frontmatter___date}){
+  blogs:allMarkdownRemark(limit:9,skip:1,sort:{order:DESC,fields:frontmatter___date}){
     edges{
       node{
         frontmatter{
@@ -47,7 +47,7 @@ const FeaturedTours = () => {
         })}
 
       </div>
-      <AniLink to="/" fade className="btn-primary" >Button</AniLink>
+      <AniLink to="/page/2" fade className="btn-primary" >Older Posts</AniLink>
     </section>
   )
 }
