@@ -1,5 +1,6 @@
 import React from "react"
-import { FaFacebook, FaTwitterSquare, FaSquarespace } from "react-icons/fa"
+import { FaFacebook, FaTwitterSquare, FaGithubSquare } from "react-icons/fa"
+import { IoLogoYoutube } from "react-icons/io"
 
 export default [
   {
@@ -11,7 +12,11 @@ export default [
     url: "https://twitter.com",
   },
   {
-    icon: <FaSquarespace />,
+    icon: <IoLogoYoutube />,
+    url: "https://twitter.com",
+  },
+  {
+    icon: <FaGithubSquare />,
     url: "https://twitter.com",
   },
 ]

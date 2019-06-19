@@ -8,6 +8,10 @@ export default [
     text: "archive",
   },
   {
+    path: "/categories",
+    text: "categories",
+  },
+  {
     path: "/contact",
     text: "contact",
   },
