@@ -35,11 +35,11 @@ const Tour = (props) => {
           </h4>
           <div className={styles.meta}>
             <h6>{props.edge.node.fields.readingTime.text}</h6>
-            {props.edge.node.frontmatter.categories && props.edge.node.frontmatter.categories.map((tag,index)=> <h6>#{tag}</h6>)}
+            {props.edge.node.frontmatter.categories && props.edge.node.frontmatter.categories.map((tag, index) => <h6>#{tag}</h6>)}
           </div>
         </div>
       </div>
-     </article>
+    </article>
   )
 }
 
