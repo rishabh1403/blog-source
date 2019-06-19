@@ -14,6 +14,12 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-feed`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-66600089-2",
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
