@@ -25,6 +25,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
             title
             description
             categories
+            date(formatString: "MMMM Do, YYYY")
             path
           }
           fields{
