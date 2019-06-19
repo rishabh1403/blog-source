@@ -4,9 +4,19 @@ import BlogCard from '../components/Blog/BlogCard'
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+const getPreviousPageLink = currentPage => {
+  if (currentPage < 3) {
+    return "/"
+  } else {
+    return `page/${currentPage - 1}`;
+  }
+}
 
 export default class BlogList extends React.Component {
   render() {
+    const { currentPage, numPages } = this.props.pageContext;
     const posts = this.props.data.allMarkdownRemark.edges
     return (
       <Layout>
@@ -20,7 +30,8 @@ export default class BlogList extends React.Component {
             })}
 
           </div>
-          {/* <AniLink to="/page/2" fade className="btn-primary" >Older Posts</AniLink> */}
+          <AniLink to={getPreviousPageLink(currentPage)} fade className="btn-primary" >Older Posts</AniLink>
+          {currentPage<numPages && <AniLink to={`page/${currentPage+1}`} fade className="btn-primary" >Newer Posts</AniLink>}
         </section>
         {/* {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
