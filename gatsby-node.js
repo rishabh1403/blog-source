@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           frontmatter{
             title
             description
-            tags
+            categories
             path
           }
           fields{
@@ -51,31 +51,31 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   const postByCategory = {}
   edges.forEach(({ node }) => {
-    node.frontmatter.tags.forEach(tag => {
-      if (!postByCategory[tag]) {
-        postByCategory[tag] = [];
+    node.frontmatter.categories.forEach(category => {
+      if (!postByCategory[category]) {
+        postByCategory[category] = [];
       }
-      postByCategory[tag].push(node);
+      postByCategory[category].push(node);
     })
   });
 
-  const tags = Object.keys(postByCategory);
+  const categories = Object.keys(postByCategory);
   createPage({
-    path: '/tags',
+    path: '/categories',
     component: require.resolve("./src/templates/categories.js"),
     context: {
-      tags: tags.sort()
+      categories: categories.sort()
     },
   })
 
 
-  tags.forEach(tag => {
-    const posts = postByCategory[tag];
+  categories.forEach(category => {
+    const posts = postByCategory[category];
     createPage({
-      path: `/tags/${tag}`,
+      path: `/categories/${category}`,
       component: require.resolve("./src/templates/singleCategory.js"),
       context: {
-        tag,
+        category,
         posts
       },
     })
