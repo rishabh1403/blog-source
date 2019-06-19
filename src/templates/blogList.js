@@ -23,20 +23,14 @@ export default class BlogList extends React.Component {
         <StyledHero home={true} img={this.props.data.stubImage.childImageSharp.fluid}>
         </StyledHero>
         <section className={styles.blogs}>
-          {/* <Title title="featured" subtitle="tours" /> */}
           <div className={styles.center}>
             {posts.map((edge, index) => {
               return <BlogCard edge={edge} key={index} />
             })}
-
           </div>
           <AniLink to={getPreviousPageLink(currentPage)} fade className="btn-primary" >Older Posts</AniLink>
           {currentPage<numPages && <AniLink to={`page/${currentPage+1}`} fade className="btn-primary" >Newer Posts</AniLink>}
         </section>
-        {/* {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return <div key={node.fields.slug}>{node.fields.slug}</div>
-        })} */}
       </Layout>
     )
   }

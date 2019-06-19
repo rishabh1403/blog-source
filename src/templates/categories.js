@@ -1,12 +1,25 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby';
+import React from "react"
+import styles from '../css/items.module.css'
+import BlogCard from '../components/Blog/BlogCard'
+import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import StyledHero from "../components/StyledHero"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const categories = ({data, pageContext}) => {
   console.log(pageContext)
   return (
-    <div>
-      something
-    </div>
+    <Layout>
+        {/* <StyledHero home={true} img={this.props.data.stubImage.childImageSharp.fluid}>
+        </StyledHero> */}
+        <section className={styles.blogs}>
+          <div className={styles.center}>
+            {pageContext.categories.map((category, index) => {
+              return <AniLink key={index} to={`categories/${category}`}>{category}</AniLink>
+            })}
+          </div>
+        </section>
+      </Layout>
   )
 }
 
