@@ -71,17 +71,17 @@
 .info h4 {
   margin-bottom: 0;
 }
-.country {
+.details {
   text-transform: capitalize;
-  color: var(--primaryColor);
+  color: var(--darkGrey);
   display: flex;
   align-items: center;
 }
 .icon {
   margin-right: 0.4rem;
 }
-.details {
-  color: var(--darkGrey);
+.meta {
+  color: var(--primaryColor);
   text-transform: uppercase;
   text-align: right;
 }

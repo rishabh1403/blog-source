@@ -30,10 +30,10 @@ const Tour = (props) => {
       <div className={styles.footer}>
         <h3>{props.edge.node.frontmatter.title}</h3>
         <div className={styles.info}>
-          <h4 className={styles.country}>
+          <h4 className={styles.details}>
             {props.edge.node.frontmatter.description}
           </h4>
-          <div className={styles.details}>
+          <div className={styles.meta}>
             <h6>{props.edge.node.fields.readingTime.text}</h6>
             {props.edge.node.frontmatter.categories && props.edge.node.frontmatter.categories.map((tag,index)=> <h6>#{tag}</h6>)}
           </div>
