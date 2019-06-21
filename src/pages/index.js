@@ -5,8 +5,11 @@ import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
 import NewestBlog from "../components/Home/NewestBlog"
 import LatestBlogs from '../components/Home/LatestBlogs'
+import SEO from '../components/SEO';
+
 export default ({data}) => (
   <Layout>
+    <SEO title="testing" description="hello helmet"/>
     <StyledHero home={true} img={data.indexImage.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
