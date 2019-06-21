@@ -2,8 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Rishabh Jain`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://www.example.com`,
+    author: `Rishabh Jain`,
+    siteUrl: `https://rishabh1403.com`,
+    twitterUsername: "rishabhjain1403",
+    image:'/bc.png'
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -13,6 +15,7 @@ module.exports = {
     `gatsby-plugin-playground`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-feed`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
