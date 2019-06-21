@@ -27,7 +27,7 @@ export default ({data}) => (
 
 export const query = graphql`
 query{
-  indexImage:file(relativePath:{eq:"bc.png"}){
+  indexImage:file(relativePath:{eq:"bcg.jpg"}){
     childImageSharp{
       fluid(quality: 90, maxWidth:100){
         ...GatsbyImageSharpFluid

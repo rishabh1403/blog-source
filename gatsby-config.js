@@ -16,6 +16,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
