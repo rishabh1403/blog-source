@@ -5,6 +5,7 @@ import img from "../../images/defaultBcg.jpeg"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { FaClock } from "react-icons/fa";
 
 let getAbout = graphql`
 query tourImage{
@@ -34,8 +35,11 @@ const Tour = (props) => {
             {props.edge.node.frontmatter.description}
           </h4>
           <div className={styles.meta}>
-            <h6>{props.edge.node.fields.readingTime.text}</h6>
-            {props.edge.node.frontmatter.categories && props.edge.node.frontmatter.categories.map((tag, index) => <h6>#{tag}</h6>)}
+            <h6><FaClock />{props.edge.node.fields.readingTime.text}</h6>
+            {props.edge.node.frontmatter.categories && 
+              props.edge.node.frontmatter.categories.map((tag, index) => {
+                return <AniLink to={`categories/${tag}`}>#{tag}</AniLink>
+              })}
           </div>
         </div>
       </div>

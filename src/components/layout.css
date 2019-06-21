@@ -38,6 +38,7 @@ h6 {
 }
 a{
   text-decoration: none;
+  color: var(--primaryColor);
 }
 p {
   margin-bottom: 1.25rem;

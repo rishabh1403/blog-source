@@ -5,6 +5,7 @@ import styles from "../../css/about.module.css"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { FaClock } from "react-icons/fa";
 
 let getAbout = graphql`
 query aboutImage{
@@ -56,9 +57,9 @@ const About = () => {
             {frontmatter.description}
           </p>
           <p>
-            {fields.readingTime.text}
+            <FaClock/>{fields.readingTime.text}
             {frontmatter.categories.map((category,index) => {
-              return <p>#{category}</p>
+              return <AniLink to={`categories/${category}`}>#{category}</AniLink>
             })}
           </p>
           <AniLink to={frontmatter.path} fade className="btn-primary" >Read More</AniLink>
