@@ -9,7 +9,7 @@ import SEO from '../components/SEO';
 
 export default ({data}) => (
   <Layout>
-    <SEO title="testing" description="hello helmet"/>
+    <SEO title="Home"/>
     <StyledHero home={true} img={data.indexImage.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
