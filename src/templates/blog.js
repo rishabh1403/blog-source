@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby';
 import Layout from "../components/Layout"
+import Disqus from 'gatsby-plugin-disqus'
 
 const blog = (props) => {
   console.log(props.pageContext)
@@ -17,6 +18,7 @@ const blog = (props) => {
         <Link to={props.pageContext.prev.frontmatter.path}>
           {props.pageContext.prev.frontmatter.title}</Link>}
     </div>
+    <Disqus />
     </Layout>
   )
 }

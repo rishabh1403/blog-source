@@ -172,7 +172,7 @@ Okay, here we have a bunch of code, let's start exploring what they mean. On the
 
 Refer the picture below, and forgive me for my bad drawing, still learning how to use some of the drawing tools
 
-![diagonal.png](/posts/coding/hackerrank/2018/08/diagonal.png)
+![diagonal.png](./diagonal.png)
 
 The elements in green and brown are the elements that belong to left diagonal, while the element which are in yellow and brown belong to the right diagonal. Notice the indexing in the boxes, if you look the indexes for the left diagonal, both the row number and the column number are same. Here we got our first condition to determine if an element belongs to left diagonal. For the right diagonal, if you notice, the sum of the indexes are always `2` in our case, I want you to try it out for other higher order matrix, say 4\*4 matrix. You'll notice that it always equal to `size - 1` of matrix. Now we got both of our conditions to determine the elements of left and right diagonal. Let's replace the comments with original sum logic
 

@@ -16,7 +16,20 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-robots-txt',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://rishabh1403.com',
+        sitemap: 'https://rishabh1403.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `rishabh1403-1`
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -28,6 +41,26 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+              height: 400, // Optional: Overrides optional.ratio
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
+            }
+          },
+          `gatsby-remark-responsive-iframe`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1200,
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
