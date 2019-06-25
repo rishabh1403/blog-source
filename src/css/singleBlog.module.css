@@ -4,6 +4,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 2rem;
   color: var(--mainBlack);
+  letter-spacing: 1.3px;
 }
 .blog h1,h2,h3{
   padding-top: 0.5rem;

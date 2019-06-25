@@ -87,9 +87,9 @@ main {
  */
 
 /* Adjust the position of the line numbers */
-.gatsby-highlight pre[class*="language-"].line-numbers {
+/* .gatsby-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
-}
+} */
 
 /**
  * If you only want to use line numbering
@@ -106,8 +106,18 @@ main {
 .gatsby-highlight pre[class*="language-"].line-numbers {
   padding: 0;
   padding-left: 2.8em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   overflow: initial;
+  border-radius: 10px;
 }
+
+.gatsby-highlight pre[class*="language-"].line-numbers .line-numbers-rows {
+  padding-left: 0.9em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 
 .gatsby-highlight pre {
   overflow-x: auto !important;
