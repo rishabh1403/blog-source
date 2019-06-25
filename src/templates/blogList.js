@@ -28,8 +28,8 @@ export default class BlogList extends React.Component {
               return <BlogCard edge={edge} key={index} />
             })}
           </div>
-          <AniLink to={getPreviousPageLink(currentPage)} fade className="btn-primary" >Older Posts</AniLink>
-          {currentPage<numPages && <AniLink to={`page/${currentPage+1}`} fade className="btn-primary" >Newer Posts</AniLink>}
+          <AniLink to={getPreviousPageLink(currentPage)} fade className="btn-primary" >Newer Posts</AniLink>
+          {currentPage<numPages && <AniLink to={`page/${currentPage+1}`} fade className="btn-primary" >Older Posts</AniLink>}
         </section>
       </Layout>
     )
