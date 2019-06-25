@@ -108,3 +108,7 @@ main {
   padding-left: 2.8em;
   overflow: initial;
 }
+
+.gatsby-highlight pre {
+  overflow-x: auto !important;
+}

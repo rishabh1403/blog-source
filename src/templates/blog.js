@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby';
 import Layout from "../components/Layout"
 import Disqus from 'gatsby-plugin-disqus'
+import styles from '../css/singleBlog.module.css'
 
 const blog = (props) => {
   console.log(props.pageContext)
@@ -10,7 +11,7 @@ const blog = (props) => {
     <Layout>
     <div>
       {props.data.markdownRemark.frontmatter.title}
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+      <div className={styles.blog} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       {props.pageContext.next &&
         <Link to={props.pageContext.next.frontmatter.path}>
           Next</Link>}
