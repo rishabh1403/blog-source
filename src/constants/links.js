@@ -12,7 +12,7 @@ export default [
     text: "categories",
   },
   {
-    path: "/contact",
-    text: "contact",
+    path: "/about",
+    text: "about",
   },
 ]
