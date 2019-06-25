@@ -1,6 +1,39 @@
 .blog{
-  padding: 4rem;
+  padding: 2rem 4rem;
   text-align: justify;
   font-family: "Poppins", sans-serif;
+  line-height: 2rem;
+  color: var(--mainBlack);
+}
+.blog h1,h2,h3{
+  padding-top: 0.5rem;
+  color: var(--mainBlack)
+}
+.blog ul {
+  margin-bottom: 20px;
+  padding-left: 1.3rem;
 }
 
+@media screen and (min-width: 576px) {
+  .blog {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .blog {
+    padding: 2rem 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog {
+    padding: 2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .blog {
+    padding: 2rem 10rem;
+  }
+}

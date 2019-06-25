@@ -21,6 +21,7 @@ The question can be found at this [link](https://www.hackerrank.com/challenges/m
 * Cracking the logic required to solve the question.
 * A keen interest in bird watching
 
+
 # Solution
 
 This is the template you get on [hackerrank](https://www.hackerrank.com/) for this problem statement.
