@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../../css/blogList.module.css'
-import { graphql, useStaticQuery } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const BlogList = ({ edges }) => {

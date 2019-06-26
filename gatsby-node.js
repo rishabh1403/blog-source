@@ -58,16 +58,23 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       if (!postByCategory[category]) {
         postByCategory[category] = [];
       }
-      postByCategory[category].push({node});
+      postByCategory[category].push({ node });
     })
   });
 
   const categories = Object.keys(postByCategory);
+  const data = categories.reduce((acc, el) => {
+    // console.log(postByCategory[acc]);
+    const posts = postByCategory[el];
+    // console.log(posts);
+    return [...acc, { name: el, count: posts.length }]
+  }, []);
+  data.sort((a,b)=> b.count - a.count);
   createPage({
     path: '/categories',
     component: require.resolve("./src/templates/categories.js"),
     context: {
-      categories: categories.sort()
+      categories: data
     },
   })
 
