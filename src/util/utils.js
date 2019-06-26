@@ -9,14 +9,14 @@ export const groupByYear = (data) => {
     let year = el.node.frontmatter.year
     if(acc[year]){
       acc[year].push({
-        date: el.node.frontmatter.date,
+        date: el.node.frontmatter.shortDate,
         title: el.node.frontmatter.title,
         path: el.node.frontmatter.path
       });
     }else{
       acc[year] = [];
       acc[year].push({
-        date: el.node.frontmatter.date,
+        date: el.node.frontmatter.shortDate,
         title: el.node.frontmatter.title,
         path: el.node.frontmatter.path
       });

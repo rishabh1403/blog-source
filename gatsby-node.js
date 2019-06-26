@@ -18,7 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
   const { data: { allMarkdownRemark: { edges } } } = await graphql(`
   {
-    allMarkdownRemark(sort:{order:ASC,fields:frontmatter___date}){
+    allMarkdownRemark(sort:{order:DESC,fields:frontmatter___date}){
       edges{
         node{
           frontmatter{
@@ -26,6 +26,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
             description
             categories
             date(formatString: "MMMM Do, YYYY")
+            shortDate:date(formatString: "MMM Do")
+            year:date(formatString: "YYYY")
             path
           }
           fields{
@@ -56,7 +58,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       if (!postByCategory[category]) {
         postByCategory[category] = [];
       }
-      postByCategory[category].push(node);
+      postByCategory[category].push({node});
     })
   });
 

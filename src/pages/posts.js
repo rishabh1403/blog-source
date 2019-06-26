@@ -36,7 +36,7 @@ query{
         frontmatter{
           title
           path
-          date(formatString: "MMM Do")
+          shortDate:date(formatString: "MMM Do")
           year:date(formatString: "YYYY")
         }
         fields{
