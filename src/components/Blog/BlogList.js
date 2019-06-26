@@ -1,36 +1,27 @@
 import React from 'react'
-import styles from '../../css/blog.module.css'
+import styles from '../../css/blogList.module.css'
 import { graphql, useStaticQuery } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-let query = graphql`
-{
-  allMarkdownRemark(sort:{order:DESC,fields:frontmatter___date}){
-    edges{
-      node{
-        frontmatter{
-          title
-          path
-          date(formatString: "MMMM Do, YYYY")
-        }
-        fields{
-          readingTime{
-            text
-          }
-        }
-      }
-    }
-  }
-}
-
-`
-
-const BlogList = () => {
-  let {allMarkdownRemark:{edges}} = useStaticQuery(query);
+const BlogList = ({ edges }) => {
   return (
     <section className={styles.blog}>
       <div className={styles.center}>
-        {edges.map((edge,index)=> {
-          return <p>{edge.node.frontmatter.title}</p>
+        {Object.keys(edges).sort().reverse().map((edge, index) => {
+          return (
+            <div>
+              <h2>{edge}</h2>
+              <div className={styles.text}>
+                {edges[edge].map((ed, el) => {
+                  return <p>
+                    <span className={styles.date}>{ed.date}</span>
+                    <AniLink to={ed.path} className={styles.title}> {ed.title}</AniLink>
+                  </p>
+                })}
+              </div>
+            </div>
+          )
+
         })}
       </div>
     </section>

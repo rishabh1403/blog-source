@@ -4,10 +4,10 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
 import BlogList from '../components/Blog/BlogList';
-
-export default ({data}) => (
+import { groupByYear } from '../util/utils';
+export default ({ data }) => (
   <Layout>
-    <StyledHero home={false} img={data.indexImage.childImageSharp.fluid}>
+    {/* <StyledHero home={false} img={data.indexImage.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
         info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
@@ -16,8 +16,8 @@ export default ({data}) => (
           explore tours
         </Link>
       </Banner>
-    </StyledHero>
-    <BlogList/>
+    </StyledHero> */}
+    <BlogList edges={groupByYear(data.allMarkdownRemark.edges)} />
   </Layout>
 )
 
@@ -27,6 +27,23 @@ query{
     childImageSharp{
       fluid(quality: 90, maxWidth:100){
         ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  allMarkdownRemark(sort:{order:DESC,fields:frontmatter___date}){
+    edges{
+      node{
+        frontmatter{
+          title
+          path
+          date(formatString: "MMM Do")
+          year:date(formatString: "YYYY")
+        }
+        fields{
+          readingTime{
+            text
+          }
+        }
       }
     }
   }
