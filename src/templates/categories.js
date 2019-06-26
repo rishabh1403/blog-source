@@ -10,12 +10,12 @@ const categories = ({ data, pageContext }) => {
   console.log(pageContext)
   return (
     <Layout>
-      {/* <StyledHero home={true} img={this.props.data.stubImage.childImageSharp.fluid}>
-        </StyledHero> */}
+      <StyledHero home={true} img={data.stubImage.childImageSharp.fluid}>
+        </StyledHero>
       <section className={styles.blogs}>
         <div className={styles.center}>
           {pageContext.categories.map((category, index) => {
-            return <AniLink className={styles.title} key={index} to={`categories/${category}`}>
+            return <AniLink className={styles.title} key={index} to={`categories/${category.name}`}>
               {category.name}<span className={styles.count}>({category.count})</span>
             </AniLink>
           })}
@@ -25,14 +25,16 @@ const categories = ({ data, pageContext }) => {
   )
 }
 
-// export const query = graphql`
-//   query($slug: String!){
-//     markdownRemark(frontmatter:{path:{eq:$slug}}){
-//       frontmatter{
-//         title
-//       }
-//       html
-//     }
-//   }
-// `
+
+export const categoryImageQuery = graphql`
+  query  {
+    stubImage:file(relativePath:{eq:"categories.jpg"}){
+      childImageSharp{
+        fluid(quality: 90, maxWidth:100){
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 export default categories

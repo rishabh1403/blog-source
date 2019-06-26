@@ -7,23 +7,15 @@ import BlogList from '../components/Blog/BlogList';
 import { groupByYear } from '../util/utils';
 export default ({ data }) => (
   <Layout>
-    {/* <StyledHero home={false} img={data.indexImage.childImageSharp.fluid}>
-      <Banner
-        title="continue exploring"
-        info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
-      >
-        <Link to="/tours" className="btn-white">
-          explore tours
-        </Link>
-      </Banner>
-    </StyledHero> */}
+    <StyledHero home={true} img={data.indexImage.childImageSharp.fluid}>
+    </StyledHero>
     <BlogList edges={groupByYear(data.allMarkdownRemark.edges)} />
   </Layout>
 )
 
 export const query = graphql`
 query{
-  indexImage:file(relativePath:{eq:"bc.png"}){
+  indexImage:file(relativePath:{eq:"archive.jpg"}){
     childImageSharp{
       fluid(quality: 90, maxWidth:100){
         ...GatsbyImageSharpFluid
