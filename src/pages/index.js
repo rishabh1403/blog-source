@@ -10,7 +10,7 @@ import SEO from '../components/SEO';
 export default ({data}) => (
   <Layout>
     <SEO title="Home"/>
-    <StyledHero home={true} img={data.indexImage.childImageSharp.fluid}>
+    <StyledHero gradient={true} home={true} img={data.indexImage.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
         info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."

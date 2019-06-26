@@ -17,7 +17,7 @@ export default ({data}) => (
         </Link>
       </Banner>
     </StyledHero>
-    <Contact />
+    {/* <Contact /> */}
   </Layout>
 )
 
