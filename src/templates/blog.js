@@ -22,6 +22,12 @@ const blog = (props) => {
             <div>|</div>
             <div><FaClock/>{props.data.markdownRemark.fields.readingTime.text}</div>
           </div>
+          <div className={styles.linkHolder}>
+            {props.data.markdownRemark.frontmatter.categories.map((category)=>{
+              return <Link to={`categories/${category}`}>
+              #{category}</Link>
+            })}
+          </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
         {props.pageContext.next &&
@@ -43,6 +49,7 @@ export const query = graphql`
         title
         description
         date(formatString: "MMMM Do, YYYY")
+        categories
       }
       fields{
         readingTime{
