@@ -196,4 +196,4 @@ Let's review what are the highlights to take away from this question. We take a 
 There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-{{< youtube UJBdyCUR4h8 >}}  
+`youtube: UJBdyCUR4h8`  
