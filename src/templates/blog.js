@@ -18,11 +18,10 @@ const blog = (props) => {
       />
         </StyledHero>
     <div>
-      {props.data.markdownRemark.frontmatter.title}
       <div className={styles.blog} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       {props.pageContext.next &&
         <Link to={props.pageContext.next.frontmatter.path}>
-          Next</Link>}
+          {props.pageContext.next.frontmatter.title}</Link>}
       {props.pageContext.prev &&
         <Link to={props.pageContext.prev.frontmatter.path}>
           {props.pageContext.prev.frontmatter.title}</Link>}
