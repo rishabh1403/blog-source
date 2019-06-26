@@ -5,28 +5,33 @@ import Disqus from 'gatsby-plugin-disqus'
 import styles from '../css/singleBlog.module.css'
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
+import { FaClock } from "react-icons/fa";
 
 const blog = (props) => {
   console.log(props.pageContext)
   console.log(props.data.markdownRemark)
   return (
     <Layout>
-      <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
-      <Banner
-        title={props.data.markdownRemark.frontmatter.title}
-        info={props.data.markdownRemark.frontmatter.description}
-      />
-        </StyledHero>
-    <div>
-      <div className={styles.blog} dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-      {props.pageContext.next &&
-        <Link to={props.pageContext.next.frontmatter.path}>
-          {props.pageContext.next.frontmatter.title}</Link>}
-      {props.pageContext.prev &&
-        <Link to={props.pageContext.prev.frontmatter.path}>
-          {props.pageContext.prev.frontmatter.title}</Link>}
-    </div>
-    <Disqus />
+      {/* <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
+        </StyledHero> */}
+      <div className={styles.blog}>
+        <div>
+          <h1 className={styles.heading}>{props.data.markdownRemark.frontmatter.title}</h1>
+          <div className={styles.meta}>
+            <div>{props.data.markdownRemark.frontmatter.date}</div>
+            <div>|</div>
+            <div><FaClock/>{props.data.markdownRemark.fields.readingTime.text}</div>
+          </div>
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+        {props.pageContext.next &&
+          <Link to={props.pageContext.next.frontmatter.path}>
+            {props.pageContext.next.frontmatter.title}</Link>}
+        {props.pageContext.prev &&
+          <Link to={props.pageContext.prev.frontmatter.path}>
+            {props.pageContext.prev.frontmatter.title}</Link>}
+      </div>
+      <Disqus />
     </Layout>
   )
 }
@@ -37,6 +42,12 @@ export const query = graphql`
       frontmatter{
         title
         description
+        date(formatString: "MMMM Do, YYYY")
+      }
+      fields{
+        readingTime{
+          text
+        }
       }
       html
     }
