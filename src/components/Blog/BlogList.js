@@ -14,7 +14,7 @@ const BlogList = ({ edges }) => {
                 {edges[edge].map((ed, el) => {
                   return <p>
                     <span className={styles.date}>{ed.date}</span>
-                    <AniLink to={ed.path} className={styles.title}> {ed.title}</AniLink>
+                    <AniLink to={`/${ed.path}`} className={styles.title}> {ed.title}</AniLink>
                   </p>
                 })}
               </div>

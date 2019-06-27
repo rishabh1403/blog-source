@@ -25,7 +25,7 @@ const Tour = (props) => {
     <article className={styles.blog} >
       <div className={styles.imgContainer}>
         <Img className={styles.img} fluid={aboutImage.childImageSharp.fluid} />
-        <AniLink to={props.edge.node.frontmatter.path} fade className={styles.link} >Read More</AniLink>
+        <AniLink to={`/${props.edge.node.frontmatter.path}`} fade className={styles.link} >Read More</AniLink>
         <h6 className={styles.date}>{props.edge.node.frontmatter.date}</h6>
       </div>
       <div className={styles.footer}>
@@ -38,7 +38,7 @@ const Tour = (props) => {
             <h6><FaClock />{props.edge.node.fields.readingTime.text}</h6>
             {props.edge.node.frontmatter.categories && 
               props.edge.node.frontmatter.categories.map((tag, index) => {
-                return <AniLink to={`categories/${tag}`}>#{tag}</AniLink>
+                return <AniLink to={`/categories/${tag}`}>#{tag}</AniLink>
               })}
           </div>
         </div>

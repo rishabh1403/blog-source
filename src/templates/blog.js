@@ -24,17 +24,17 @@ const blog = (props) => {
           </div>
           <div className={styles.linkHolder}>
             {props.data.markdownRemark.frontmatter.categories.map((category)=>{
-              return <Link to={`categories/${category}`}>
+              return <Link to={`/categories/${category}`}>
               #{category}</Link>
             })}
           </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
         {props.pageContext.next &&
-          <Link to={props.pageContext.next.frontmatter.path}>
+          <Link to={`/${props.pageContext.next.frontmatter.path}`}>
             {props.pageContext.next.frontmatter.title}</Link>}
         {props.pageContext.prev &&
-          <Link to={props.pageContext.prev.frontmatter.path}>
+          <Link to={`/${props.pageContext.prev.frontmatter.path}`}>
             {props.pageContext.prev.frontmatter.title}</Link>}
       </div>
       <Disqus />

@@ -10,7 +10,7 @@ const getPreviousPageLink = currentPage => {
   if (currentPage < 3) {
     return "/"
   } else {
-    return `page/${currentPage - 1}`;
+    return `/page/${currentPage - 1}`;
   }
 }
 

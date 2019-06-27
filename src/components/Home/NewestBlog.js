@@ -59,10 +59,10 @@ const About = () => {
           <p>
             <FaClock/>{fields.readingTime.text}
             {frontmatter.categories.map((category,index) => {
-              return <AniLink to={`categories/${category}`}>#{category}</AniLink>
+              return <AniLink to={`/categories/${category}`}>#{category}</AniLink>
             })}
           </p>
-          <AniLink to={frontmatter.path} fade className="btn-primary" >Read More</AniLink>
+          <AniLink to={`/${frontmatter.path}`} fade className="btn-primary" >Read More</AniLink>
         </article>
       </div>
     </section>
