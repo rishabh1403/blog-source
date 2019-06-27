@@ -23,7 +23,7 @@
 .about-img div {
   box-shadow: var(--lightShadow);
 }
-.about-info h4 {
+.about-info h3 {
   font-size: 1.9rem;
   text-transform: uppercase;
 }
@@ -70,4 +70,41 @@
     width: 95vw;
     max-width: 1170px;
   }
+}
+.meta {
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.7;
+  padding-bottom: 1rem;
+}
+.meta div {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.meta div svg {
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.title{
+  text-align: center;
+}
+.linkHolder {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  /* opacity: 0.7; */
+  padding-bottom: 1rem;
+}
+.linkHolder a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-top: 0px;
+  opacity: 0.7;
+  padding-bottom: 2rem;
+}
+.description{
+  text-align: justify;
+  opacity: 0.7;
 }

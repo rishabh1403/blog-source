@@ -37,9 +37,9 @@ query aboutImage{
 }
 `;
 const About = () => {
-  const { aboutImage,blogs:{edges} } = useStaticQuery(getAbout);
+  const { aboutImage, blogs: { edges } } = useStaticQuery(getAbout);
   // console.log(blogs)
-  const {node:{frontmatter,fields}} = edges[0]; 
+  const { node: { frontmatter, fields } } = edges[0];
   return (
     <section className={styles.about}>
       <Title title="Latest" subtitle="updates" />
@@ -51,17 +51,22 @@ const About = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>{frontmatter.title}</h4>
-          <p>{frontmatter.date}</p>
-          <p>
-            {frontmatter.description}
-          </p>
-          <p>
-            <FaClock/>{fields.readingTime.text}
-            {frontmatter.categories.map((category,index) => {
+          <h3 className={styles.title}>{frontmatter.title}</h3>
+          <div className={styles.meta}>
+            <div>{frontmatter.date}</div>
+            <div>|</div>
+            <div><FaClock />{fields.readingTime.text}</div>
+          </div>
+          <div className={styles.linkHolder}>
+
+            {frontmatter.categories.map((category, index) => {
               return <AniLink to={`/categories/${category}`}>#{category}</AniLink>
             })}
-          </p>
+          </div>
+          <div className={styles.description}>
+            <h4>{frontmatter.description}</h4>
+          </div>
+
           <AniLink to={`/${frontmatter.path}`} fade className="btn-primary" >Read More</AniLink>
         </article>
       </div>
