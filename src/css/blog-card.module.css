@@ -53,6 +53,8 @@
   padding: 0.3rem 0.5rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 .footer h3 {

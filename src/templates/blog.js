@@ -62,7 +62,7 @@ export const query = graphql`
     }
     stubImage:file(relativePath:{eq:"bc.png"}){
       childImageSharp{
-        fluid(quality: 90, maxWidth:100){
+        fluid(quality: 90, maxWidth:2000){
           ...GatsbyImageSharpFluid
         }
       }

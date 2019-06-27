@@ -19,7 +19,7 @@ query someImage{
       node{
         frontmatter{
           title
-          date(formatString: "MMMM Do, YYYY")
+          date(formatString: "MMM Do, YYYY")
           description
           path
           categories

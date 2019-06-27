@@ -11,14 +11,14 @@ export default ({data}) => (
   <Layout>
     <SEO title="Home"/>
     <StyledHero gradient={true} home={true} img={data.indexImage.childImageSharp.fluid}>
-      <Banner
+      {/* <Banner
         title="continue exploring"
         info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
-      >
-        <Link to="/tours" className="btn-white">
+      > */}
+        {/* <Link to="/tours" className="btn-white">
           explore tours
         </Link>
-      </Banner>
+      </Banner> */}
     </StyledHero>
     <NewestBlog />
     <LatestBlogs />
@@ -29,7 +29,7 @@ export const query = graphql`
 query{
   indexImage:file(relativePath:{eq:"home.jpg"}){
     childImageSharp{
-      fluid(quality: 90, maxWidth:100){
+      fluid(quality: 90, maxWidth:2000){
         ...GatsbyImageSharpFluid
       }
     }
