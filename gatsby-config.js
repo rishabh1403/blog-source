@@ -41,6 +41,7 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          `gatsby-remark-autolink-headers`,
           {
             resolve: "gatsby-remark-embed-video",
             options: {
