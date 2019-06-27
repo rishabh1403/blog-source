@@ -57,6 +57,9 @@
 
 .footer h3 {
   text-transform: capitalize;
+  font-weight: bold;
+  opacity: 1 !important;
+  text-align: center;
   margin-bottom: 0;
 }
 .info {
@@ -65,7 +68,7 @@
   justify-content: space-between;
   text-transform: uppercase;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .info h6,
 .info h4 {
@@ -73,9 +76,12 @@
 }
 .details {
   text-transform: capitalize;
-  color: var(--darkGrey);
+  letter-spacing: 0.2rem;
+  color: var(--mainBlack);
   display: flex;
+  opacity: 0.7;
   align-items: center;
+  text-align: justify;
 }
 .icon {
   margin-right: 0.4rem;
@@ -84,4 +90,23 @@
   color: var(--primaryColor);
   text-transform: uppercase;
   text-align: right;
+  margin-top: 1rem;
+  width: 100%;
+
+}
+.meta div{
+  display: inline-block;
+}
+.readingTime{
+  float: left;
+}
+.readingTime svg{
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.categories{
+  float: right;
+}
+.categories a{
+  display: block;
 }

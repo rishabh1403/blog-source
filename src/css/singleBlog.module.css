@@ -6,10 +6,17 @@
   color: var(--mainBlack);
   letter-spacing: 1.3px;
 }
-.blog h1,
-h2,
-h3,
-h4 {
+.blog h1{
+  padding-top: 0.5rem;
+  opacity: 0.7;
+  color: var(--mainBlack);
+}
+.blog h2{
+  padding-top: 0.5rem;
+  opacity: 0.7;
+  color: var(--mainBlack);
+}
+.blog h3{
   padding-top: 0.5rem;
   opacity: 0.7;
   color: var(--mainBlack);

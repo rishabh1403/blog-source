@@ -35,11 +35,15 @@ const Tour = (props) => {
             {props.edge.node.frontmatter.description}
           </h4>
           <div className={styles.meta}>
-            <h6><FaClock />{props.edge.node.fields.readingTime.text}</h6>
-            {props.edge.node.frontmatter.categories && 
-              props.edge.node.frontmatter.categories.map((tag, index) => {
-                return <AniLink to={`/categories/${tag}`}>#{tag}</AniLink>
-              })}
+            <div className={styles.readingTime}>
+              <FaClock />{props.edge.node.fields.readingTime.text}
+            </div>
+            <div className={styles.categories}>
+              {props.edge.node.frontmatter.categories &&
+                props.edge.node.frontmatter.categories.map((tag, index) => {
+                  return <AniLink to={`/categories/${tag}`}>#{tag}</AniLink>
+                })}
+            </div>
           </div>
         </div>
       </div>
