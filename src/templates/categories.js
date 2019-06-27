@@ -30,7 +30,7 @@ export const categoryImageQuery = graphql`
   query  {
     stubImage:file(relativePath:{eq:"categories.jpg"}){
       childImageSharp{
-        fluid(quality: 90, maxWidth:100){
+        fluid(quality: 90, maxWidth:2000){
           ...GatsbyImageSharpFluid
         }
       }

@@ -7,13 +7,6 @@ import BlogCard from '../Blog/BlogCard';
 
 let getAbout = graphql`
 query someImage{
-  someImage:file(relativePath:{eq:"defaultBcg.jpeg"}){
-    childImageSharp{
-      fluid(maxWidth:600){
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
   blogs:allMarkdownRemark(limit:9,skip:1,sort:{order:DESC,fields:frontmatter___date}){
     edges{
       node{

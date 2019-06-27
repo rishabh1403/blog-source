@@ -17,7 +17,7 @@ export const query = graphql`
 query{
   indexImage:file(relativePath:{eq:"archive.jpg"}){
     childImageSharp{
-      fluid(quality: 90, maxWidth:100){
+      fluid(quality: 90, maxWidth:2000){
         ...GatsbyImageSharpFluid
       }
     }
