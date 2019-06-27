@@ -12,14 +12,6 @@ draft: false
 In this one we will solve question migratory birds from hackerrank in golang. This one wraps a logic which can be used to solve many questions. Let's dive right into it.
 <!--more-->
 
-<!-- TOC -->
-
-- [Problem Statement](#problem-statement)
-- [Challenges](#challenges)
-- [Solution](#solution)
-
-<!-- /TOC -->
-
 # Problem Statement
 The question can be found at this [link](https://www.hackerrank.com/challenges/migratory-birds/problem). The problem statement states that there are many birds of ***very few*** types and we need to find which type of bird is most in number. In case we have multiple types with same number we need to answer the bird with lower type. 
 
