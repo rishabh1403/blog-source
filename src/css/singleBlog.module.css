@@ -1,10 +1,14 @@
 .blog {
-  padding: 2rem 4rem;
+  padding: 4rem 0;
   text-align: justify;
   font-family: "Poppins", sans-serif;
   line-height: 2rem;
   color: var(--mainBlack);
   letter-spacing: 1.3px;
+}
+.about-center {
+  width: 80vw;
+  margin: 0 auto;
 }
 .blog h1{
   padding-top: 0.5rem;
@@ -26,7 +30,7 @@
   padding-left: 1.3rem;
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .blog {
     padding: 2rem 4rem;
   }
@@ -36,19 +40,20 @@
   .blog {
     padding: 2rem 6rem;
   }
-}
+} */
 
 @media screen and (min-width: 1200px) {
-  .blog {
-    padding: 2rem 8rem;
+  .about-center {
+    width: 95vw;
+    max-width: 1170px;
   }
 }
 
-@media screen and (min-width: 1500px) {
+/* @media screen and (min-width: 1500px) {
   .blog {
     padding: 2rem 10rem;
   }
-}
+} */
 .heading {
   opacity: 1 !important;
   line-height: 3rem;

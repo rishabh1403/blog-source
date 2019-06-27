@@ -15,29 +15,31 @@ const blog = (props) => {
       {/* <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
         </StyledHero> */}
       <div className={styles.blog}>
-        <div>
+        <div className={styles.aboutCenter}>
           <h1 className={styles.heading}>{props.data.markdownRemark.frontmatter.title}</h1>
           <div className={styles.meta}>
             <div>{props.data.markdownRemark.frontmatter.date}</div>
             <div>|</div>
-            <div><FaClock/>{props.data.markdownRemark.fields.readingTime.text}</div>
+            <div><FaClock />{props.data.markdownRemark.fields.readingTime.text}</div>
           </div>
           <div className={styles.linkHolder}>
-            {props.data.markdownRemark.frontmatter.categories.map((category)=>{
+            {props.data.markdownRemark.frontmatter.categories.map((category) => {
               return <Link to={`/categories/${category}`}>
-              #{category}</Link>
+                #{category}</Link>
             })}
           </div>
+          <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+          {props.pageContext.next &&
+            <Link to={`/${props.pageContext.next.frontmatter.path}`}>
+              {props.pageContext.next.frontmatter.title}</Link>}
+          {props.pageContext.prev &&
+            <Link to={`/${props.pageContext.prev.frontmatter.path}`}>
+              {props.pageContext.prev.frontmatter.title}</Link>}
+          <Disqus />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-        {props.pageContext.next &&
-          <Link to={`/${props.pageContext.next.frontmatter.path}`}>
-            {props.pageContext.next.frontmatter.title}</Link>}
-        {props.pageContext.prev &&
-          <Link to={`/${props.pageContext.prev.frontmatter.path}`}>
-            {props.pageContext.prev.frontmatter.title}</Link>}
+
       </div>
-      <Disqus />
+
     </Layout>
   )
 }
