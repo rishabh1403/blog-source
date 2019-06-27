@@ -2,6 +2,7 @@
   padding: 4rem 0;
   text-align: justify;
   font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
   line-height: 2rem;
   color: var(--mainBlack);
   letter-spacing: 1.3px;
@@ -29,31 +30,12 @@
   margin-bottom: 20px;
   padding-left: 1.3rem;
 }
-
-/* @media screen and (min-width: 576px) {
-  .blog {
-    padding: 2rem 4rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .blog {
-    padding: 2rem 6rem;
-  }
-} */
-
 @media screen and (min-width: 1200px) {
   .about-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-
-/* @media screen and (min-width: 1500px) {
-  .blog {
-    padding: 2rem 10rem;
-  }
-} */
 .heading {
   opacity: 1 !important;
   line-height: 3rem;

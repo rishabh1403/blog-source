@@ -12,8 +12,8 @@ const blog = (props) => {
   console.log(props.data.markdownRemark)
   return (
     <Layout>
-      {/* <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
-        </StyledHero> */}
+      <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
+        </StyledHero>
       <div className={styles.blog}>
         <div className={styles.aboutCenter}>
           <h1 className={styles.heading}>{props.data.markdownRemark.frontmatter.title}</h1>

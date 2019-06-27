@@ -122,3 +122,6 @@ main {
 .gatsby-highlight pre {
   overflow-x: auto !important;
 }
+.language-text{
+  padding: 5px 5px !important;
+}
