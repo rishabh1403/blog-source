@@ -14,10 +14,10 @@ const blog = (props) => {
     <Layout>
       <SEO title={props.data.markdownRemark.frontmatter.title}
         keywords={props.data.markdownRemark.frontmatter.keywords.join(" , ")}
-       description={props.data.markdownRemark.frontmatter.description} />
+        description={props.data.markdownRemark.frontmatter.description} />
 
       <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
-        </StyledHero>
+      </StyledHero>
       <div className={styles.blog}>
         <div className={styles.aboutCenter}>
           <h1 className={styles.heading}>{props.data.markdownRemark.frontmatter.title}</h1>
@@ -49,7 +49,7 @@ const blog = (props) => {
 }
 
 export const query = graphql`
-  query($slug: String!){
+  query($slug: String!, $image: String!){
     markdownRemark(frontmatter:{path:{eq:$slug}}){
       frontmatter{
         title
@@ -65,7 +65,7 @@ export const query = graphql`
       }
       html
     }
-    stubImage:file(relativePath:{eq:"bc.png"}){
+    stubImage:file(relativePath:{eq:$image}){
       childImageSharp{
         fluid(quality: 90, maxWidth:2000){
           ...GatsbyImageSharpFluid
