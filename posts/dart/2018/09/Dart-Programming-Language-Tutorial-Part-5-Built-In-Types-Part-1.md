@@ -6,6 +6,7 @@ keywords: ["rishabh","dart","dartlang","built-in types","numbers","strings","boo
 tags: ["dart","tutorial"]
 categories: ["dart"]
 path: "posts/dart/2018/09/dart-programming-language-tutorial-part-5-built-in-types-part-1/"
+path: "posts/dart/2018/09/dart-programming-language-tutorial-part-5-built-in-types-part-1.jpg"
 date: 2018-09-04T21:30:59+05:30
 draft: false
 ---
