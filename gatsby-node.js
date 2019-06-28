@@ -43,7 +43,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   `)
   edges.forEach((edge, index) => {
     const image = edge.node.frontmatter.image || "bcg.jpg"
-    console.log(image)
     createPage({
       path: edge.node.frontmatter.path,
       component: require.resolve("./src/templates/blog.js"),
@@ -73,7 +72,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     // console.log(posts);
     return [...acc, { name: el, count: posts.length }]
   }, []);
-  data.sort((a,b)=> b.count - a.count);
+  data.sort((a, b) => b.count - a.count);
   createPage({
     path: '/categories',
     component: require.resolve("./src/templates/categories.js"),
