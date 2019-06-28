@@ -27,7 +27,7 @@ const Tour = (props) => {
             <div className={styles.categories}>
               {props.edge.node.frontmatter.categories &&
                 props.edge.node.frontmatter.categories.map((tag, index) => {
-                  return <AniLink fade to={`/categories/${tag}`}>#{tag}</AniLink>
+                  return <AniLink key={index} fade to={`/categories/${tag}`}>#{tag}</AniLink>
                 })}
             </div>
           </div>

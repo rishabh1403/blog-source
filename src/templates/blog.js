@@ -33,12 +33,18 @@ const blog = (props) => {
             })}
           </div>
           <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-          {props.pageContext.next &&
-            <Link to={`/${props.pageContext.next.frontmatter.path}`}>
-              {props.pageContext.next.frontmatter.title}</Link>}
-          {props.pageContext.prev &&
-            <Link to={`/${props.pageContext.prev.frontmatter.path}`}>
-              {props.pageContext.prev.frontmatter.title}</Link>}
+          <div className={styles.meta}>
+            <h2>Read More</h2>
+            <div>{props.pageContext.next &&
+              <Link to={`/${props.pageContext.next.frontmatter.path}`}>
+                {props.pageContext.next.frontmatter.title}</Link>}</div>
+            <div>|</div>
+            <div>{props.pageContext.prev &&
+              <Link to={`/${props.pageContext.prev.frontmatter.path}`}>
+                {props.pageContext.prev.frontmatter.title}</Link>}</div>
+          </div>
+
+
           <Disqus />
         </div>
 
@@ -50,28 +56,28 @@ const blog = (props) => {
 
 export const query = graphql`
   query($slug: String!){
-    markdownRemark(frontmatter:{path:{eq:$slug}}){
-      frontmatter{
-        title
-        description
-        date(formatString: "MMMM Do, YYYY")
-        categories
-        keywords
+        markdownRemark(frontmatter: {path: {eq: $slug}}){
+        frontmatter{
+      title
+      description
+      date(formatString: "MMMM Do, YYYY")
+      categories
+      keywords
         image{
-          childImageSharp{
-            fluid(maxWidth:2000){
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        childImageSharp{
+      fluid(maxWidth:2000){
+        ...GatsbyImageSharpFluid
       }
-      fields{
-        readingTime{
-          text
-        }
       }
-      html
     }
   }
+      fields{
+        readingTime{
+      text
+    }
+  }
+  html
+}
+}
 `
 export default blog

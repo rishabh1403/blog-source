@@ -8,11 +8,11 @@ const BlogList = ({ edges }) => {
       <div className={styles.center}>
         {Object.keys(edges).sort().reverse().map((edge, index) => {
           return (
-            <div>
+            <div key={index}>
               <h2>{edge}</h2>
               <div className={styles.text}>
                 {edges[edge].map((ed, el) => {
-                  return <p>
+                  return <p key={el}>
                     <span className={styles.date}>{ed.date}</span>
                     <AniLink fade to={`/${ed.path}`} className={styles.title}> {ed.title}</AniLink>
                   </p>

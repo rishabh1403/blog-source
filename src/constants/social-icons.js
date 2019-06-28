@@ -5,26 +5,26 @@ import { IoLogoYoutube } from "react-icons/io"
 export default [
   {
     icon: <FaEnvelope />,
-    url: "https://twitter.com",
+    url: "mailto:contact@rishabh1403.com",
   },
   {
     icon: <FaFacebook />,
-    url: "https://twitter.com",
+    url: "#",
   },
   {
     icon: <FaTwitterSquare />,
-    url: "https://twitter.com",
+    url: "https://www.twitter.com/rishabhjain1403",
   },
   {
     icon: <IoLogoYoutube />,
-    url: "https://twitter.com",
+    url: "https://www.youtube.com/rishabh1403",
   },
   {
     icon: <FaGithubSquare />,
-    url: "https://twitter.com",
+    url: "https://www.github.com/rishabh1403",
   },
   {
     icon: <FaRssSquare />,
-    url: "https://twitter.com",
+    url: "https://rishabh1403.com/index.xml",
   },
 ]

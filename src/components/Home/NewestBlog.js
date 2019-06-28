@@ -59,7 +59,7 @@ const About = () => {
           <div className={styles.linkHolder}>
 
             {frontmatter.categories.map((category, index) => {
-              return <AniLink to={`/categories/${category}`}>#{category}</AniLink>
+              return <AniLink key={index} to={`/categories/${category}`}>#{category}</AniLink>
             })}
           </div>
           <div className={styles.description}>
