@@ -18,7 +18,7 @@ query{
 
 `
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, keywords }) => {
   const { site } = useStaticQuery(getData);
   const { siteTitle, siteDescription, author, siteUrl, twitterUsername, image } = site.siteMetadata;
   return (
@@ -26,6 +26,7 @@ const SEO = ({ title, description }) => {
       <meta name="description" content={description || siteDescription} />
       <meta name="image" content={image}/>
       <meta name="author" content={author} />
+      <meta name="keywords" content={keywords} />
       {/* Twitter Cards */}
       <meta name="twitter:card" content={"summary_large_image"} />
       <meta name="twitter:creator" content={twitterUsername} />

@@ -5,12 +5,17 @@ import Disqus from 'gatsby-plugin-disqus'
 import styles from '../css/singleBlog.module.css'
 import StyledHero from "../components/StyledHero"
 import { FaClock } from "react-icons/fa";
+import SEO from '../components/SEO';
 
 const blog = (props) => {
   console.log(props.pageContext)
   console.log(props.data.markdownRemark)
   return (
     <Layout>
+      <SEO title={props.data.markdownRemark.frontmatter.title}
+        keywords={props.data.markdownRemark.frontmatter.keywords.join(" , ")}
+       description={props.data.markdownRemark.frontmatter.description} />
+
       <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
         </StyledHero>
       <div className={styles.blog}>
@@ -51,6 +56,7 @@ export const query = graphql`
         description
         date(formatString: "MMMM Do, YYYY")
         categories
+        keywords
       }
       fields{
         readingTime{

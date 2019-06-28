@@ -4,8 +4,11 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import BlogList from '../components/Blog/BlogList';
 import { groupByYear } from '../util/utils';
+import SEO from '../components/SEO';
+
 export default ({ data }) => (
   <Layout>
+    <SEO title="Archive" description="Archive page of Rishabh Jain's blog. List of all blogs on the website" />
     <StyledHero home={true} img={data.indexImage.childImageSharp.fluid}>
     </StyledHero>
     <BlogList edges={groupByYear(data.allMarkdownRemark.edges)} />

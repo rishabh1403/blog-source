@@ -8,7 +8,7 @@ import SEO from '../components/SEO';
 
 export default ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description="Index page of Rishabh Jain's blog." />
     <StyledHero gradient={true} home={true} img={data.indexImage.childImageSharp.fluid}>
       {/* <Banner
         title="continue exploring"
