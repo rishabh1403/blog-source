@@ -481,4 +481,4 @@ const ans = data.reduce((acc,el) => {
 
 
 
-console.log(ans);
+// console.log(ans);

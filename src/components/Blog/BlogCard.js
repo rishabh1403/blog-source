@@ -19,7 +19,7 @@ query tourImage{
 }
 `;
 const Tour = (props) => {
-  console.log(props.edge.node)
+  // console.log(props.edge.node)
   const { aboutImage } = useStaticQuery(getAbout);
   return (
     <article className={styles.blog} >

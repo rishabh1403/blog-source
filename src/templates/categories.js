@@ -6,7 +6,7 @@ import StyledHero from "../components/StyledHero"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const categories = ({ data, pageContext }) => {
-  console.log(pageContext)
+  // console.log(pageContext)
   return (
     <Layout>
       <StyledHero home={true} img={data.stubImage.childImageSharp.fluid}>

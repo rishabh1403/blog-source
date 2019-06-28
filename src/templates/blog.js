@@ -8,8 +8,8 @@ import { FaClock } from "react-icons/fa";
 import SEO from '../components/SEO';
 
 const blog = (props) => {
-  console.log(props.pageContext)
-  console.log(props.data.markdownRemark)
+  // console.log(props.pageContext)
+  // console.log(props.data.markdownRemark)
   return (
     <Layout>
       <SEO title={props.data.markdownRemark.frontmatter.title}
