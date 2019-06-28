@@ -13,7 +13,7 @@ draft: false
 In this post we will discuss some of the privacy concerns that we will face while we browse the internet. Have a safe browsing!!!.
 <!--more-->
 
-![Incognito](/posts/privacy/2018/09/incognito-2231825_640.png "Coutesy - https://pixabay.com/en/incognito-private-browsing-browsing-2231825/")
+![Incognito](./incognito-2231825_640.png "Coutesy - https://pixabay.com/en/incognito-private-browsing-browsing-2231825/")
 
 After the recent [Facebook–Cambridge Analytica data scandal](https://www.bbc.com/news/technology-43649018), that cost the privacy of 87 million Facebook users, the need for concrete measures to protect online privacy has become more urgent than ever. The event was a grim reminder — *if you're not paying for it, you are the product*.
 

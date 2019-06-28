@@ -18,13 +18,13 @@ Computers played a fundamental role in the first Apollo mission, and then eventu
 
 ### Apollo Guidance Computer
 
-![Apollo Guidance Computer](/posts/general/2018/10/2522175629_39cd59a95c_z.jpg "Apollo Guidance Computer | Courtesy - https://www.flickr.com/photos/csixty4/2522175629")
+![Apollo Guidance Computer](./2522175629_39cd59a95c_z.jpg "Apollo Guidance Computer | Courtesy - https://www.flickr.com/photos/csixty4/2522175629")
 
 [Apollo Guidance Computer](https://en.wikipedia.org/wiki/Apollo_Guidance_Computer) (AGC), designed at MIT, provided computation and electronic interfaces for guidance, navigation, and control of the spacecraft. Putting it simply, the AGC helped the astronauts to better control their spacecraft by passing in *nouns* and *verbs* as commands. To control the hardware, AGC had built-in machine code instructions using a compiler called  [Luminary](https://www.ibiblio.org/apollo/Luminary.html#What_is_Luminary_). 
 
 >On July 7, former NASA intern Chris Garry uploaded the entire AGC source code to [github](https://github.com/chrislgarry/Apollo-11). The humorous nature of some code snippets and comments is noteworthy. The instructions for the master ignition burn is titled, [BURN_BABY_BURN- -MASTER_IGNITION_ROUTINE](https://github.com/chrislgarry/Apollo-11/blob/27e2acf88a6345e2b1064c8b006a154363937050/Luminary099/BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc), for example. There's even and explanation for it,
 >
->![Master ignition routine nomenclature](/posts/general/2018/10/Screenshot_2018-09-21_chrislgarry_Apollo-11.png)
+>![Master ignition routine nomenclature](./Screenshot_2018-09-21_chrislgarry_Apollo-11.png)
 *Read more about it [here](https://www.popularmechanics.com/space/moon-mars/a21771/code-for-apollo-moon-landings-on-github/).*
 
 The AGC might've guided man to the moon but honestly, it wasn't particularly powerful. In fact, it ran on a **64 kB** memory at an underwhelming **0.043 MHz**. Our hand-held calculators are more equipped than that. ([What?!](https://en.wikipedia.org/wiki/TI-83_series#Technical_specifications))

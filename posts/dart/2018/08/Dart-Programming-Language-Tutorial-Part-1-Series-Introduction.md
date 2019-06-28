@@ -14,17 +14,17 @@ A general introduction to my dart programming language tutorial series. The post
 <!--more-->
 # A Gentle Introduction to Dart
 
-![dart1.png](/posts/dart/2018/08/dart1.png)
+![dart1.png](./dart1.png)
 
 I am starting a new series on [dart](https://dartlang.org) programming language. In this series I would be covering everything about dart from scratch to advanced concepts. Dart is an object oriented programming language by google that came around 2011. If you are here, then most probably you want to learn dart to write [flutter](https://flutter.io) apps. In that case, I have got you covered. After this series, I will start a flutter series, however if you just wanted to learn dart as a programming language, I have got you covered too. Dart can be used to write web apps, server apps, cli apps etc and we will do some standalone dart projects too. 
 
 So what is dart? Dart is a object oriented programming language i.e. everything in dart is an object, it's syntax is very similar to c++, java and I would also say javascript. It has reactive programming, async programming, concept of futures and streams inbuilt in it and is very fast and optimized.
 
 # So what are we going to cover in this series?
-![dart2.png](/posts/dart/2018/08/dart2.png)
+![dart2.png](./dart2.png)
 We are going to start with variables, comments, functions, operators, control flow etc which are basic building blocks of any program. Function will have some sub-topics of its own.
 
-![dart3.png](/posts/dart/2018/08/dart3.png)
+![dart3.png](./dart3.png)
 Then we will move on to some advanced topics such as classes, generics, async programming etc. Classes will have sub-topics such as constructors, inheritance etc, while constructors will in turn have some sub-topics. Then we will branch out and do some dart projects and start a flutter series.
 We have a long road ahead. 
 # Local setup

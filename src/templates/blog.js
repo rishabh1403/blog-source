@@ -27,8 +27,8 @@ const blog = (props) => {
             <div><FaClock />{props.data.markdownRemark.fields.readingTime.text}</div>
           </div>
           <div className={styles.linkHolder}>
-            {props.data.markdownRemark.frontmatter.categories.map((category) => {
-              return <Link to={`/categories/${category}`}>
+            {props.data.markdownRemark.frontmatter.categories.map((category,index) => {
+              return <Link key={index} to={`/categories/${category}`}>
                 #{category}</Link>
             })}
           </div>

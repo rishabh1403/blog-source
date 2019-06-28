@@ -13,7 +13,7 @@ draft: false
 In this post we will introduce dockers a bit, just a bit of preparation for what is to come in near future on my blog.
 <!--more-->
 
-![Docker](https://c1.staticflickr.com/1/778/22947137613_69a88cb94b_b.jpg)
+![Docker](./whale.jpg)
 
 ## The Origins
     
@@ -31,7 +31,7 @@ Basically, Docker makes life a whole lot simpler. It's appeal mainly lies in its
 
 Docker is primarily developed for Linux and relies on its key component **libcontainer**, which enables direct leveraging of the virtualization facilities provisioned by the Linux kernel. Formerly, Docker relied on LXC as its default execution environment but it was dropped since the release of version **0.9**.
 
-![Layers of a container based on the Ubuntu image](https://docs.docker.com/v17.09/engine/userguide/storagedriver/images/sharing-layers.jpg "Courtesy - https://docs.docker.com")
+![Layers of a container based on the Ubuntu image](./archi.jpg "Courtesy - https://docs.docker.com")
 
 #### Container
 
