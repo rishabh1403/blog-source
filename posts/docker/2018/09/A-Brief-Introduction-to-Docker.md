@@ -7,6 +7,7 @@ tags: ["docker"]
 categories: ["docker"]
 path: "posts/docker/2018/09/a-brief-introduction-to-docker/"
 date: 2018-09-17T23:01:36+05:30
+image: "posts/docker/2018/09/docker.jpg"
 draft: false
 ---
 In this post we will introduce dockers a bit, just a bit of preparation for what is to come in near future on my blog.
