@@ -42,6 +42,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   }
   `)
   edges.forEach((edge, index) => {
+    console.log(edge.node.frontmatter.image)
     createPage({
       path: edge.node.frontmatter.path,
       component: require.resolve("./src/templates/blog.js"),
