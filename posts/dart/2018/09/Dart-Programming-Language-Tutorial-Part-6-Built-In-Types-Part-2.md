@@ -6,7 +6,7 @@ keywords: ["dart","dartlang","built-in types","list","maps","rishabh","jain","ri
 tags: ["dart","tutorial"]
 categories: ["dart"]
 path: "posts/dart/2018/09/dart-programming-language-tutorial-part-6-built-in-types-part-2/"
-path: "posts/dart/2018/09/dart-programming-language-tutorial-part-6-built-in-types-part-2.jpg"
+image: "./dart-programming-language-tutorial-part-6-built-in-types-part-2.jpg"
 date: 2018-09-07T19:45:11+05:30
 draft: false
 ---

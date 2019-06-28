@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","rishabh1403","blog","dart","dartlang","variables","final","const","default","values","tutorial","programming","language"]
 tags: ["dart","tutorial"]
 path: "posts/dart/2018/08/dart-programming-language-tutorial-part-3-final-const-default-values/"
-image: "posts/dart/2018/08/dart-programming-language-tutorial-part-3-final-const-default-values.jpg"
+image: "./dart-programming-language-tutorial-part-3-final-const-default-values.jpg"
 categories: ["dart"]
 date: 2018-08-29T21:45:47+05:30
 draft: false

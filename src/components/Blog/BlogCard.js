@@ -20,11 +20,11 @@ query tourImage{
 `;
 const Tour = (props) => {
   // console.log(props.edge.node)
-  const { aboutImage } = useStaticQuery(getAbout);
+  // const { aboutImage } = useStaticQuery(getAbout);
   return (
     <article className={styles.blog} >
       <div className={styles.imgContainer}>
-        <Img className={styles.img} fluid={aboutImage.childImageSharp.fluid} />
+        <Img className={styles.img} fluid={props.edge.node.frontmatter.image.childImageSharp.fluid} />
         <AniLink to={`/${props.edge.node.frontmatter.path}`} fade className={styles.link} >Read More</AniLink>
         <h6 className={styles.date}>{props.edge.node.frontmatter.date}</h6>
       </div>

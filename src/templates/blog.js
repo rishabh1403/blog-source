@@ -16,7 +16,7 @@ const blog = (props) => {
         keywords={props.data.markdownRemark.frontmatter.keywords.join(" , ")}
         description={props.data.markdownRemark.frontmatter.description} />
 
-      <StyledHero home={true} img={props.data.stubImage.childImageSharp.fluid}>
+      <StyledHero home={true} img={props.data.markdownRemark.frontmatter.image.childImageSharp.fluid}>
       </StyledHero>
       <div className={styles.blog}>
         <div className={styles.aboutCenter}>
@@ -49,7 +49,7 @@ const blog = (props) => {
 }
 
 export const query = graphql`
-  query($slug: String!, $image: String!){
+  query($slug: String!){
     markdownRemark(frontmatter:{path:{eq:$slug}}){
       frontmatter{
         title
@@ -57,6 +57,13 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         categories
         keywords
+        image{
+          childImageSharp{
+            fluid(maxWidth:2000){
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields{
         readingTime{
@@ -64,13 +71,6 @@ export const query = graphql`
         }
       }
       html
-    }
-    stubImage:file(relativePath:{eq:$image}){
-      childImageSharp{
-        fluid(quality: 90, maxWidth:2000){
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
   }
 `

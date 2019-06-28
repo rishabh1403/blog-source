@@ -6,7 +6,7 @@ keywords: ["rishabh","rishabh jain","rishabh1403","blog","comments","dart","dart
 tags: ["dart","tutorial"]
 categories: ["dart"]
 path: "posts/dart/2018/08/dart-programming-language-tutorial-part-4-comments/"
-image: "posts/dart/2018/08/dart-programming-language-tutorial-part-4-comments.jpg"
+image: "./dart-programming-language-tutorial-part-4-comments.jpg"
 date: 2018-08-30T01:15:14+05:30
 draft: false
 ---

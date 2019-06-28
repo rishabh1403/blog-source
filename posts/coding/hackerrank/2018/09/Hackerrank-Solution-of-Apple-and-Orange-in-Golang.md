@@ -7,7 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-09-19T20:55:26+05:30
 path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-apple-and-orange-in-golang/"
-image: "posts/coding/hackerrank/2018/09/apple-and-orange.jpg"
+image: "./apple-and-orange.jpg"
 draft: false
 ---
 In this post we will solve question apple and orange from hackerrank implementation section. A very easy one, let's dive right into it.

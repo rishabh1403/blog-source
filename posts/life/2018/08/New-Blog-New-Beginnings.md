@@ -7,7 +7,7 @@ tags: ["life"]
 categories: ["life"]
 path: "posts/life/2018/08/new-blog-new-beginnings/"
 date: 2018-08-21T01:17:37+05:30
-image: "posts/life/2018/08/new.jpg"
+image: "./new.jpg"
 draft: false
 ---
 My first blog. Just getting the hang of it and posting some random thoughts.

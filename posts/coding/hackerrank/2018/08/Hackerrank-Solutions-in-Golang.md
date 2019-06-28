@@ -7,7 +7,7 @@ tags: ["hackerrank","golang","coding"]
 categories: ["hackerrank","golang","coding"]
 path: "posts/coding/hackerrank/2018/08/hackerrank-solutions-in-golang/"
 date: 2018-08-21T12:32:25+05:30
-image: "posts/coding/hackerrank/2018/08/hackerrank-solutions.jpg"
+image: "./hackerrank-solutions.jpg"
 draft: false
 ---
 My solutions to hackerrank practice problems in golang with explantions.

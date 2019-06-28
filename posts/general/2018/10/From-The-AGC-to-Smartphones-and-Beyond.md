@@ -7,7 +7,7 @@ tags: ["general","space"]
 path: "posts/general/2018/10/from-the-agc-to-smartphones-and-beyond/"
 categories: ["general"]
 date: 2018-10-06T10:56:20+05:30
-image: "posts/general/2018/10/acg.jpg"
+image: "./acg.jpg"
 draft: false
 ---
 Today, space technology has evolved to an extent that mankind can envisage a future where [space tourism](https://www.space.com/topics/space-tourism) could be a thing. In contrast, not even five decades ago, a single space expedition was a near to impossible task. The journey has been a historic one, much of which has been made possible by the power of modern computers, the foundation for which was laid in the 1960's.

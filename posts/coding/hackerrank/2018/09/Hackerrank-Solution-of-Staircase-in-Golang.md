@@ -7,7 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-staircase-in-golang/"
 date: 2018-09-01T16:45:26+05:30
-image: "posts/coding/hackerrank/2018/09/staircase.jpg"
+image: "./staircase.jpg"
 draft: false
 ---
 In this post we will solve question staircase from Hackerrank. A simple one, only requires to decode the logic for pattern. Will need if-else and a nested for loop. Let's get started.

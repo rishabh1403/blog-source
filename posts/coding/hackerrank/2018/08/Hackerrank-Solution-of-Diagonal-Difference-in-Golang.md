@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","rishabh1403","blog","hackerrank","coding","golang","language","go","competitive","programming","sport","daigonal","difference","matrix in golang","multi dimension array","2D","array"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
-image: "posts/coding/hackerrank/2018/08/diagonal-difference.jpg"
+image: "./diagonal-difference.jpg"
 path: "posts/coding/hackerrank/2018/08/hackerrank-solution-of-diagonal-difference-in-golang/"
 date: 2018-08-30T19:05:56+05:30
 draft: false

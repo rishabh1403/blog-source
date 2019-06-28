@@ -7,7 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-mini-max-sum-in-golang/"
 date: 2018-09-02T18:35:00+05:30
-image: "posts/coding/hackerrank/2018/09/mini-max-sum.jpg"
+image: "./mini-max-sum.jpg"
 draft: false
 ---
 In this post we will solve question mini-max sum from hackerrank. Here we will learn a bit about make in golang along with a new golang package called sort. Let's get started.

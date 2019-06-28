@@ -7,7 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-10-22T21:45:53+05:30
 path: "posts/coding/hackerrank/2018/10/hackerrank-solution-of-migratory-birds-in-golang"
-image: "posts/coding/hackerrank/2018/10/migratory-birds.jpg"
+image: "./migratory-birds.jpg"
 draft: false
 ---
 In this one we will solve question migratory birds from hackerrank in golang. This one wraps a logic which can be used to solve many questions. Let's dive right into it.

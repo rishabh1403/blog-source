@@ -7,7 +7,7 @@ tags: ["privacy"]
 path: "posts/privacy/2018/09/they-can-smell-what-you-are-cooking/"
 categories: ["privacy"]
 date: 2018-09-19T21:06:20+05:30
-image: "posts/privacy/2018/09/privacy.jpg"
+image: "./privacy.jpg"
 draft: false
 ---
 In this post we will discuss some of the privacy concerns that we will face while we browse the internet. Have a safe browsing!!!.

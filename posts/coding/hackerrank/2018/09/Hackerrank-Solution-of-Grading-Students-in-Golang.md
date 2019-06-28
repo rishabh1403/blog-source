@@ -7,7 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-09-16T23:35:13+05:30
 path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-grading-students-in-golang/"
-image: "posts/coding/hackerrank/2018/09/grading-students.jpg"
+image: "./grading-students.jpg"
 draft: false
 ---
 In this post we will solve question grading students from hackerrank in golang. Let's dive right into it.

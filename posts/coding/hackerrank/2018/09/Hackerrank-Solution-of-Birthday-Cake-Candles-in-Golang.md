@@ -7,7 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-09-03T19:35:03+05:30
 path: "posts/coding/hackerrank/2018/09/hackerrank-solution-of-birthday-cake-candles-in-golang/"
-image: "posts/coding/hackerrank/2018/09/birthday-cake-candles.jpg"
+image: "./birthday-cake-candles.jpg"
 draft: false
 ---
 In this post we will solve question Birthday Cake Candles from hackerrank. This is one of those questions, which packs a fancy description but in the end needs a simple logic to solve. Let's dive right into it.

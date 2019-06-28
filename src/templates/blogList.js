@@ -57,6 +57,13 @@ export const blogListQuery = graphql`
             description
             categories
             path
+            image{
+              childImageSharp{
+                fluid(quality: 90, maxWidth:2000){
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

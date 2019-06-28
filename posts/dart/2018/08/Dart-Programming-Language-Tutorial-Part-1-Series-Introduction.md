@@ -6,7 +6,7 @@ keywords: ["rishabh","rishabh jain","rishabh1403","blog","dart","series","progra
 tags: ["dart","tutorial"]
 categories: ["dart"]
 path: "posts/dart/2018/08/dart-programming-language-tutorial-part-1-series-introduction/"
-image: "posts/dart/2018/08/dart-programming-language-tutorial-part-1-series-introduction.jpg"
+image: "./dart-programming-language-tutorial-part-1-series-introduction.jpg"
 date: 2018-08-27T20:15:08+05:30
 draft: false
 ---

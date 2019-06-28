@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","hackerrank","coding","golang","competitive","programming","tech","technology","plus","minus"]
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
-image: "posts/coding/hackerrank/2018/08/plus-minus.jpg"
+image: "./plus-minus.jpg"
 path: "posts/coding/hackerrank/2018/08/hackerrank-solution-of-plus-minus-in-golang/"
 date: 2018-08-31T20:10:21+05:30
 draft: false

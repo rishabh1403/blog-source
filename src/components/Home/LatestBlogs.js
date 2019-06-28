@@ -15,6 +15,13 @@ query someImage{
           description
           path
           categories
+          image{
+            childImageSharp{
+              fluid(maxWidth:600){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         fields{
           readingTime{
