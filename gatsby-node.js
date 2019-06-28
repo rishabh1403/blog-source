@@ -42,13 +42,14 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   }
   `)
   edges.forEach((edge, index) => {
-    console.log(edge.node.frontmatter.image)
+    const image = edge.node.frontmatter.image || "bcg.jpg"
+    console.log(image)
     createPage({
       path: edge.node.frontmatter.path,
       component: require.resolve("./src/templates/blog.js"),
       context: {
         slug: edge.node.frontmatter.path,
-        image: edge.node.frontmatter.image || "posts/hackerrank/2018/08/connectBcg.jpeg",
+        image: image,
         prev: index === 0 ? null : edges[index - 1].node,
         next: index === (edges.length - 1) ? null : edges[index + 1].node
       },
