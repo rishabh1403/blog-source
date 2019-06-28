@@ -3,6 +3,7 @@ title: "Hackerrank Solution of A Very Big Sum in Golang"
 description: "Solution for hackerrank warmup question a very big sum in golang. This question is very similar to simple array sum problem. The only difference being that the input array is huge. Let's tackle that in this blog post."
 author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","very","big","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
+image: "posts/coding/hackerrank/2018/08/a-very-big-sum.jpg"
 tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 path: "posts/coding/hackerrank/2018/08/hackerrank-solution-of-a-very-big-sum-in-golang/"

@@ -4,6 +4,7 @@ description: "Solution for hackerrank warmup question compare the triplets in go
 author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","very","big","sum","rishabh1403","hackerrank","blog","golang","solution","learn","code"]
 tags: ["hackerrank","coding","golang"]
+image: "posts/coding/hackerrank/2018/08/compare-the-triplets.jpg"
 categories: ["hackerrank","coding","golang"]
 path: "posts/coding/hackerrank/2018/08/hackerrank-solution-of-compare-the-triplets-in-golang/"
 date: 2018-08-25T23:00:09+05:30
