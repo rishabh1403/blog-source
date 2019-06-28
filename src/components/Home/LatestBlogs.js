@@ -17,7 +17,7 @@ query someImage{
           categories
           image{
             childImageSharp{
-              fluid(maxWidth:600){
+              fluid(maxWidth:1000){
                 ...GatsbyImageSharpFluid
               }
             }

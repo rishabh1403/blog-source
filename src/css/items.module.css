@@ -14,10 +14,34 @@
   .center {
     grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
   }
+  .meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .meta div{
+    padding: 1rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .center {
     width: 100%;
     max-width: 1170px;
   }
+  .meta{
+    display: block;
+    width: 100%;
+    max-width: 1170px;
+  }
+}
+.meta {
+  text-align: center;
+  width: 80vw;
+  margin: 3rem auto;
+  font-weight: bold;
+  opacity: 0.7;
+  padding-bottom: 1rem;
+}
+.meta div {
+  display: inline-block;
 }

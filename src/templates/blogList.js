@@ -27,9 +27,17 @@ export default class BlogList extends React.Component {
             {posts.map((edge, index) => {
               return <BlogCard edge={edge} key={index} />
             })}
+
           </div>
-          <AniLink to={getPreviousPageLink(currentPage)} fade className="btn-primary" >Newer Posts</AniLink>
-          {currentPage<numPages && <AniLink to={`page/${currentPage+1}`} fade className="btn-primary" >Older Posts</AniLink>}
+          <div className={styles.meta}>
+            <div style={{ float: "left" }}>
+              <AniLink to={getPreviousPageLink(currentPage)} fade className="btn-primary" >Newer Posts</AniLink>
+
+            </div>
+            <div style={{ float: "right" }}>
+              {currentPage < numPages && <AniLink to={`page/${currentPage + 1}`} fade className="btn-primary" >Older Posts</AniLink>}
+            </div>
+          </div>
         </section>
       </Layout>
     )
@@ -59,7 +67,7 @@ export const blogListQuery = graphql`
             path
             image{
               childImageSharp{
-                fluid(quality: 90, maxWidth:2000){
+                fluid(quality: 90, maxWidth:1000){
                   ...GatsbyImageSharpFluid
                 }
               }
