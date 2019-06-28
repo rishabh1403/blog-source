@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Title from '../Title'
 import styles from '../../css/items.module.css'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import BlogCard from '../Blog/BlogCard';
@@ -29,16 +28,13 @@ query someImage{
 `;
 
 const FeaturedTours = () => {
-  const { someImage, blogs } = useStaticQuery(getAbout);
-  console.log(blogs);
+  const { blogs } = useStaticQuery(getAbout);
   return (
     <section className={styles.blogs}>
-      {/* <Title title="featured" subtitle="tours" /> */}
       <div className={styles.center}>
         {blogs.edges.map((edge, index) => {
           return <BlogCard edge={edge} key={index} />
         })}
-
       </div>
       <AniLink to="/page/2" fade className="btn-primary" >Older Posts</AniLink>
     </section>

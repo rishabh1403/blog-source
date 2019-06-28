@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import BackgroundImage from 'gatsby-background-image'
+// import BackgroundImage from 'gatsby-background-image'
 import Img from 'gatsby-image';
 
 const StyledHero = ({ img, className, children, home, gradient }) => {

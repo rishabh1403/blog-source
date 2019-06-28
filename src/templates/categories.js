@@ -1,6 +1,5 @@
 import React from "react"
 import styles from '../css/categories.module.css'
-import BlogCard from '../components/Blog/BlogCard'
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"

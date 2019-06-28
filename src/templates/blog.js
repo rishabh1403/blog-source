@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import Disqus from 'gatsby-plugin-disqus'
 import styles from '../css/singleBlog.module.css'
 import StyledHero from "../components/StyledHero"
-import Banner from "../components/Banner"
 import { FaClock } from "react-icons/fa";
 
 const blog = (props) => {

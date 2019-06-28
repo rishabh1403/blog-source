@@ -1,8 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import Banner from "../components/Banner"
 import BlogList from '../components/Blog/BlogList';
 import { groupByYear } from '../util/utils';
 export default ({ data }) => (
