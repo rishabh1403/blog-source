@@ -5,7 +5,7 @@ module.exports = {
     author: `Rishabh Jain`,
     siteUrl: `https://rishabh1403.com`,
     twitterUsername: "@rishabhjain1403",
-    image:'/bc.png'
+    image:'/home.jpg'
   },
   plugins: [
     `gatsby-plugin-styled-components`,

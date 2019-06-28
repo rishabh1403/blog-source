@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from '../../css/blog-card.module.css'
-// import styles from '../../css/tour.module.css'
-// import img from "../../images/defaultBcg.jpeg"
 import Img from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { FaClock } from "react-icons/fa";
