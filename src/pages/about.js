@@ -1,13 +1,13 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
-import Banner from "../components/Banner"
+// import StyledHero from "../components/StyledHero"
+// import Banner from "../components/Banner"
 // import Contact from '../components/Contact/Contact'
 
-export default ({data}) => (
+export default () => (
   <Layout>
-    <StyledHero home={false} img={data.indexImage.childImageSharp.fluid}>
+    {/* <StyledHero home={false} img={data.indexImage.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
         info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
@@ -16,14 +16,14 @@ export default ({data}) => (
           explore tours
         </Link>
       </Banner>
-    </StyledHero>
+    </StyledHero> */}
     {/* <Contact /> */}
   </Layout>
 )
 
 export const query = graphql`
 query{
-  indexImage:file(relativePath:{eq:"bc.png"}){
+  indexImage:file(relativePath:{eq:"blogBcg.jpeg"}){
     childImageSharp{
       fluid(quality: 90, maxWidth:2000){
         ...GatsbyImageSharpFluid

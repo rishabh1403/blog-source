@@ -13,6 +13,7 @@ draft: false
 In this post we will introduce dockers a bit, just a bit of preparation for what is to come in near future on my blog.
 <!--more-->
 
+
 ![Docker](./whale.jpg)
 
 ## The Origins

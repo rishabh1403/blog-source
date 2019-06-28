@@ -76,7 +76,7 @@ export const blogListQuery = graphql`
         }
       }
     }
-    stubImage:file(relativePath:{eq:"bc.png"}){
+    stubImage:file(relativePath:{eq:"blogBcg.jpeg"}){
       childImageSharp{
         fluid(quality: 90, maxWidth:2000){
           ...GatsbyImageSharpFluid

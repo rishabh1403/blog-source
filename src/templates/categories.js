@@ -14,7 +14,7 @@ const categories = ({ data, pageContext }) => {
       <section className={styles.blogs}>
         <div className={styles.center}>
           {pageContext.categories.map((category, index) => {
-            return <AniLink className={styles.title} key={index} to={`/categories/${category.name}`}>
+            return <AniLink fade className={styles.title} key={index} to={`/categories/${category.name}`}>
               {category.name}<span className={styles.count}>({category.count})</span>
             </AniLink>
           })}

@@ -1,11 +1,12 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from "../components/Layout"
 import Disqus from 'gatsby-plugin-disqus'
 import styles from '../css/singleBlog.module.css'
 import StyledHero from "../components/StyledHero"
 import { FaClock } from "react-icons/fa";
 import SEO from '../components/SEO';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const blog = (props) => {
   // console.log(props.pageContext)
@@ -27,21 +28,21 @@ const blog = (props) => {
             <div><FaClock />{props.data.markdownRemark.fields.readingTime.text}</div>
           </div>
           <div className={styles.linkHolder}>
-            {props.data.markdownRemark.frontmatter.categories.map((category,index) => {
-              return <Link key={index} to={`/categories/${category}`}>
-                #{category}</Link>
+            {props.data.markdownRemark.frontmatter.categories.map((category, index) => {
+              return <AniLink fade key={index} to={`/categories/${category}`}>
+                #{category}</AniLink>
             })}
           </div>
           <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
           <div className={styles.meta}>
             <h2>Read More</h2>
             <div>{props.pageContext.next &&
-              <Link to={`/${props.pageContext.next.frontmatter.path}`}>
-                {props.pageContext.next.frontmatter.title}</Link>}</div>
+              <AniLink fade to={`/${props.pageContext.next.frontmatter.path}`}>
+                {props.pageContext.next.frontmatter.title}</AniLink>}</div>
             <div>|</div>
             <div>{props.pageContext.prev &&
-              <Link to={`/${props.pageContext.prev.frontmatter.path}`}>
-                {props.pageContext.prev.frontmatter.title}</Link>}</div>
+              <AniLink fade to={`/${props.pageContext.prev.frontmatter.path}`}>
+                {props.pageContext.prev.frontmatter.title}</AniLink>}</div>
           </div>
 
 
