@@ -29,13 +29,13 @@ jobs: # a collection of steps
           command: git clone --depth 1 https://${DOCS_GITHUB_TOKEN}@github.com/rishabh1403/rishabh1403.github.io.git
       - run:
           name: clear old deployment files
-          command: rm -rf bt/*
+          command: rm -rf rishabh1403.github.io/*
       - run:
           name: copy new build
-          command: cp -vr public/* bt
+          command: cp -vr public/* rishabh1403.github.io
       - deploy:
           name: Deploy new build
-          working_directory: ~/stuart/bt
+          working_directory: ~/stuart/rishabh1403.github.io
           command: |
             git add .
             git config credential.helper 'cache --timeout=120'
