@@ -9,13 +9,6 @@ import { FaClock } from "react-icons/fa";
 
 let getAbout = graphql`
 query aboutImage{
-  aboutImage:file(relativePath:{eq:"defaultBcg.jpeg"}){
-    childImageSharp{
-      fluid(maxWidth:600){
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
   blogs:allMarkdownRemark(limit:1,sort:{order:DESC,fields:frontmatter___date}){
     edges{
       node{
@@ -25,6 +18,13 @@ query aboutImage{
           description
           categories
           path
+          image{
+            childImageSharp{
+              fluid(maxWidth:800){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         fields{
           readingTime{
@@ -37,8 +37,7 @@ query aboutImage{
 }
 `;
 const About = () => {
-  const { aboutImage, blogs: { edges } } = useStaticQuery(getAbout);
-  // console.log(blogs)
+  const {  blogs: { edges } } = useStaticQuery(getAbout);
   const { node: { frontmatter, fields } } = edges[0];
   return (
     <section className={styles.about}>
@@ -47,7 +46,7 @@ const About = () => {
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
             {/* <img src={img} alt="about company" /> */}
-            <Img fluid={aboutImage.childImageSharp.fluid} />
+            <Img fluid={frontmatter.image.childImageSharp.fluid} />
           </div>
         </article>
         <article className={styles.aboutInfo}>

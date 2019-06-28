@@ -13,14 +13,4 @@ const singlecategories = ({ data, pageContext }) => {
   )
 }
 
-// export const query = graphql`
-//   query($slug: String!){
-//     markdownRemark(frontmatter:{path:{eq:$slug}}){
-//       frontmatter{
-//         title
-//       }
-//       html
-//     }
-//   }
-// `
 export default singlecategories

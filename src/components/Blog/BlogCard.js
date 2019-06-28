@@ -2,25 +2,11 @@ import React from 'react'
 import styles from '../../css/blog-card.module.css'
 // import styles from '../../css/tour.module.css'
 // import img from "../../images/defaultBcg.jpeg"
-import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { FaClock } from "react-icons/fa";
 
-let getAbout = graphql`
-query tourImage{
-  aboutImage:file(relativePath:{eq:"bc.png"}){
-    childImageSharp{
-      fluid(maxWidth:600){
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-`;
 const Tour = (props) => {
-  // console.log(props.edge.node)
-  // const { aboutImage } = useStaticQuery(getAbout);
   return (
     <article className={styles.blog} >
       <div className={styles.imgContainer}>
@@ -41,7 +27,7 @@ const Tour = (props) => {
             <div className={styles.categories}>
               {props.edge.node.frontmatter.categories &&
                 props.edge.node.frontmatter.categories.map((tag, index) => {
-                  return <AniLink to={`/categories/${tag}`}>#{tag}</AniLink>
+                  return <AniLink fade to={`/categories/${tag}`}>#{tag}</AniLink>
                 })}
             </div>
           </div>
