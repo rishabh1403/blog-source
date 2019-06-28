@@ -7,6 +7,7 @@ tags: ["hackerrank","coding","golang"]
 categories: ["hackerrank","coding","golang"]
 date: 2018-10-06T22:10:10+05:30
 path: "posts/coding/hackerrank/2018/10/hackerrank-solution-of-divisible-sum-pairs-in-golang/"
+image: "posts/coding/hackerrank/2018/10/divisible-sum-pairs.jpg"
 draft: false
 ---
 In this one we will solve question divisible sum pairs from hackerrank in golang. Let's get right into it.
