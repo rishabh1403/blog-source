@@ -7,6 +7,7 @@ tags: ["life","youtube"]
 path: "posts/life/2018/09/new-mornings-new-subscribers/"
 categories: ["life"]
 date: 2018-09-20T21:35:47+05:30
+image: "posts/life/2018/09/thanks.jpg"
 draft: false
 ---
 It's been a month since I started writing and uploading youtube videos. Just taking a minute to thank everyone for their support and sharing some stats for this month.
