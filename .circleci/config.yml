@@ -26,7 +26,7 @@ jobs: # a collection of steps
       - run:
           name: clone the deployment repo
           working_directory: ~/stuart
-          command: git clone --depth 1 https://${DOCS_GITHUB_TOKEN}@github.com/rishabh1403/bt.git
+          command: git clone --depth 1 https://${DOCS_GITHUB_TOKEN}@github.com/rishabh1403/rishabh1403.github.io.git
       - run:
           name: clear old deployment files
           command: rm -rf bt/*
