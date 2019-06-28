@@ -7,6 +7,7 @@ tags: ["games"]
 path: "posts/games/pubg/2018/09/pubg-a-new-gaming-sensation/"
 categories: ["games"]
 date: 2018-09-17T23:13:22+05:30
+image: "images/posts/games/2018/09/pubg.jpg"
 draft: false
 ---
 I know I am late late to the party, still a bit about PUBG.
