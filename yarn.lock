@@ -4892,10 +4892,10 @@ gatsby-link@^2.1.1:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-disqus@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.0.3.tgz#1a7a2780d2cee0607a3151e5b2deb8307d0d60ec"
-  integrity sha512-iDzAoXwn3KFmFGEG1aLMiedpFYhWaxjGRtLSPuARielu0mRqsOlNjnZe/y/piezD2e7dlb2FdoDVFq8CQIXUcQ==
+gatsby-plugin-disqus@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.1.0.tgz#5bbb438434772bd35188c0993020a9f68a7ab42c"
+  integrity sha512-+TlB4NmvgkTSRV8x1+trre/UOrrbbktVex5q+B6BkrAZOaF7a4eTkJGNq+PfyKlhOXJrRZEF0h5/KUv2ZU233g==
   dependencies:
     babel-preset-gatsby-package "^0.1.2"
     cross-env "^5.2.0"
