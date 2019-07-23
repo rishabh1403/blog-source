@@ -5044,10 +5044,10 @@ gatsby-page-utils@^0.0.5:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-disqus@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.1.1.tgz#981e1a1dd8ffefc0394594207c25740a38843c7b"
-  integrity sha512-M0ghDlQ764YLE28yMMQDfyHjK3oiFQ/K4xMvJD46mjWRZ5rS2BL94HKxzsXcmjeDeGlognSj5tLR9L0Ka3G76Q==
+gatsby-plugin-disqus@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.1.2.tgz#ee94e8e894541b26daa3bf1450ee2be3940a5bf0"
+  integrity sha512-RLaHe6xa/tkaN/e6Ql77og4ULjJDBSddJeD4zVNx36r9v+vRdZoWk3rNxAkKjsxkjO6uAcvZJ29Bn5L8GoWB2A==
   dependencies:
     babel-preset-gatsby-package "^0.1.2"
     cross-env "^5.2.0"
