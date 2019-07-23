@@ -1,15 +1,19 @@
 ---
 title: "Stepping into the awe-inspiring world of Augmented Reality aka AR"
-description: "Today, space technology has evolved to an extent that mankind can envisage a future where space tourism could be a thing. In contrast, not even five decades ago, a single space expedition was a near to impossible task. The journey has been a historic one, much of which has been made possible by the power of modern computers, the foundation for which was laid in the 1960's."
+description: "We know about Virtual Reality and how it allows us to experience a completely different world, a \"virtual\" world of sorts. Augmented Reality, on the other hand, adds to our material surroundings. So how are AR and VR related? Lets have a look about AR and VR in this article."
 author: "Rishabh Jain"
-keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology","agc","smartphone","moon","apollo mission"]
-tags: ["general","space"]
+keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","ar","vr","Augmented Reality", "Virtual Reality", "pokemon go", "reality", "augment","science and technology" ]
+tags: ["general", "Augmented Reality","Virtual Reality"]
 path: "stepping-into-the-awe-inspiring-world-of-augmented-reality-aka-ar"
-categories: ["general"]
+categories: ["general", "Augmented Reality", "Virtual Reality"]
 date: 2019-07-23T10:56:20+05:30
-image: "./images/arimage.jpeg"
+image: "./images/go.jpg"
 draft: false
 ---
+
+We know about Virtual Reality and how it allows us to experience a completely different world, a "virtual" world of sorts. Augmented Reality, on the other hand, adds to our material surroundings. So how are AR and VR related? Lets have a look about AR and VR in this article.
+
+<!--more-->
 
 # Stepping into the awe-inspiring world of Augmented Reality aka AR
 
