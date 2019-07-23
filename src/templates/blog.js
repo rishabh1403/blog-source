@@ -33,7 +33,9 @@ const blog = (props) => {
                 #{category}</AniLink>
             })}
           </div>
-          <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+          <div className="blogHolder">
+            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+          </div>
           <div className={styles.meta}>
             <h2>Read More</h2>
             <div>{props.pageContext.next &&

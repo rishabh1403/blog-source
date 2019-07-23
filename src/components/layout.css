@@ -117,3 +117,8 @@ main {
 .language-text{
   padding: 5px 5px !important;
 }
+
+div.blogHolder .gatsby-resp-image-wrapper{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
