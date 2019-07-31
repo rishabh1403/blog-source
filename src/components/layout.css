@@ -123,41 +123,39 @@ div.blogHolder .gatsby-resp-image-wrapper{
   margin-bottom: 2rem;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1.2rem;
+  width:90%;
+  margin:10px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 3rem 1.2em 3rem;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
 
- blockquote {
-  margin: 0 auto;
-  padding: 1em;
-  border-left: 5px solid #999;
-}
-blockquote:before {
-  display: none;
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4rem;
+  position: absolute;
+  left: 10px;
+  top:-10px;
 }
 
-blockquote p {
-  color: #555;
-  font-size: 12pt;
-  line-height: 1.4;
-  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+blockquote::after{
+  content: '';
 }
-blockquote footer {
-  margin-top: .5em;
-  padding: 0;
-  color: #777;
-  font-size: 12pt;
-  text-align: left;
-  font-style: italic;
-}
-blockquote footer:before {
-  content: '— ';
-}
-@element 'blockquote' and (min-width: 300px) {
-  blockquote {
-    padding: 1em 20% 1em 1em;
-  }
-  blockquote p {
-    font-size: 14pt;
-  }
-  blockquote:nth-of-type(even) {
-    padding: 1em 1em 1em 20%;
-  }
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }

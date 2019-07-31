@@ -61,8 +61,7 @@ HTML.propTypes = {
 //////////////////
 
 <blockquote>
-  <p><q>The U.S. is fast approaching $19,000,000,000,000.00 in national debt. This is mathematically impossible to ever pay back &hellip; even if every American was taxed at 100%.</q></p>
-  <footer>Charles Goyette, The Dollar Meltdown</footer>
+  Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things.
+  <span>Steve Jobs</span>
 </blockquote>
-
 blockquote usage

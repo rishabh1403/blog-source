@@ -12,7 +12,7 @@ draft: false
 ---
 In this one we will solve question migratory birds from hackerrank in golang. This one wraps a logic which can be used to solve many questions. Let's dive right into it.
 
-> test
+> In this one we will solve question migratory birds from hackerrank in golang. This one wraps a logic which can be used to solve many questions. Let's dive right into it.
 
 
 <!--more-->
