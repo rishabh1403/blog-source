@@ -55,3 +55,14 @@ HTML.propTypes = {
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
 }
+
+
+
+//////////////////
+
+<blockquote>
+  <p><q>The U.S. is fast approaching $19,000,000,000,000.00 in national debt. This is mathematically impossible to ever pay back &hellip; even if every American was taxed at 100%.</q></p>
+  <footer>Charles Goyette, The Dollar Meltdown</footer>
+</blockquote>
+
+blockquote usage
