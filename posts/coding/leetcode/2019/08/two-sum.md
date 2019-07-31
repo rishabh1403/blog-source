@@ -18,16 +18,27 @@ In this one we will solve question migratory birds from hackerrank in golang. Th
 <!--more-->
 
 # Problem Statement
-The question can be found at this [link](https://www.hackerrank.com/challenges/migratory-birds/problem). The problem statement states that there are many birds of ***very few*** types and we need to find which type of bird is most in number. In case we have multiple types with same number we need to answer the bird with lower type. 
+The question can be found at [leetcode two sum problem](https://leetcode.com/problems/two-sum/).
 
-# Challenges
+The problem states that we are given an array of integers and a target number, our task is to return the indices of the two numbers
+which add upto the target.
 
-* Choose our preferred language as [golang](https://golang.org/) on hackerrank. The moment we do that, we get some 50-60 lines of code which are very unfamiliar to someone who is new to language.
-* Cracking the logic required to solve the question.
-* A keen interest in bird watching
+# Constraints and challenges
+
+* Assumption in question that each input set will have **exactly one solution**
+* We cannot use the **same element twice**
+* Nothing else to worry about as of now :smile:
+
+# Solutions
+ We will discuss three solutions in this article, compare their time & space complexities. 
+ We will also see if any of these methods have any constraints under which the solution fails.
+
+- Two nested loops
+- One loop with a hashmap
+- Two pointer method
 
 
-# Solution
+# Two nested loops
 
 This is the template you get on [hackerrank](https://www.hackerrank.com/) for this problem statement.
 
