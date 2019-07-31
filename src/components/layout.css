@@ -110,6 +110,10 @@ main {
   padding-bottom: 1rem;
 }
 
+.gatsby-highlight-code-line {
+  background-color: #000;
+  display: block;
+}
 
 .gatsby-highlight pre {
   overflow-x: auto !important;
