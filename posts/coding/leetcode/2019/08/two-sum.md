@@ -7,7 +7,7 @@ tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-07-31T21:39:05.667Z
 path: "Leetcode-Solution-of-Two-Sum-in-JavaScript"
-image: "./migratory-birds.jpg"
+image: "./two-sum.png"
 draft: false
 ---
 In this post we will solve two sum problem from leetcode using couple of methods, compare their time and space complexities. Let's begin.
