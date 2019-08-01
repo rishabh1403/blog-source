@@ -29,10 +29,9 @@ which add upto the target.
  We will discuss three solutions in this article, compare their time & space complexities. 
  We will also see if any of these methods have any constraints under which the solution fails.
 
-- Two nested loops
-- One loop with a hashmap
-- Two pointer method
-
+* Two nested loops
+* One loop with a hashmap
+* Two pointer method
 
 # Two nested loops
 
@@ -45,9 +44,50 @@ The idea is very simple, we will pick one element ( lets say **key** ) from the 
 Let's see a simple implementation of the above logic
 
 ```js
+
 var twoSum = function (nums, target) {
   for (let i = 0; i < nums.length; i++) {
-    // highlight-next-line
+    for (let j = 0; j < nums.length; j++) {
+      if(i !== j){
+        if (nums[i] + nums[j] === target) {
+          return [i, j];
+        }
+      }
+    }
+  }
+}
+
+```
+
+Nothing fancy going on here, Let's look at the solution
+
+We are iterating over the array, picking one number ( the `js$ i` loop or *the outer loop*). We are then
+iterating over the array once more choosing one number. Now that we have our numbers, let's see
+if their sum is equal to the *target*. 
+
+The only catch is the if statement `js$ if(i !== j)`. If you remember from the constraints, 
+we cannot use the same number twice, so it's just a safety check to see if both
+the numbers are same. 
+
+That is it to solve the problem, once we submit it, these are the stats 
+```yaml
+
+Status : Accepted
+Runtime: 172ms
+Memory: 34.8MB
+
+```
+
+Can we do something better still using the two loops? When pick a number, let's say ***i = 0***, and loop through the inner loop without a result, we need not pick that again in **inner loop**. Why? 
+
+Let's take an example, if the number is **2** and target is **6**. The number we are looking for is **4**, and if we don't find it, that means **2** can never be a part of the result, we don't have a 4. So No point looping the iner loop from 0 everytime, we can start from i+1 very safely. We can also remove the check where i!===j, because now j will always be greater than i. 
+
+Let's see how this refactoring looks
+
+```js
+
+var twoSum = function (nums, target) {
+  for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
       if (nums[i] + nums[j] === target) {
         return [i, j];
@@ -55,28 +95,212 @@ var twoSum = function (nums, target) {
     }
   }
 }
+
 ```
 
-Nothing fancy going on here, 
+Once we run this, these are the stats
+
+```yaml
+
+Status : Accepted
+Runtime: 108ms
+Memory: 34.8MB
+
+```
+
+If you notice, we see a decrease in runtime from 172ms to 108ms, because when the input size is large the inner loop is doing one less iteration each time outer loop runs for next index. Small optimization but still something. Also got rid of the if statement :muscle:
+
+## Time and space complexity
+
+**Space complexity** 
+
+Well we have an array as input and a number, no variables used in the code by far, so space complexity is in the order of N, O(n), remember we are talking about space complexity, not Auxiliary Space, auxiliary Space in this case will of order of 1.
+
+**Time Complexity**
+
+First solution, in worst case both loop will n times, and since it's nested,it will run n*n times, so O(n^2)
+
+Second solution, we have optimized a bit, but still the inner solution runs n-1 time in first iteration
+if the result is not found. Outer is loop is running n times, so worst case it still would be order of n^2, O(n^2). It's true it will be a bit faster but the asymptotic complexity is still n^2. Sucks!!! :disappointed:
+
+Well nothing to worry, we are goint to optimize it next. Let's look into that
+
+# One loop with a hashmap
+
+Hashmap is a great way to optimize some of the algorithms at the cost of some space. 
+
+Let's see a solution where we hashmap to solve the problem.
+
+```js
+
+var twoSum = function (nums, target) {
+  let obj = {}
+  for (let i = 0; i < nums.length; i++) {
+    if (target - nums[i] in obj) {
+      return [obj[target - nums[i]], i]
+    } else {
+      obj[nums[i]] = i;
+    }
+  }
+};
+
+```
+
+Before you all start shouting at me about the usage of an object vs map in javascript, yes, you can 
+use both, just make sure leetcode supports that, considering it's newer( if you are reading in 2025, well it was new in 2019, i hope :laugh: ) syntax.
+
+Well what do we have here, looping over the array, picking a number. Take the difference of the number and target, if that difference is preject in object, we found a match, else, add the number and it's index in the map, for future use. Simple right? 
+
+Stats?
+
+```yaml
+
+Status : Accepted
+Runtime: 60ms
+Memory: 34.7MB
+
+```
+
+Wow!!! 60ms from 108ms. That's almost 40% optimization. Before we discuss complexities let's discuss some gotchas and conditions under which it won't work.
+
+Consider an array `js$ arr = [5,2,3,3,6]`, now if the target is 9 we have two solutions ( because of duplicate 3), so which index should we return? Thankfully if you remember the constraints from question, there will be exactly one solution. So our solution holds!!!. What if we wanted 6? it would still work, when the pointer is at first occurence of 3, it won't find any 3 in map so it will save index of 3.
+
+On next occurence of 3 it will have an entry in map, hence the result. Something to keep in mind, constraints make life easy and hard ( next example :wink: )
+
+## Time and space complexity
+
+**Space complexity** 
+
+Well we have an array as input and a number, and we are also using an object of length same as the array in worst case, so space complexity is in the order of (N + N), O(n).
+
+**Time Complexity**
+
+We are loping over the array only once, finiding an element in a map is constant time, so time complexity, O(n).
+
+Last one, bit more tricky, but we'll get through it :smile:
+
+# Two pointer method
+
+Two pointer ( finger ) method is still another very famous method of solving problems where you take two numbers on opposite ends of the array and move inwards, in turn covering all elements.
+
+Let's take an example
+
+In the following array
+
+```js
+
+let arr = [1,2,3,4,5,6,7,8]
+
+```
+
+if we were given a target and had to find the indices of numbers, instead of iterating on one end, we can have two pointer, one at index 0 other at end. 
+
+Take the sum, if sum is more than the target, we need to decrease the sum. Well if we move the left pointer it will take us to a number larger than the earlier one, notice the sorted array. So we take move our right pointer to next left position. 
+
+Take the sum, if sum is less than the target, we need to increase the sum. Well if we move the right pointer it will take us to a number smaller than the earlier one. So we take move our left pointer to next right position.
+
+If the sum is equal to target, we find the sum. All good. If lower pointer ( left one) becomes equal to right one, we stop because we have already covered all elements and no solution found. 
+
+Advantage of this solution, Still O(n) time complexity but no hashmap, thus saving us space.
+
+Unfortunately in our case we don't have a sorted array, so to use this approach we need to sort our array first. Let's look at a snipet of code
+
+```js
+
+var twoSum_sort = function (nums, target) {
+  const clone = [...nums];
+  nums.sort((a, b) => a - b);
+
+  let low = 0, high = nums.length - 1;
+
+  while (low < high) {
+    if (nums[low] + nums[high] < target) {
+      low++;
+    } else if (nums[low] + nums[high] > target) {
+      high--;
+    } else {
+      return [clone.indexOf(nums[low]), clone.indexOf(nums[high])];
+    }
+  }
+}
+
+```
+
+Don't copy and run the solution just yet. Why? because it won't work. :joy: Edge cases!!!
+
+Let's first understand the code, and why it won't work.
+
+First we are cloning the array to another array, because when we sort it, we'll lose original indexing, and we need to return correct indices. In the sort function passing a comparator, to make it gets sorted in ascending order.
+
+Next fixed the pointers at the lower and higher end. The if and else-if should be easy to understand, it's the same logic that we discussed in the example above. In the return section we find the index of the numbers, and return it. All good? Should work? 
+
+Well look at this example
+
+```js
+
+let arr = [3,2,2,5]
+target = 4
+
+```
+
+The sorted array is `js$ [2,2,3,5]`, when low and high are at `js$ [0,1]`, we find the index of the numbers and since index of returns the first index of, the output will be `js$ [0,0]` instead of `js$ [0,1]`. Let's fix this.
+
+```js
+
+var twoSum = function (nums, target) {
+  const clone = [...nums];
+  nums.sort((a, b) => a - b);
+  let low = 0, high = nums.length - 1;
+  while (low < high) {
+    if (nums[low] + nums[high] < target) {
+      low++;
+    } else if (nums[low] + nums[high] > target) {
+      high--;
+    } else {
+      if (nums[low] === nums[high]) {
+        return [clone.indexOf(nums[low]), clone.indexOf(nums[high], clone.indexOf(nums[low]) + 1)];
+      }
+      return [clone.indexOf(nums[low]), clone.indexOf(nums[high])];
+    }
+  }
+}
+
+```
+
+You can run this and check, it will pass, but hold on and understand what just happened :joy: 
+Only thing that has changed is last else part. If the numbers are equal only then the problem will occur. So if that's the case, we find the index of the number, and then for the next one start our search from next index, `js$ clone.indexOf(nums[low]) + 1`. 
+
+Refer to this [mdn docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) for more info & examples. 
+
+Stats
+
+```yaml
+
+Status : Accepted
+Runtime: 88ms
+Memory: 38.7MB
+
+```
+
+So if you notice, runtime is between the hashmap method and the nested loop method. Better than nested loops for sure. If the array would have been sorted it would have been the best solution, but good to know all your options, who knows someday you'll find the input sorted :smile: 
+
+## Time and space complexity
+
+**Space complexity** 
+
+Well we have an array as input and a number, and we are also using an array ( clone ) of length same as the array in worst case, so space complexity is in the order of (N + N), O(n).
+
+**Time Complexity**
+
+Depending on sorting algorithm it be either O(n^2) or O(nlog n). Looks like in this case it's O(nlog n). We are loping over the array only once, we are also using index of method inside which has a complexity if O(n), however it is only done in one case, not everytime of the time complexity becomes the order of NlogN + N + CN, so O(nlogn). 
+
+# Summary
+
+I guess it would have made more sense to do the two pointer method one before hasmap, I mean n^2 > nlogn > n , but wanted to make sure to end with two pointer menthod, hopefully will wtick with you longer :smile: . Here you have it, a comprehensive discussion on two sum problem.
 
 
+I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions). Will see you in the next one.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-I hope you enjoyed solving this question. This appproach of using array to store count of something where index becomes the key is very common. It helps in faster lookup for results. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions). Will see you in the next one.
-
-There you go guys, you made it to end of the post. Please check out the video below if you still have any doubts. Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) and my mailing list below for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
+There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: IoX_OBCVIOw`  
