@@ -1,12 +1,12 @@
 ---
 title: "Leetcode | Solution of Two Sum in JavaScript"
-description: "In this post we will solve two sum problem from leetcode using couple of methods, compare their time and space complexities. Let's begin."
+description: "In this post, we will solve two sum problem from leetcode using a couple of methods, compare their time and space complexities. Let's begin."
 author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-07-31T21:39:05.667Z
-path: "Leetcode-Solution-of-Two-Sum-in-JavaScript"
+date: 2019-08-01T22:19:33.921Z
+path: "leetcode-solution-of-two-sum-in-javascript"
 image: "./two-sum.png"
 draft: false
 ---
@@ -209,7 +209,7 @@ Unfortunately, in our case we don't have a sorted array, so to use this approach
 
 ```js
 
-var twoSum_sort = function (nums, target) {
+var twoSum = function (nums, target) {
   const clone = [...nums];
   nums.sort((a, b) => a - b);
 
