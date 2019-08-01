@@ -301,7 +301,7 @@ Depending on sorting algorithm it is either **O(n^2) or O(nlog n)**. Looks like 
 I guess it would have made more sense to do the two-pointer method one before hashmap, I mean **n^2 > nlogn > n**, but wanted to make sure to end with two pointer method, hopefully, will stick with you longer :smile: . Here you have it, a comprehensive discussion on two sum problem.
 
 
-I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/hackerrank-golang-solutions). Will see you in the next one.
+I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
