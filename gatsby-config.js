@@ -5,11 +5,11 @@ module.exports = {
     author: `Rishabh Jain`,
     siteUrl: `https://rishabh1403.com`,
     twitterUsername: "@rishabhjain1403",
-    image:'/home.jpg'
+    image: '/home.jpg'
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
@@ -41,6 +41,26 @@ module.exports = {
         plugins: [
           `gatsby-remark-reading-time`,
           `gatsby-remark-autolink-headers`,
+          {
+            resolve: 'gatsby-remark-emojis',
+            options: {
+              // Deactivate the plugin globally (default: true)
+              active: true,
+              // Add a custom css class
+              class: 'emoji-icon',
+              // Select the size (available size: 16, 24, 32, 64)
+              size: 64,
+              // Add custom styles
+              styles: {
+                display: 'inline',
+                margin: '0',
+                'margin-top': '1px',
+                position: 'relative',
+                top: '5px',
+                width: '25px'
+              }
+            }
+          },
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -78,7 +98,7 @@ module.exports = {
               // stripping.
               // A suggested value for English speakers is the non-ascii
               // character '›'.
-              inlineCodeMarker: null,
+              inlineCodeMarker: '$',
               // This lets you set up language aliases.  For example,
               // setting this to '{ sh: "bash" }' will let you use
               // the language "sh" which will highlight using the
