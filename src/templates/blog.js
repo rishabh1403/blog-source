@@ -14,6 +14,7 @@ const blog = (props) => {
   return (
     <Layout>
       <SEO title={props.data.markdownRemark.frontmatter.title}
+          image={props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src}
         keywords={props.data.markdownRemark.frontmatter.keywords.join(" , ")}
         description={props.data.markdownRemark.frontmatter.description} />
 
@@ -68,9 +69,12 @@ export const query = graphql`
       keywords
         image{
         childImageSharp{
-      fluid(maxWidth:2000){
-        ...GatsbyImageSharpFluid
-      }
+          fluid(maxWidth:2000){
+            ...GatsbyImageSharpFluid
+          }
+          resize(width: 900, quality: 90) {
+            src
+          }
       }
     }
   }

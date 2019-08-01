@@ -11,20 +11,21 @@ query{
       author
       siteUrl
       twitterUsername
-      image
+      siteImage
     }
   }
 }
 
 `
 
-const SEO = ({ title, description, keywords }) => {
+const SEO = ({ title, description, keywords, image }) => {
   const { site } = useStaticQuery(getData);
-  const { siteTitle, siteDescription, author, siteUrl, twitterUsername, image } = site.siteMetadata;
+  const { siteTitle, siteDescription, author, siteUrl, twitterUsername, siteImage } = site.siteMetadata;
+  const finalImage = image ? `${siteUrl}${image}` : `${siteUrl}${siteImage}`;
   return (
     <Helmet htmlAttributes={{ lang: 'en' }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDescription} />
-      <meta name="image" content={image}/>
+      <meta name="image" content={finalImage} />
       <meta name="author" content={author} />
       <meta name="keywords" content={keywords} />
       {/* Twitter Cards */}
@@ -32,13 +33,13 @@ const SEO = ({ title, description, keywords }) => {
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={`${title} | ${siteTitle}`} />
       <meta name="twitter:description" content={description || siteDescription} />
-      <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta name="twitter:image" content={finalImage} />
       {/* Facebook Cards */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={`${title} | ${siteTitle}`} />
       <meta property="og:description" content={description || siteDescription} />
-      <meta property="og:image" content={`${siteUrl}${image}`} />
+      <meta property="og:image" content={finalImage} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:heigth" content="300" />
     </Helmet>
