@@ -5,29 +5,30 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-16T23:16:18.404Z
+date: 2019-09-17T23:16:18.404Z
 path: "leetcode-solution-of-reverse-integer-in-javascript"
 image: "./reverse-integer.png"
 draft: false
 ---
 
-In this post, we will solve reverse integer problem from leetcode and compute it's time & space complexity. Let's begin.
+In this post, we will solve palindrome number problem from leetcode and compute it's time & space complexity. Let's begin.
 <!--more-->
 
 # Problem Statement
-The question can be found at [leetcode reverse integer problem](https://leetcode.com/problems/reverse-integer/).
+The question can be found at [leetcode reverse integer problem](https://leetcode.com/problems/palindrome-number/).
 
-The problem states that we are given a 32-bit signed integer, and we need to reverse it's digits.
+The problem states that we need to determine if a given integer is palindrome.
 
 # Constraints and challenges
 
-* If the absolute value of the number overflows 2<sup>31</sup> after reversing the number, we need to return 0.
+* We need to take sign of number into account while solving the problem. -2 is not a palindrome as 2 is not equal to -2.
 
 # Solutions
- We will discuss two solutions in this article and compare their time & space complexities.
+ We will discuss three solutions in this article and compare their time & space complexities.
 
 * String based reversal
 * Number based reversal
+* Two pointer method
 
 # String based reversal
 
@@ -47,14 +48,8 @@ Let's see a simple implementation of the above logic.
 
 ```js
 
-var reverse = function(x) {
-    
-  const reversedInt = parseInt(Math.abs(x).toString().split('').reverse().join(''));
-  
-  if (reversedInt > 2**31) return 0;
-  
-  return reversedInt * Math.sign(x);
-    
+var isPalindrome = function(x) {
+  return x == x.toString().split('').reverse().join('');
 };
 
 ```
@@ -78,8 +73,8 @@ This is all we need to solve the problem, once we submit it, these are the stats
 ```yaml
 
 Status: Accepted
-Runtime: 68ms
-Memory: 35.8MB
+Runtime: 212ms
+Memory: 46MB
 
 ```
 
@@ -92,41 +87,6 @@ We use a bunch of methods, but they are chained as opposed to nested, so the run
 ### Space complexity
 
 We have a number as input, using another variable to store the reversed number, so space complexity is constatnt, **O(1)**
-
-Now, we don't really need to explicitly convert the string to number, JavaScript can automatically do it for us ( for some extra cost, ofcourse ). 
-
-Look at the snippet below
-
-```js
-
-var reverse = function(x) {
-    
-    const reversedInt = Math.abs(x).toString().split('').reverse().join('');
-    
-    if (reversedInt > 2**31) return 0;
-    
-    return reversedInt * Math.sign(x);
-    
-};
-
-```
-
-Once we run this, these are the stats.
-
-```yaml
-
-Status: Accepted
-Runtime: 84ms
-Memory: 35.8MB
-
-```
-
-Now, why did it work? Well implicit type casting. String is converted to number when we are comparing it with 2<sup>31</sup> and multiplying with the sign. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
-
-## Time and space complexity
-
-Well, asymptotically it's still the same, however implicit type casting should add some more time to execution, which we see in the stats.
-
 
 # Number based reversal
 
@@ -149,26 +109,24 @@ Let's see a simple implementation of the above logic.
 
 ```js
 
-var reverse = function(x) {
-    const isNegative = x< 0 ? true : false;
+var isPalindrome = function(x) {
+  const isNegative = x< 0 ? true : false;
     
-    if (isNegative){
-        x = x *-1;
-    }
+  if (isNegative){
+      return false;
+  }
     
-    let reversed = 0;
-    while(x>0){
-        reversed = (reversed * 10) + (x % 10);
-        
-        x = parseInt(x/10);
-    }
+  const temp = x;
+  let reversed = 0;
     
-    if(reversed > 2**31){
-        return 0;
-    }
+  while(x>0){
+      reversed = (reversed * 10) + (x%10);
+      x = parseInt(x/10);
+  }
     
-    return isNegative? reversed * -1 : reversed;
+  return reversed == temp;
 };
+
 
 ```
 
@@ -185,8 +143,8 @@ Here are the stats one we run this code
 ```yaml
 
 Status: Accepted
-Runtime: 72ms
-Memory: 35.9MB
+Runtime: 192ms
+Memory: 45.2MB
 
 ```
 
@@ -194,6 +152,90 @@ Memory: 35.9MB
 
 Unfortunately we didn't really improve a lot in time complexity. It's **O(len X)** ( notice the loop runs len X times).
 Same goes for space, **O(1)**.
+
+# Two pointer method
+
+In this method, we will convert the number to a string, reverse it. We will also use some inbuilt methods in JavaScript for string manipulation as well as for some mathematical operation.
+
+The idea is very simple
+
+- Take absolute value of number
+- convert to string
+- create a character array
+- reverse it
+- join it back to a string
+- parse the string to a number ( not required in JavaScript )
+
+
+Let's see a simple implementation of the above logic.
+
+```js
+
+var isPalindrome = function (x) {
+
+  if (x < 0) {
+    return false;
+  }
+
+  if (x < 10) {
+    return true;
+  }
+
+  if (x % 10 === 0 && x !== 0) {
+    return false;
+  }
+
+  const str = String(x);
+  let i = 0, j = str.length - 1;
+
+  while (i < j) {
+    if (str[i] !== str[j]) {
+      return false;
+    }
+
+    i++;
+    j--;
+  }
+
+  return true;
+};
+
+```
+
+Nothing fancy going on here, Let's look at the solution.
+
+First line has most of the logic here. We wrap everything inside a *parseInt* function, ( to convert string to integer ), now, steps are as follows
+- we take the absolute value of the number
+- convert the number to a string
+- split the string, and convert it to an array
+- reverse the array
+- join the elements of array
+
+this gives us the reversed number in string format, and then parseInt converts it to a number.
+
+Next, we check if the reversed integer is greater than the given constraint, if yes, we retrun 0 ( constaints in question )
+
+In the last line, we check the sign of initial number X and mulitply it with reversed number to get the integer with same sign.
+
+This is all we need to solve the problem, once we submit it, these are the stats.
+```yaml
+
+Status: Accepted
+Runtime: 188ms
+Memory: 45.8MB
+
+```
+
+## Time and space complexity
+
+### Time complexity
+
+We use a bunch of methods, but they are chained as opposed to nested, so the runtime will be dependent on number of digits in the input. We can say **O(len X)**
+
+### Space complexity
+
+We have a number as input, using another variable to store the reversed number, so space complexity is constatnt, **O(1)**
+
 
 # Summary
 
