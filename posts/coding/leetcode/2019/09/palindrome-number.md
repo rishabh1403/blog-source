@@ -7,7 +7,7 @@ tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-09-17T23:16:18.404Z
 path: "leetcode-solution-of-reverse-integer-in-javascript"
-image: "./reverse-integer.png"
+image: "./palindrome.png"
 draft: false
 ---
 
@@ -32,16 +32,15 @@ The problem states that we need to determine if a given integer is palindrome.
 
 # String based reversal
 
-In this method, we will convert the number to a string, reverse it. We will also use some inbuilt methods in JavaScript for string manipulation as well as for some mathematical operation.
+In this method, we will convert the number to a string, reverse it and check if the initial number is equal to the new one. We will use some built in JavaScript methods.
 
 The idea is very simple
 
-- Take absolute value of number
 - convert to string
 - create a character array
 - reverse it
 - join it back to a string
-- parse the string to a number ( not required in JavaScript )
+- check for equality
 
 
 Let's see a simple implementation of the above logic.
@@ -54,20 +53,16 @@ var isPalindrome = function(x) {
 
 ```
 
-Nothing fancy going on here, Let's look at the solution.
+Notice the `==` as opposed to `===` becuase we want to check if both sides are equal regardless of their type. In this case X is a number while the computed value is a string.
 
-First line has most of the logic here. We wrap everything inside a *parseInt* function, ( to convert string to integer ), now, steps are as follows
-- we take the absolute value of the number
-- convert the number to a string
-- split the string, and convert it to an array
-- reverse the array
-- join the elements of array
+Some of the methods chained are
 
-this gives us the reversed number in string format, and then parseInt converts it to a number.
+- toString() to convert the number to string
+- split() to convert the string to an array of characters
+- reverse() to reverse the array
+- join() to join the array back to a string
 
-Next, we check if the reversed integer is greater than the given constraint, if yes, we retrun 0 ( constaints in question )
-
-In the last line, we check the sign of initial number X and mulitply it with reversed number to get the integer with same sign.
+This will also solve the problem with the sign of the number. When we convert the number to string, the minus sign becomes the part of the string and on reversal goes to end. For example -123 becomes 321-.
 
 This is all we need to solve the problem, once we submit it, these are the stats.
 ```yaml
@@ -82,11 +77,11 @@ Memory: 46MB
 
 ### Time complexity
 
-We use a bunch of methods, but they are chained as opposed to nested, so the runtime will be dependent on number of digits in the input. We can say **O(len X)**
+We use a bunch of methods, all with linear time compexity, but they are chained as opposed to nested, so the runtime will be dependent on number of digits in the input. We can say **O(len X)**
 
 ### Space complexity
 
-We have a number as input, using another variable to store the reversed number, so space complexity is constatnt, **O(1)**
+We have a number as input, not using any other temporary variable to store the result, so space complexity is constatnt, **O(1)**
 
 # Number based reversal
 
@@ -95,14 +90,15 @@ In this method, we will pick the digits of the number one by one and reverse the
 The idea is very simple
 
 - check is the number is less than zero
-- if the number is less than zero, take the absolute value of it
-- initialize a variable `reversed` with 0
+- if the number is less than zero, return false
+- initialize a variable temp with X ( because we lose the initial value of X in the logic)
+- initialize the reverse variable with 0
 - loop over the number until it's less than or equal to zero (at one point it will be)
 - now, muliply the reversed variable with 10 and add the last digit of the number to it
 - remove the last digit of x
 - when the loop ends, we will have our reversed number
-- if the reversed number is more than 2<sup>31</sup>, return 0
-- else, return the reversed integer with it's actual sign
+- if the reversed number is equal to temp ( initial number ), return true
+- else, false
 
 
 Let's see a simple implementation of the above logic.
@@ -130,13 +126,13 @@ var isPalindrome = function(x) {
 
 ```
 
-So as discussed above, first we determine if the number is negative, and take the absolute of the number.
+So as discussed above, first we determine if the number is negative, and return false. 
 
-Iteratively take last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it, so this it becomes 13, we will multiply 1 with 10 and add 3 to it. This hold true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
+Next, iteratively take last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it, so this it becomes 13, we will multiply 1 with 10 and add 3 to it. This hold true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
 
 Dividing by 10 and taking integer counterpart, just removes the last digit of the number. ( Try it your self :smile: )
 
-Next the logic is pretty straight forward, if the reversed number is greater than 2<sup>31</sup> retrun 0 else return the reversed number with the sign.
+Next the logic is pretty straight forward, check if the reversed number is equal to temp, and return the result.
 
 Here are the stats one we run this code
 
@@ -155,17 +151,9 @@ Same goes for space, **O(1)**.
 
 # Two pointer method
 
-In this method, we will convert the number to a string, reverse it. We will also use some inbuilt methods in JavaScript for string manipulation as well as for some mathematical operation.
+In this solution, we will take care of some of the simple cases before writing out logic. Once those are taken care of, we will follow the two pointer method to check if the number is a palindrome. 
 
-The idea is very simple
-
-- Take absolute value of number
-- convert to string
-- create a character array
-- reverse it
-- join it back to a string
-- parse the string to a number ( not required in JavaScript )
-
+The idea is, we will take one digit from the start, and another from the last. Check if both are equal, if not, the number is not a palindrome.
 
 Let's see a simple implementation of the above logic.
 
@@ -202,20 +190,19 @@ var isPalindrome = function (x) {
 
 ```
 
-Nothing fancy going on here, Let's look at the solution.
+First we took care of following cases
 
-First line has most of the logic here. We wrap everything inside a *parseInt* function, ( to convert string to integer ), now, steps are as follows
-- we take the absolute value of the number
-- convert the number to a string
-- split the string, and convert it to an array
-- reverse the array
-- join the elements of array
+- if X is negative ( not a palindrome )
+- if X is less than ten ( always a palindrome )
+- if X has 0 at it's last digit and X is not 0 itself ( not a palindrome ) e.g. 10, 130 whose reverse will be 01, 031 respectively
 
-this gives us the reversed number in string format, and then parseInt converts it to a number.
+Next the logic is straight forward
 
-Next, we check if the reversed integer is greater than the given constraint, if yes, we retrun 0 ( constaints in question )
-
-In the last line, we check the sign of initial number X and mulitply it with reversed number to get the integer with same sign.
+- convert the number to string
+- take two pointers, at the start and end of string
+- if the digits at the both pointers are different, it's not a palindrome
+- we increment starting pointer and decrement the end pointer iteratively
+- if the loop exits, then it was a palindrome
 
 This is all we need to solve the problem, once we submit it, these are the stats.
 ```yaml
@@ -230,16 +217,16 @@ Memory: 45.8MB
 
 ### Time complexity
 
-We use a bunch of methods, but they are chained as opposed to nested, so the runtime will be dependent on number of digits in the input. We can say **O(len X)**
+We see a bit of improvement in run time. We are running logic only for positive numbers greater than 9. Also, in the loop we are taking two steps instead of 1. However, asymptotically the running time complexity is still **O(len x)** :disappointed:
 
 ### Space complexity
 
-We have a number as input, using another variable to store the reversed number, so space complexity is constatnt, **O(1)**
+We have a number as input, using couple of more temporary variables, so space complexity is constatnt, **O(1)**
 
 
 # Summary
 
-So, we solved the reverse integer problem using 2 methods, although the complexity is same, it's goot to know both approaches. In an interview you may be asked to not use Math/ String/ Array methods, then you can go for integer based reversal method.
+So, we solved the palindrome number problem using 3 methods, although the complexity is same, it's good to know these different approaches. In an interview you may be asked to solve using two pinter method, who knows.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
