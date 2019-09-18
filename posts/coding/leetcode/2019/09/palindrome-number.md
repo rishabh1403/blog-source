@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of palindrome number","rishabh
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-09-17T23:16:18.404Z
-path: "leetcode-solution-of-reverse-integer-in-javascript"
+path: "leetcode-solution-of-palindrome-number-in-javascript"
 image: "./palindrome.png"
 draft: false
 ---
@@ -15,7 +15,7 @@ In this post, we will solve palindrome number problem from leetcode and compute 
 <!--more-->
 
 # Problem Statement
-The question can be found at [leetcode reverse integer problem](https://leetcode.com/problems/palindrome-number/).
+The question can be found at [leetcode palindrome number problem](https://leetcode.com/problems/palindrome-number/).
 
 The problem states that we need to determine if a given integer is palindrome.
 
