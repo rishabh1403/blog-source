@@ -1,8 +1,8 @@
 ---
-title: "Leetcode | Solution of Reverse Integer in JavaScript"
-description: "In this post, we will solve two sum problem from leetcode using a couple of methods, compare their time and space complexities. Let's begin."
+title: "Leetcode | Solution of Palindrome Number in JavaScript"
+description: "In this post, we will solve palindrome number problem from leetcode using a couple of methods and compare their time and space complexities. Let's begin."
 author: "Rishabh Jain"
-keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
+keywords: ["leetcode","js","javascript","solution of palindrome number","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-09-17T23:16:18.404Z
