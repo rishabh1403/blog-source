@@ -5,9 +5,9 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of valid parentheses problem","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-17T23:16:18.404Z
+date: 2019-09-18T23:16:18.404Z
 path: "leetcode-solution-of-valid-parentheses-in-javascript"
-image: "./palindrome.png"
+image: "./valid-parentheses.png"
 draft: false
 ---
 
@@ -74,23 +74,22 @@ var isValid = function (s) {
 
 ```
 
-Notice the `==` as opposed to `===` becuase we want to check if both sides are equal regardless of their type. In this case X is a number while the computed value is a string.
+Let's discuss the implementation. 
 
-Some of the methods chained are
+We declare a hashmap with opening brackets as key and closing ones as their values. Next we initialize an empty array and will use it as our stack to store opening braces.
 
-- toString() to convert the number to string
-- split() to convert the string to an array of characters
-- reverse() to reverse the array
-- join() to join the array back to a string
+Next, we are looping over all the characters of the string, and this case, all the braces present in the string. In the next condition, we check if the character is an opening bracket, if yes we push it to the stack.
 
-This will also solve the problem with the sign of the number. When we convert the number to string, the minus sign becomes the part of the string and on reversal goes to end. For example -123 becomes 321-.
+If the character is a closing bracket, we check for the last entry in the stack. If the last entry in the stack is the opening counterpart of the current closing bracket, we remove the entry from stack. It balances the bracket. If no, the braces are not balanced.
+
+At the end, if the stack is not empty, it means there was some opening bracket for which closing bracket was not found in correct order. Thus we return false or true depending on stack length.
 
 This is all we need to solve the problem, once we submit it, these are the stats.
 ```yaml
 
 Status: Accepted
-Runtime: 212ms
-Memory: 46MB
+Runtime: 56ms
+Memory: 33MB
 
 ```
 
@@ -98,16 +97,15 @@ Memory: 46MB
 
 ### Time complexity
 
-We use a bunch of methods, all with linear time compexity, but they are chained as opposed to nested, so the runtime will be dependent on number of digits in the input. We can say **O(len X)**
+We loop over the characters of the string for every string. We also use some of the methods on object and stack, but they are constant time, so time complexity would be **O(len S)**, proportional to length of string.
 
 ### Space complexity
 
-We have a number as input, not using any other temporary variable to store the result, so space complexity is constatnt, **O(1)**
-
+We are taking a string as input, but also using a stack to keep characters of the string. In the worst case (no closing bracket in string ), we will end up storing all the characters in the stack. We have an object but the size is always constant. So the space will be again proportional to length of string. **O(len S)**.
 
 # Summary
 
-So, we solved the palindrome number problem using 3 methods, although the complexity is same, it's good to know these different approaches. In an interview you may be asked to solve using two pinter method, who knows.
+So, we solved the valid parentheses problem, used a stack and a hashmap and saw a couple of object method. At last calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
