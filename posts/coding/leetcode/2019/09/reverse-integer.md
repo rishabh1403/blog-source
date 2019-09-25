@@ -17,7 +17,7 @@ In this post, we will solve reverse integer problem from leetcode and compute it
 # Problem Statement
 The question can be found at [leetcode reverse integer problem](https://leetcode.com/problems/reverse-integer/).
 
-The problem states that we are given a 32-bit signed integer, and we need to reverse it's digits.
+The problem states that we are given a 32-bit signed integer, and we need to reverse its digits.
 
 # Constraints and challenges
 
@@ -26,16 +26,16 @@ The problem states that we are given a 32-bit signed integer, and we need to rev
 # Solutions
  We will discuss two solutions in this article and compare their time & space complexities.
 
-* String based reversal
+* String-based reversal
 * Number based reversal
 
-# String based reversal
+# String-based reversal
 
-In this method, we will convert the number to a string, reverse it. We will also use some inbuilt methods in JavaScript for string manipulation and mathematical operation.
+In this method, we will convert the number to a string and reverse it. We will also use some inbuilt methods in JavaScript for string manipulation and mathematical operation.
 
 The idea is very simple
 
-- Take absolute value of number
+- Take the absolute value of the number
 - convert to string
 - create a character array
 - reverse it
@@ -61,18 +61,18 @@ var reverse = function(x) {
 
 Nothing fancy going on here, Let's look at the solution.
 
-First line has most of the logic here. We wrap everything inside a *parseInt* function, ( to convert string to integer ), now, steps are as follows
+The first line has most of the logic here. We wrap everything inside a *parseInt* function, ( to convert string to integer ), now, steps are as follows
 - we take the absolute value of the number
 - convert the number to a string
 - split the string, and convert it to an array
 - reverse the array
-- join the elements of array
+- join the elements of the array
 
 this gives us the reversed number in string format, and then parseInt converts it to a number.
 
-Next, we check if the reversed integer is greater than the given constraint, if yes, we retrun 0 ( constaints in question )
+Next, we check if the reversed integer is greater than the given constraint, if yes, we return 0 ( constraints in question )
 
-In the last line, we check the sign of initial number X and mulitply it with reversed number to get the integer with same sign.
+In the last line, we check the sign of initial number X and multiply it with the reversed number to get the integer with the same sign.
 
 This is all we need to solve the problem, once we submit it, these are the stats.
 ```yaml
@@ -87,13 +87,13 @@ Memory: 35.8MB
 
 ### Time complexity
 
-We use a bunch of methods, but they are chained as opposed to nested, so the runtime will be dependent on number of digits in the input. We can say **O(len X)**
+We use a bunch of methods with linear complexity, but they are chained as opposed to nested, so the runtime will be dependent on the number of digits in the input. We can say **O(len X)**
 
 ### Space complexity
 
-We have a number as input, using another variable to store the reversed number, so space complexity is constatnt, **O(1)**
+We have a number as input, using another variable to store the reversed number, so space complexity is constant, **O(1)**
 
-Now, we don't really need to explicitly convert the string to number, JavaScript can automatically do it for us ( for some extra cost, ofcourse ). 
+Now, we don't need to explicitly convert the string to a number, JavaScript can automatically do it for us ( for some extra cost, of course ). 
 
 Look at the snippet below
 
@@ -121,11 +121,11 @@ Memory: 35.8MB
 
 ```
 
-Now, why did it work? Well implicit type casting. String is converted to number when we are comparing it with 2<sup>31</sup> and multiplying with the sign. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+Now, why did it work? Well implicit typecasting. The string is converted to a number when we are comparing it with 2<sup>31</sup> and multiplying with the sign. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 ## Time and space complexity
 
-Well, asymptotically it's still the same, however implicit type casting should add some more time to execution, which we see in the stats.
+Well, asymptotically it's still the same, however, implicit type casting should add some more time to execution, which we see in the stats.
 
 
 # Number based reversal
@@ -134,15 +134,15 @@ In this method, we will pick the digits of the number one by one and reverse the
 
 The idea is very simple
 
-- check is the number is less than zero
+- check if the number is less than zero
 - if the number is less than zero, take the absolute value of it
 - initialize a variable `reversed` with 0
 - loop over the number until it's less than or equal to zero (at one point it will be)
-- now, muliply the reversed variable with 10 and add the last digit of the number to it
+- now, multiply the reversed variable with 10 and add the last digit of the number to it
 - remove the last digit of x
 - when the loop ends, we will have our reversed number
 - if the reversed number is more than 2<sup>31</sup>, return 0
-- else, return the reversed integer with it's actual sign
+- else, return the reversed integer with its actual sign
 
 
 Let's see a simple implementation of the above logic.
@@ -174,11 +174,11 @@ var reverse = function(x) {
 
 So as discussed above, first we determine if the number is negative, and take the absolute of the number.
 
-Iteratively take last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it, so that it becomes 13, we will multiply 1 with 10 and add 3 to it. This hold true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
+Iteratively take the last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it so that it becomes 13, we will multiply 1 with 10 and add 3 to it. This holds true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
 
 Dividing by 10 and taking integer counterpart, just removes the last digit of the number. ( Try it your self :smile: )
 
-Next the logic is pretty straight forward, if the reversed number is greater than 2<sup>31</sup> retrun 0 else return the reversed number with the sign.
+Next, the logic is pretty straight forward if the reversed number is greater than 2<sup>31</sup> return 0 else return the reversed number with the sign.
 
 Here are the stats one we run this code
 
@@ -192,15 +192,15 @@ Memory: 35.9MB
 
 ## Time and Space complexity
 
-Unfortunately we didn't really improve a lot in time complexity. It's **O(len X)** ( notice the loop runs len X times).
+Unfortunately, we didn't improve the time complexity. It's **O(len X)** ( notice the loop runs len X times).
 Same goes for space, **O(1)**.
 
 # Summary
 
-So, we solved the reverse integer problem using 2 methods, although the complexity is same, it's goot to know both approaches. In an interview you may be asked to not use Math/ String/ Array methods, then you can go for integer based reversal method.
+So, we solved the reverse integer problem using 2 methods, although the complexity is the same, it's good to know both approaches. In an interview you may be asked to not use Math/ String/ Array methods, then you can go for integer based reversal method.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
-There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
+There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
