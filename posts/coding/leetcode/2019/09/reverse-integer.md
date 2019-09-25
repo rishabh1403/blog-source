@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of reverse integer","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-24T23:16:18.404Z
+date: 2019-09-25T18:19:18.404Z
 path: "leetcode-solution-of-reverse-integer-in-javascript"
 image: "./reverse-integer.png"
 draft: false
