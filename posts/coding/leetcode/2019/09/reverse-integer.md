@@ -17,11 +17,11 @@ In this post, we will solve reverse integer problem from leetcode and compute it
 # Problem Statement
 The question can be found at [leetcode reverse integer problem](https://leetcode.com/problems/reverse-integer/).
 
-The problem states that we are given a 32-bit signed integer, and we need to reverse its digits.
+The problem states that we are given a **32-bit signed integer**, and we need to reverse its digits.
 
 # Constraints and challenges
 
-* If the absolute value of the number overflows 2<sup>31</sup> after reversing the number, we need to return 0.
+* If the absolute value of the number overflows **2<sup>31</sup> after reversing the number**, we need to return **0**.
 
 # Solutions
  We will discuss two solutions in this article and compare their time & space complexities.
@@ -40,7 +40,7 @@ The idea is very simple
 - create a character array
 - reverse it
 - join it back to a string
-- parse the string to a number ( not required in JavaScript )
+- parse the string to a number ( *not required in JavaScript* )
 
 
 Let's see a simple implementation of the above logic.
@@ -61,7 +61,7 @@ var reverse = function(x) {
 
 Nothing fancy going on here, Let's look at the solution.
 
-The first line has most of the logic here. We wrap everything inside a *parseInt* function, ( to convert string to integer ), now, steps are as follows
+The first line has most of the logic here. We wrap everything inside a **parseInt** function, ( to convert string to integer ), now, steps are as follows
 - we take the absolute value of the number
 - convert the number to a string
 - split the string, and convert it to an array
@@ -87,7 +87,7 @@ Memory: 35.8MB
 
 ### Time complexity
 
-We use a bunch of methods with linear complexity, but they are chained as opposed to nested, so the runtime will be dependent on the number of digits in the input. We can say **O(len X)**
+We use a bunch of methods with **linear complexity**, but they are chained as opposed to nested, so the runtime will be dependent on the number of digits in the input. We can say **O(len X)**
 
 ### Space complexity
 
@@ -121,7 +121,7 @@ Memory: 35.8MB
 
 ```
 
-Now, why did it work? Well implicit typecasting. The string is converted to a number when we are comparing it with 2<sup>31</sup> and multiplying with the sign. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+Now, why did it work? Well implicit typecasting. The string is converted to a number when we are comparing it with **2<sup>31</sup>** and multiplying with the sign. [Read More](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 ## Time and space complexity
 
@@ -139,7 +139,7 @@ The idea is very simple
 - initialize a variable `reversed` with 0
 - loop over the number until it's less than or equal to zero (at one point it will be)
 - now, multiply the reversed variable with 10 and add the last digit of the number to it
-- remove the last digit of x
+- remove the last digit of X
 - when the loop ends, we will have our reversed number
 - if the reversed number is more than 2<sup>31</sup>, return 0
 - else, return the reversed integer with its actual sign
@@ -174,7 +174,7 @@ var reverse = function(x) {
 
 So as discussed above, first we determine if the number is negative, and take the absolute of the number.
 
-Iteratively take the last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it so that it becomes 13, we will multiply 1 with 10 and add 3 to it. This holds true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
+Iteratively take the last digit of the number and add it to the reversed number. For example, if we have `1` and we want to append `3` to it so that it becomes `13`, we will multiply *1 with 10 and add 3* to it. This holds true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
 
 Dividing by 10 and taking integer counterpart, just removes the last digit of the number. ( Try it your self :smile: )
 
