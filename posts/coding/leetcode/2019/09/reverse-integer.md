@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of reverse integer","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-16T23:16:18.404Z
+date: 2019-09-24T23:16:18.404Z
 path: "leetcode-solution-of-reverse-integer-in-javascript"
 image: "./reverse-integer.png"
 draft: false
@@ -31,7 +31,7 @@ The problem states that we are given a 32-bit signed integer, and we need to rev
 
 # String based reversal
 
-In this method, we will convert the number to a string, reverse it. We will also use some inbuilt methods in JavaScript for string manipulation as well as for some mathematical operation.
+In this method, we will convert the number to a string, reverse it. We will also use some inbuilt methods in JavaScript for string manipulation and mathematical operation.
 
 The idea is very simple
 
@@ -174,7 +174,7 @@ var reverse = function(x) {
 
 So as discussed above, first we determine if the number is negative, and take the absolute of the number.
 
-Iteratively take last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it, so this it becomes 13, we will multiply 1 with 10 and add 3 to it. This hold true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
+Iteratively take last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it, so that it becomes 13, we will multiply 1 with 10 and add 3 to it. This hold true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
 
 Dividing by 10 and taking integer counterpart, just removes the last digit of the number. ( Try it your self :smile: )
 
