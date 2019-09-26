@@ -41,11 +41,11 @@ In this method, we will follow the following approach
 - at last, when we have checked all the characters, the stack should be empty, why? :astonished:
 - to keep the string balanced, each closing bracket will have an opening one, and since when this case occurs, we clear the last entry from stack. Hence the stack should be empty after the iteration to ensure the string is balanced.
 
-We have discussed the approach, I urge you to go ahead on leetcode and give it another try. :smile:
+We have discussed the approach, **I urge you to go ahead on leetcode and give it another try**. :smile:
 
 <hr />
 <br />
-If you are here, it means something went wrong in implementation or you are just too lazy. In any case, let's see a simple implementation of the above logic.
+If you are here, it means something went wrong in implementation or you are just too lazy :smile: . In any case, let's see a simple implementation of the above logic.
 
 ```js
 
