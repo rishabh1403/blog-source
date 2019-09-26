@@ -5,13 +5,13 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of palindrome number","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-17T23:16:18.404Z
+date: 2019-09-26T23:16:18.404Z
 path: "leetcode-solution-of-palindrome-number-in-javascript"
 image: "./palindrome.png"
 draft: false
 ---
 
-In this post, we will solve palindrome number problem from leetcode and compute it's time & space complexity. Let's begin.
+In this post, we will solve palindrome number problem from leetcode using a couple of methods and compare their time and space complexities. Let's begin.
 <!--more-->
 
 # Problem Statement
@@ -21,7 +21,7 @@ The problem states that we need to determine if a given integer is palindrome.
 
 # Constraints and challenges
 
-* We need to take sign of number into account while solving the problem. -2 is not a palindrome as 2 is not equal to -2.
+* We need to take sign of number into account while solving the problem. -2 is not a palindrome as 2- is not equal to -2.
 
 # Solutions
  We will discuss three solutions in this article and compare their time & space complexities.
@@ -89,7 +89,7 @@ In this method, we will pick the digits of the number one by one and reverse the
 
 The idea is very simple
 
-- check is the number is less than zero
+- check ii the number is less than zero
 - if the number is less than zero, return false
 - initialize a variable temp with X ( because we lose the initial value of X in the logic)
 - initialize the reverse variable with 0
@@ -128,9 +128,7 @@ var isPalindrome = function(x) {
 
 So as discussed above, first we determine if the number is negative, and return false. 
 
-Next, iteratively take last digit of the number and add it to the reversed number. For example, if we have 1 and we want to append 3 to it, so this it becomes 13, we will multiply 1 with 10 and add 3 to it. This hold true for any number, if we need to append anything to the end of the number, we multiply by 10 and add the number which had to be appended. 
-
-Dividing by 10 and taking integer counterpart, just removes the last digit of the number. ( Try it your self :smile: )
+You can can read more about number based reversal method in my [previous post](https://rishabh1403.com/leetcode-solution-of-reverse-integer-in-javascript). 
 
 Next the logic is pretty straight forward, check if the reversed number is equal to temp, and return the result.
 
@@ -146,7 +144,7 @@ Memory: 45.2MB
 
 ## Time and Space complexity
 
-Unfortunately we didn't really improve a lot in time complexity. It's **O(len X)** ( notice the loop runs len X times).
+Unfortunately we didn't really improve the time complexity. It's **O(len X)** ( notice the loop runs len X times).
 Same goes for space, **O(1)**.
 
 # Two pointer method
