@@ -17,11 +17,11 @@ In this post, we will solve the palindrome number problem from leetcode using a 
 # Problem Statement
 The question can be found at [leetcode palindrome number problem](https://leetcode.com/problems/palindrome-number/).
 
-The problem states that we need to determine if a given integer is a palindrome.
+The problem states that we need to determine if a given *integer* is a palindrome.
 
 # Constraints and challenges
 
-* We need to take the sign of number into account while solving the problem. -2 is not a palindrome as 2- is not equal to -2.
+* We need to take the sign of number into account while solving the problem. **-2 is not a palindrome as 2- is not equal to -2**.
 
 # Solutions
  We will discuss three solutions in this article and compare their time & space complexities.
@@ -62,7 +62,7 @@ Some of the methods chained are
 - reverse() to reverse the array
 - join() to join the array back to a string
 
-This will also solve the problem with the sign of the number. When we convert the number to a string, the minus sign becomes the part of the string and on reversal goes to end. For example, -123 becomes 321-.
+This will also solve the problem with the sign of the number. When we convert the number to a string, the minus sign becomes the part of the string and on reversal goes to end. For example, *-123 becomes 321-*.
 
 This is all we need to solve the problem, once we submit it, these are the stats.
 ```yaml
@@ -89,13 +89,13 @@ In this method, we will pick the digits of the number one by one and reverse the
 
 The idea is very simple
 
-- check ii the number is less than zero
+- check if the number is less than zero
 - if the number is less than zero, return false
 - initialize a variable temp with X ( because we lose the initial value of X in the logic)
 - initialize the reverse variable with 0
 - loop over the number until it's less than or equal to zero (at one point it will be)
 - now, multiply the reversed variable with 10 and add the last digit of the number to it
-- remove the last digit of x
+- remove the last digit of X
 - when the loop ends, we will have our reversed number
 - if the reversed number is equal to temp ( initial number ), return true
 - else, false
