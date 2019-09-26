@@ -11,7 +11,7 @@ image: "./valid-parentheses.png"
 draft: false
 ---
 
-In this post, we will solve valid parentheses problem from leetcode and compute it's time & space complexity. Let's begin.
+In this post, we will solve valid parentheses problem from leetcode and compute it's time & space complexity. Let's begin
 <!--more-->
 
 # Problem Statement
