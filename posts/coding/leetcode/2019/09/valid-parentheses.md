@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of valid parentheses problem","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-18T23:16:18.404Z
+date: 2019-09-27T23:16:18.404Z
 path: "leetcode-solution-of-valid-parentheses-in-javascript"
 image: "./valid-parentheses.png"
 draft: false
@@ -32,17 +32,19 @@ A string is valid if
 In this method, we will follow the following approach
 
 - we will create a map of parentheses with opening parenthese as key and corresponding closing ones as value
-- will declare a empty array to use as stack
+- will declare a empty array to use as stack :books:
 - will check the string character by character
 - if the character is an opening bracket, will push it to stack
-- is it's a closing bracket, will check the last entry in stack
+- if it is a closing bracket, will check the last entry in stack
 - if the last entry is an opening bracket of same type, will delete that last entry from stack
 - else, the string is not balanced
-- at last when we have checked all the characters, the stack should be empty, why? :thinking:
+- at last when we have checked all the characters, the stack should be empty, why? :astonished:
 - to keep the string balanced, each closing bracket will have an opening one, and since when this case occurs, we clear the last entry from stack. Hence the stack should be empty after the iteration to ensure the string is balanced.
 
 We have discussed the approach, I urge you to go ahead on leetcode and give it another try. :smile:
 
+<hr />
+<br />
 If you are here, it means something went wrong in implementation or you are just too lazy. In any case, let's see a simple implementation of the above logic.
 
 ```js
@@ -78,9 +80,9 @@ Let's discuss the implementation.
 
 We declare a hashmap with opening brackets as key and closing ones as their values. Next we initialize an empty array and will use it as our stack to store opening braces.
 
-Next, we are looping over all the characters of the string, and this case, all the braces present in the string. In the next condition, we check if the character is an opening bracket, if yes we push it to the stack.
+Next, we are looping over all the characters of the string, and in this case, all the braces present in the string. In the next condition, we check if the character is an opening bracket, if yes we push it to the stack.
 
-If the character is a closing bracket, we check for the last entry in the stack. If the last entry in the stack is the opening counterpart of the current closing bracket, we remove the entry from stack. It balances the bracket. If no, the braces are not balanced.
+If the character is a closing bracket, we check for the last entry in the stack. If the last entry in the stack is the opening counterpart of the current closing bracket, we remove the entry from stack. It balances the bracket. If no, the braces are not balanced, hence we return false and exit.
 
 At the end, if the stack is not empty, it means there was some opening bracket for which closing bracket was not found in correct order. Thus we return false or true depending on stack length.
 
