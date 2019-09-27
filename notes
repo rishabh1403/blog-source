@@ -65,3 +65,8 @@ HTML.propTypes = {
   <span>Steve Jobs</span>
 </blockquote>
 blockquote usage
+
+
+/// emoji
+
+https://github.com/matchilling/gatsby-remark-emojis/blob/master/emoji.md
