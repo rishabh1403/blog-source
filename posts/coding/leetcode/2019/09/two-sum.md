@@ -1,12 +1,12 @@
 ---
-title: "Leetcode | Solution of Two Sum in JavaScript"
-description: "In this post, we will solve two sum problem from leetcode using a couple of methods, compare their time and space complexities. Let's begin."
+title: "Leetcode | Solution of Two Sum II in JavaScript"
+description: "In this post, we will solve two sum II - input array is sorted problem from leetcode. Let's begin."
 author: "Rishabh Jain"
-keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
+keywords: ["leetcode","js","javascript","solution of two sum II input array is sorted","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions", "two sum"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-08-01T22:19:33.921Z
-path: "leetcode-solution-of-two-sum-in-javascript"
+path: "leetcode-solution-of-two-sum-ii-in-javascript"
 image: "./two-sum-two.png"
 draft: false
 ---
@@ -15,20 +15,20 @@ In this post, we will solve two sum II - input array is sorted problem from leet
 <!--more-->
 
 # Problem Statement
-The question can be found at [Leetcode Two Sum II - Input array is sorted problem](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/).
+The question can be found at [Leetcode Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/).
 
-The problem states that we are given an array of integers and a target number, our task is to return the indices of the two numbers which add up to the target.
+The problem states that we are given an array of integers and a target number, our task is to return the indices of the two numbers which adds up to the target.
 
 # Constraints and challenges
 
 * Input array is sorted in ascending order
 
 # Solution
- We have already discussed the solution of two sum problem in multiple ways in my earlier blog. In this case the array is sorted which makes it more easier to find the solution. I will list down one of the solutions for the problem, for the rest please refer to my two sum blog post :smile: .
+ We have already discussed the solution of two sum problem in multiple ways in my [earlier blog](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript). In this case the array is sorted which makes it more easier to find the solution. I will list down one of the solutions for the problem, for the rest please refer to my [two sum blog post](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript) :smile: .
 
 # Two pointer method
 
-Two pointer ( finger ) method is still another very famous method of solving problems where you take two elements on opposite ends of the array and move inwards, in turn covering all elements.
+Two pointer ( finger ) method is very famous method of solving problems where you take two elements on opposite ends of the array and move inwards, in turn covering all elements.
 
 Let's take an example.
 
@@ -42,13 +42,13 @@ let arr = [1,2,3,4,5,6,7,8]
 
 Notice the sorted array.
 
-If we were given a target and had to find the indices of numbers, instead of iterating on one end, we can have two pointers, one at index 0 other at the end. 
+If we were given a target and had to find the indices of numbers, instead of iterating on one end, we can have two pointers, one at index 0 and another at the end. 
 
 Take the sum, if the sum is more than the target, we need to decrease the sum. Well if we move the left pointer to the next right position, it will take us to a number larger than the earlier one, because of  the sorted array. So we move our right pointer to next left position, thus decreasing the sum. 
 
 Similarly, if the sum is less than the target, we need to increase the sum. Well if we move the right pointer to the next left position, it will take us to a number smaller than the earlier one. So we move our left pointer to next right position, thus increasing the sum.
 
-If the sum is equal to the target, we find the sum. All good. If lower pointer (left one) becomes equal to right one, we stop because we have already covered all elements and no solution found. 
+If the sum is equal to the target, we got our result. All good. If lower pointer (left one) becomes equal to right one, we stop because we have already covered all elements and no solution found. 
 
 ```js
 
@@ -92,7 +92,7 @@ In the worst case we will loop over the array once, so time complexity will be *
 
 # Summary
 
-A very quick blog, didn't want to stretch this a lot because had already done two sum extensively before. Please refer to two sum blog for more details. 
+A very quick blog, didn't want to stretch this a lot because had already done two sum extensively before. Please refer to [two sum blog](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript) for more details. 
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
