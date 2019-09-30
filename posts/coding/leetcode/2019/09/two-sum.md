@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of two sum II input array is sorted","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions", "two sum"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-08-01T22:19:33.921Z
+date: 2019-09-30T17:19:33.921Z
 path: "leetcode-solution-of-two-sum-ii-in-javascript"
 image: "./two-sum-two.png"
 draft: false
@@ -21,10 +21,10 @@ The problem states that we are given an array of integers and a target number, o
 
 # Constraints and challenges
 
-* Input array is sorted in ascending order
+* Input array is **sorted in ascending order**.
 
 # Solution
- We have already discussed the solution of two sum problem in multiple ways in my [earlier blog](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript). In this case, the array is sorted which makes it easier to find the solution. I will list down one of the solutions for the problem, for the rest please refer to my [two sum blog post](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript) :smile: .
+ We have already discussed the solution of two sum problem in multiple ways in my [earlier blog](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript). In this case, the array is **sorted** which makes it *easier to find the solution*. I will list down one of the solutions for the problem, for the rest please refer to my [two sum blog post](https://rishabh1403.com/leetcode-solution-of-two-sum-in-javascript) :smile: .
 
 # Two pointer method
 
@@ -42,7 +42,7 @@ let arr = [1,2,3,4,5,6,7,8]
 
 Notice the sorted array.
 
-If we were given a target and had to find the indices of numbers, instead of iterating on one end, we can have two pointers, one at index 0 and another at the end. 
+If we were given a target and had to find the indices of numbers, instead of iterating on one end, we can have two pointers, *one at index 0 and another at the end*. 
 
 Take the sum, if the sum is more than the target, we need to decrease the sum. Well if we move the left pointer to the next right position, it will take us to a number larger than the earlier one, because of the sorted array. So we move our right pointer to next left position, thus decreasing the sum. 
 
