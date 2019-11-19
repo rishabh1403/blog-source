@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-08-01T22:19:33.921Z
+date: 2019-11-19T17:19:33.921Z
 path: "leetcode-solution-of-two-sum-in-javascript"
 image: "./two-sum.png"
 draft: false
