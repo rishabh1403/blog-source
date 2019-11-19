@@ -5,7 +5,7 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-08-01T22:19:33.921Z
+date: 2019-11-19T17:19:33.921Z
 path: "leetcode-solution-of-two-sum-in-javascript"
 image: "./two-sum.png"
 draft: false
@@ -306,3 +306,4 @@ I hope you enjoyed solving this question. This is it for this one, complete sour
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/channel/UC4syrEYE9_fzeVBajZIyHlA) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403) , drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
+`youtube: qqC9m93ofwI`
