@@ -5,11 +5,16 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","life","rishabh1403","intro","blog"]
 tags: ["life"]
 categories: ["life"]
-path: "posts/life/2018/08/new-blog-new-beginnings/"
-date: 2018-08-21T01:17:37+05:30
-image: "./new.jpg"
+path: "trip-to-rishikesh"
+date: 2019-11-28T01:17:37+05:30
+image: "./rishi.jpg"
 draft: false
 ---
+
+----------------
+
+i went on July 14th
+
 
 Where it all started!!!. I think this is the best I can describe that journey. My first solo trip, 
 my first trip in fact. I had never traveled before just for the fun of it. Every place I had visited earlier was either for work or family obligations(sad). This was my first trip for fun, for leisure, for me. My solo one day trip to Rishikesh
