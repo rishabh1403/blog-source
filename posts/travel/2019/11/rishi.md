@@ -26,7 +26,7 @@ It was around 4 o'clock one Saturday evening July 13th. I was bored the hell out
 
 I got down from the bus around 8 a.m. Rishikesh was still 11kms from the bus stand. So took a public auto to the center of the city. The drive towards the city was refreshing. I was excited and a bit scared for it was my first solo trip. I had traveled solo first, but had friends and family in every one of those cities, but not this one. 
 
-![Chaos](./chaos.jpg)
+![Chaos](./chaos.jpg "City view")
 
 As the auto drove towards the city, it started to get crowded and more crowded. And when I was dropped off I found myself in complete chaos. The city was crawling with people. People everywhere. Shops everywhere. Things and shops crammed in small places. I felt suffocated in that environment. I went over to the river bank and people bathing there, noise, polluted river. It was all chaos. I didn't come all this way for this experience. It was horrible and making me nauseous. 
 
@@ -34,50 +34,50 @@ As the auto drove towards the city, it started to get crowded and more crowded. 
 
 I could see lush green mountains nearby. A river flowing parallel to the ranges and clear weather. I decided to rent a motorbike and go for a ride, for I had come for peace and not chaos. I found a renting shop nearby and took a bike on rent. 
 
-![good-road](./rishi1.jpg)
+![good-road](./rishi1.jpg "road sandwidched between a river and a mountain range")
 
 I had in total of 500 kms of riding experience. I had learned how to ride quite recently and wasn't very comfortable on a bike. Also the mountains.... had never driven in a hilly area. So it brought its challenges. I finally rented a good bike. The moment I got on my bike, it felt so heavy. I was used to driving a lighter one, that too hadn't driven for around 6-7 months. I was a complete noob. Somehow I got the wheels rolling and in less than 5 minutes I was on the road. I asked someone for directions towards the hills and I left the city for good. I felt free and this was a breakthrough in my biking journey, which was going to define a lot my future decisions. I was flying.
 
-![bike](./bike.jpg)
+![bike](./bike.jpg "my bike for the day")
 
 # The ride
 
 Before I knew it, I was in the mountains. The roads were good, the mountains on one side and the river on the other. The wind hitting my face was nothing but pleasant. I felt happy and relaxed. I was enjoying the ride to its fullest and loved the bike. It was much refined than the one I owned and moved much faster ( tongue out emoji). While driving I saw some people near the riverbank, that too with cars. I knew there must be a way to reach there so decided to explore on my way back. 
 
-![breakthrough](./break.jpg)
+![breakthrough](./break.jpg "greenery at a distance")
 
 
 After driving for about 50 km decided to turn back as I was on the clock. (1-day trip). I was hungry as last I ate was around 20 hours ago. I had almost forgotten to have breakfast or even lunch in the excitement of the ride. I took a pit stop, had some breakfast at one of the roadside eateries and continued on my journey. Finally, I found the road which took me towards the river bank and boy it felt so good to just stand beside flowing water.
 
-![water](./water.jpg)
+![water](./water.jpg "me enjoying at the dangerous river bank")
 
 # The scare
 
 As I was sitting there, watching the river flow I heard a sound that I never wanted to hear in those circumstances. Rumbling clouds and lightning. Before I knew it, the sky turned dark and I got scared. I was inside the river and if I had stayed there amid rains, the river flow would have been too dangerous. 
 
-![scared](./scared.jpg)
+![scared](./scared.jpg "me scared of approaching clouds")
 
 I hurried back to my bike and tried to get out of the place as soon as I can, never looking back at the river. The moment I reached the road, it started raining heavily and I felt a sigh of relief and fear. I wasn't prepared for rains definitely in my current attire. To escape I started driving fast as there was no shed nearby and I did something that was nothing but an achievement for me. Took a turn at the speed of 60kmph. At that moment I learned how to lean and control the bike on turns momentarily and everything turned out okay. I found a shed nearby and took shelter before I could get too drenched.
 
-![turn](./turn60.jpg)
+![turn](./turn60.jpg "the perfect turn at high speed")
 
 # The freedom
 
 As I was standing there waiting for the rains to stop, I felt freedom. I had a bike, but that was more or less a necessity as opposed to a hobby. For the first time, I looked at the bike as a hobby. Something that I knew I would always enjoy. Especially in these circumstances. I felt the urge to drive in the rains but held back as I was underprepared. It felt binding to me, but I knew biking is the means of freedom for me. 
 
 
-![bikeHobby](./hobby.jpg)
+![bikeHobby](./hobby.jpg "looking at this as a hobby")
 
 
 After the rains had stopped I returned the bike to the renting shop and decided to explore the city for the rest of the day.
 
-![rains](./rains.jpg)
+![rains](./rains.jpg "heavy rainfall in the mountains")
 
 # The city
 
 At that point, I had no intention of exploring the city, I knew what my heart wanted. But, I had recommendations from my friend that I needed to explore. I visited a couple of places. ( places ). Bought a couple of souvenirs for my friend and mom. 
 
-![gift](./giftnew.jpg)
+![gift](./giftnew.jpg "gift for my mom...something religious")
 
 All that time walking around on hilly roads didn't tire me. I am the complete opposite of what you'll call an athletic body but I was just loving the day so much. Suddenly chaos looked so beautiful. People looked so happy. The small shops looked so lively. Everything was just overwhelming. And before I know it, it was almost time to return. 
 
@@ -85,7 +85,7 @@ All that time walking around on hilly roads didn't tire me. I am the complete op
 
 It was around 2 hours before my bus departed. I spent the last hour sitting on the bank of the river. Just watching people coming there, praying, chilling, laughing and enjoying their evening was so calming. I looked at the river flowing steadily and it felt so soothing.
 
-![peace](./peace.jpg)
+![peace](./peace.jpg "me feeling peaceful at the end")
 
 I didn't want to go back for I was having one of the best days of my life. At that moment I promised the city that I'll come back again and spend more time there. I will explore more things that I could from the recommendation list. and before I know it, it was dusk and I was on my way back to the bus.
 
@@ -103,11 +103,11 @@ I learnt a lot of things that day
 and a lot more. So much that I was taking notes at different points in the trip
 
 
-![lessons](./lessonsme.jpg)
+![lessons](./lessonsme.jpg "me in white ninja mode" )
 
 
 # conclusion
 
-![rishi1](./rishi.jpg)
+![rishi1](./rishi.jpg "the city in an image")
 
 To conclude this epic one day trip, I'll say this, don't ask me for places to visit in Rishikesh, because the answer is I don't know. The bike trip was the biggest turning point of the trip and everything that followed felt good as it had set the tone for the day. I had found a new hobby and an even greater passion to make things better, I had one of the best guides ever as my friend.

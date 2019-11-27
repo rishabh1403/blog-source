@@ -163,3 +163,11 @@ blockquote span{
   font-weight: bold;
   margin-top:1em;
 }
+
+
+figcaption{
+  text-align: center;
+  margin-top: -20px;
+  opacity: 0.8;
+  font-size: 0.75rem;
+}
