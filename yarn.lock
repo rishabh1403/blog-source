@@ -6090,10 +6090,10 @@ gatsby-remark-embed-video@2.0.1:
     remark-burger "^1.0.1"
     unist-util-visit "^2.0.0"
 
-gatsby-remark-emojis@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-emojis/-/gatsby-remark-emojis-0.3.3.tgz#1eedab34eb5bb796e1a773fc735ca1de6f34eed3"
-  integrity sha512-oxNuFlug5Euq57h/JRBeqphIB7muD5eWydxzac7DJGUETL6Qp2CozoMpfhilKfGKfDSRxZURbGFruFIJx9h6QA==
+gatsby-remark-emojis@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-emojis/-/gatsby-remark-emojis-0.4.2.tgz#58050474395769cb3a4f834e39feebfd5d745bc7"
+  integrity sha512-45YMyYk67uwXuSnjmLpk8SRL+D/5wsw9D/jmsMjnq1Gi9WiHMfhj9OiO6mSzEMKpr2aDJzuqKnxB78K7D+VcUg==
 
 gatsby-remark-images@3.1.26:
   version "3.1.26"
