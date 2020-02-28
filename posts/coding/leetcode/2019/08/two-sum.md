@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of two sum","rishabh","jain","
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-11-19T17:19:33.921Z
-path: "leetcode-solution-of-two-sum-in-javascript"
+path: "posts/coding/leetcode/2019/11/leetcode-solution-of-two-sum-in-javascript"
 image: "./two-sum.png"
 draft: false
 ---

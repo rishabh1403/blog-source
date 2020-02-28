@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of reverse integer","rishabh",
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-11-21T15:19:18.404Z
-path: "leetcode-solution-of-reverse-integer-in-javascript"
+path: "posts/coding/leetcode/2019/11/leetcode-solution-of-reverse-integer-in-javascript"
 image: "./reverse-integer.png"
 draft: false
 ---

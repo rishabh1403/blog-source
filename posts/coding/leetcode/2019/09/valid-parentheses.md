@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of valid parentheses problem",
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-09-27T23:16:18.404Z
-path: "leetcode-solution-of-valid-parentheses-in-javascript"
+path: "posts/coding/leetcode/2019/09/leetcode-solution-of-valid-parentheses-in-javascript"
 image: "./valid-parentheses.png"
 draft: false
 ---

@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of two sum II input array is s
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-12-10T17:19:33.921Z
-path: "leetcode-solution-of-two-sum-ii-in-javascript"
+path: "posts/coding/leetcode/2019/12/leetcode-solution-of-two-sum-ii-in-javascript"
 image: "./two-sum-two.png"
 draft: false
 ---

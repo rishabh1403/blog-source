@@ -4,7 +4,7 @@ description: "We know about Virtual Reality and how it allows us to experience a
 author: "Rishabh Jain"
 keywords: ["rishabh","jain","rishabh jain","rishabh1403","blog","ar","vr","Augmented Reality", "Virtual Reality", "pokemon go", "reality", "augment","science and technology" ]
 tags: ["general", "Augmented Reality","Virtual Reality"]
-path: "stepping-into-the-awe-inspiring-world-of-augmented-reality-aka-ar"
+path: "posts/general/2019/07/stepping-into-the-awe-inspiring-world-of-augmented-reality-aka-ar"
 categories: ["general", "Augmented Reality", "Virtual Reality"]
 date: 2019-07-31T22:19:33.921Z
 image: "./images/top.jpg"

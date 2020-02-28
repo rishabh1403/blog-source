@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of palindrome number","rishabh
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-12-11T13:16:18.404Z
-path: "leetcode-solution-of-palindrome-number-in-javascript"
+path: "posts/coding/leetcode/2019/12/leetcode-solution-of-palindrome-number-in-javascript"
 image: "./palindrome.png"
 draft: false
 ---

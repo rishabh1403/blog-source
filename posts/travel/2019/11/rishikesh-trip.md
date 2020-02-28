@@ -6,7 +6,7 @@ author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
 tags: ["life", "travel", "biking"]
 categories: ["life", "travel", "biking"]
-path: "trip-to-rishikesh"
+path: "posts/travel/2019/11/trip-to-rishikesh"
 date: 2019-11-27T17:17:37+05:30
 image: "./rishi2.jpg"
 draft: false
