@@ -1,1 +1,14 @@
-dece
+- delayed start
+- puncture
+- first lunch
+- hot weather
+- second lunch
+- nice resort
+- river side chill
+- night drive to theka
+- heavy breakfast
+- pool masti
+- games and swings
+- return journey
+- race
+- learnings

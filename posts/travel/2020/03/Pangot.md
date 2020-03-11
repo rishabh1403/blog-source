@@ -1,1 +1,17 @@
-cece
+- sudden plan
+- snow fall before the day we left
+- driver was asleep
+- the treachorius roads
+- no signal
+- best drive on snow
+- nice cute cottages
+- games and good food
+- meetings
+- music concert
+- walk and cute dog
+- games and good food
+- meetings
+- people getting sick
+- everything fine
+- snow drive again
+- back to delhi safe and sound
