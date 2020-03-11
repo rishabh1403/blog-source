@@ -36,4 +36,53 @@ We ignored the man, assuming he was calling someone else. He came closer and in
 an angry tone asked us to follow him. He looked super pissed. He took us to a
 millitary camp where he along with some others started enquiring about us. He
 asked us about our business there and reminded us of the multiple sign boards.
-All of my friends had no clue what he was talking about, but
+All of my friends had no clue what he was talking about, but I knew exactly what
+was going on there. He was talking about 124(he kept reminding us the number)
+sign boards which we ignored on our way. Now I was wide awake. Others were
+pretty calm, we could only see him speaking all the time. We tried to convince
+them that we were tourists, and intend no shenanigans. One of the officers was
+pretty calm and assured us that we can go. He, however was pretty adamant and
+called his superiors, all this went on for about half an hour and then their
+superiors arrived. They came and let us go without any problem. They also told
+us the route which if taken will ensure we get a good view of the dam and enjoy
+the most. We hurried through it and then stopped after crossing the millitary
+zone to take some more pictures. We were also adamant.
+
+It was almost sunrise and we left for MT. 
+
+The drive to MT from there was very scenic with mountains, little bit of fog and
+chilling weather. Once we reached the city, I was a bit displased. I thought it
+would be like lansdowne, empty and uncommercialized, however, it was a fully
+commercilalized city with a lot of tourists. To my amazement, Shubham kept of
+saying the city looked empty. We checked-in to our hotel and headed out for
+breakfast. Lemme tell you, the entire MT city was all about food. We didn't do
+anything else but eat.
+
+I went to sleep after breakfast, hadn't slept whole night like others, so
+whatever conspired till evening is unknown to me. In the evening we walked
+around a mile uphill to reach a famous eatery which we found out was closed. At
+least I lost some weight from all the walk up there. We had some light snacks up
+there at other places and came down to have our dinner. It was a pretty heavy
+dinner followed by some shopping for us and our families. We had a long walk and
+retired to our rooms after that. 
+
+After a long night's sleep we were ready to depart for Delhi in the morning. We
+decided to take a pit stop at Robert's cave in dehradun and have lunch there.
+
+Robert's cave was the most amazing place for me in the entire trip(second would
+be Tehri, ahem ahem). There was a stream flowing inside the cave, the water was
+really cold and it felt relaxing. There was water dripping along the sides, and
+at the end of the cave was a small waterfall. There were a lot of tourists in
+the cave but it still felt pretty empty. It's hard for me to explain the feeling
+in words so, i'll just go ahead and attach some pictures hoping they'll do some
+justice to the place. 
+
+We spent another hour at <Restro name> for lunch which was delicious. Having a
+food guide on a trip has it's own pros. It was around 3PM when we left Dehradun
+and took another smaller break around 7PM for some refreshments. We were home by
+9PM and it was a nice and relaxing trip.
+
+It was my frist trip with a bunch of friends and I enjoyed it to the fullest.
+Stay tuned guys for my next trip to Pangot, a place with no cellular signals and
+a lot of snow. 
+That's it for this one guys, stay tuned and i'll see you around in the next one.
