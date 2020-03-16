@@ -1,4 +1,16 @@
-
+---
+title: "Bought a new bike!!!"
+description: "Where it all started!!!. I think this is the best I can describe that journey. My first solo trip, 
+my first trip in fact. I had never traveled before just for the fun of it. Every place I had visited earlier was either for work or family obligations. This was my first trip for fun, for leisure, for me. My solo one day trip to Rishikesh"
+author: "Rishabh Jain"
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
+tags: ["life","biking"]
+categories: ["life", "travel", "biking"]
+path: "posts/life/2020/08/bought-a-new-bike"
+date: 2019-11-27T17:17:37+05:30
+image: "./rishi2.jpg"
+draft: false
+---
 
 November was a really rough for we were working really hard to good amount of
 work done in our company. After that came the cool down period, and one fine
