@@ -1,10 +1,5 @@
 
-- music concert
-- walk and cute dog
-- games and good food
-- meetings
-- people getting sick
-- everything fine
+
 - snow drive again
 - back to delhi safe and sound
 
@@ -65,3 +60,26 @@ whole 4 hours till late afternoon and went for lunch only after we were forced
 to. Food again was really good and was followed by a long comapny meeting. We
 brainstormed for quite sometime until the bonfire.
 
+Bonfire wwas fun, people were frinking and eating and singing. I was mostly
+curled up in a blanked and sat as close the fire I could. Some of us sang really
+good. It was an evening well spent and we retired to our cottages after dinner.
+I got to sleep on a bunk bed.
+
+I got up early next morning and found out couple of othere were too. Wew ent for
+a walk and came across a really cute dog near by. It was fun to play with him.
+He was tripping over snow and the sight melted my heart. I always wanted a dog,
+and this sight made sure, i'm getting one sooner than later. I played in snow
+for sometime and was tahnkful to Abhik and shubham because those shoes were a
+life saver. The rest of the day went jusdt like the last one, games and good
+food. The cold weather was taking a toll on some people and we started worrying
+for their health. Luckily it wasn't anything very serious and everything worked
+out fine eventually. In the evening we had another gathering where we socialized a bit before
+retiring to sleep. I got the bunk bed again.
+
+We left for delhi next mnorning. We got to aboard the snow train again and it
+was fun again. I'll admit the drive in snow was rthe best part of the trip.
+Following that, we boarded out bus and left for Delhi. We all reached our homes,
+safe and sound and that concluded our 3 day fun filled trip to Pangot.
+
+That is it for thuis one guys, stay tuned and i'll see you around in the next
+one where my biking group went to Jim Corbett national park for a 2 day bike ride.
