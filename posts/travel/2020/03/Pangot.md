@@ -1,8 +1,5 @@
 
 
-- snow drive again
-- back to delhi safe and sound
-
 November was a really rough for we were working really hard to good amount of
 work done in our company. After that came the cool down period, and one fine
 day, out of the blue, everyone decided to take a company trip for 2 days. Before
