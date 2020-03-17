@@ -11,7 +11,7 @@ tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/bought-a-new-bike"
 date: 2019-12-05T17:17:37+05:30
-image: "./bike2.jpg"
+image: "./bike.jpg"
 draft: false
 ---
 
