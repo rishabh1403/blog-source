@@ -2,7 +2,7 @@
 title: "Small rides on weekends"
 description: "It was time for me to go for my first group ride."
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking"]
 tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/small-rides"

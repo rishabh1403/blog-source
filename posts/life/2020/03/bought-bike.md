@@ -6,7 +6,7 @@ family (trust me it's temporary), and buying a new bike. Yes!!! bought a new
 bike in August'19. This post is all about the time I bought my first new bike."
 author: "Rishabh Jain"
 keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking",
-"rishikesh trip", "buy", "suzuki gixxer 250sf"]
+ "buy", "suzuki gixxer 250sf"]
 tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/bought-a-new-bike"

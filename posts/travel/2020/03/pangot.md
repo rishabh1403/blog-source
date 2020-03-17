@@ -6,10 +6,10 @@ we could let it sink, Shubham was ready with the itinerary and cost estimation.
 The very same weekend we left for Pangot, again in the mountains where you don't
 even get cellular networks(that was the best part)."
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
-tags: ["life","biking"]
-categories: ["life", "travel", "biking"]
-path: "posts/life/2020/08/bought-a-new-bike"
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "pangot trip", "solo trip"]
+tags: ["life","travel"]
+categories: ["life", "travel"]
+path: "posts/life/2020/03/pangot-trip"
 date: 2019-11-27T17:17:37+05:30
 image: "../../2019/11/bike.jpg"
 draft: false

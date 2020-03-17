@@ -4,10 +4,10 @@ description: "In November I got another opportunity to travel and spend a fine w
 It's a nice settlement on a hilltop, with cold weather round the year and snow in
 the winters. "
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
-tags: ["life","biking"]
-categories: ["life", "travel", "biking"]
-path: "posts/life/2020/07/bought-a-new-bike"
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "Mussoorie trip", "solo trip"]
+tags: ["life","travel"]
+categories: ["life", "travel"]
+path: "posts/life/2020/03/mussoorie-trip"
 date: 2019-11-27T17:17:37+05:30
 image: "../../2019/11/bike.jpg"
 draft: false

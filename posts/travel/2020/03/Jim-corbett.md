@@ -4,10 +4,11 @@ description: "After a long wait, it was time for our second bike trip. I was exc
 developed more experience since my last long trip and was much more comfortable
 riding long distances. "
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
-tags: ["life","biking"]
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "jim
+corbett bike trip", "solo trip"]
+tags: ["life","travel","biking"]
 categories: ["life", "travel", "biking"]
-path: "posts/life/2020/09/bought-a-new-bike"
+path: "posts/life/2020/03/jim-corbett-bike-ride"
 date: 2019-11-27T17:17:37+05:30
 image: "../../2019/11/bike.jpg"
 draft: false
