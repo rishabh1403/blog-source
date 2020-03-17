@@ -5,13 +5,12 @@ take it to all parts of the country, but knew nothing about safety gear or
 fixing small issues with the bike. I knew what I had to do...join a biking
 group."
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking"
-"suzuki gixxer 250sf"]
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking","suzuki gixxer 250sf"]
 tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/joined-biking-group"
 date: 2019-11-27T17:17:37+05:30
-image: "./bike.jpg"
+image: "./group.jpg"
 draft: false
 ---
 

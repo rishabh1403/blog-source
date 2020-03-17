@@ -7,7 +7,7 @@ tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/small-rides"
 date: 2019-11-27T17:17:37+05:30
-image: "./bike.jpg"
+image: "./small.jpg"
 draft: false
 ---
 It was time for me to go for my first group ride.
