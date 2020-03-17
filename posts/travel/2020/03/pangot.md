@@ -1,5 +1,5 @@
 ---
-title: "Bought a new bike!!!"
+title: "Pangot"
 description: "Where it all started!!!. I think this is the best I can describe that journey. My first solo trip, 
 my first trip in fact. I had never traveled before just for the fun of it. Every place I had visited earlier was either for work or family obligations. This was my first trip for fun, for leisure, for me. My solo one day trip to Rishikesh"
 author: "Rishabh Jain"
@@ -8,7 +8,7 @@ tags: ["life","biking"]
 categories: ["life", "travel", "biking"]
 path: "posts/life/2020/08/bought-a-new-bike"
 date: 2019-11-27T17:17:37+05:30
-image: "./rishi2.jpg"
+image: "../../2019/11/bike.jpg"
 draft: false
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: "Bought a new bike!!!"
-description: "Where it all started!!!. I think this is the best I can describe that journey. My first solo trip, 
-my first trip in fact. I had never traveled before just for the fun of it. Every place I had visited earlier was either for work or family obligations. This was my first trip for fun, for leisure, for me. My solo one day trip to Rishikesh"
+title: "Lansdowne bike trip"
+description: "Our first long bike ride to Lansdowne."
 author: "Rishabh Jain"
-keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "rishikesh trip", "solo trip"]
-tags: ["life","biking"]
+keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking",
+"lansdowne trip", "bike ride"]
+tags: ["life", "travel","biking"]
 categories: ["life", "travel", "biking"]
-path: "posts/life/2020/06/bought-a-new-bike"
+path: "posts/life/2020/03/lansdowne"
 date: 2019-11-27T17:17:37+05:30
-image: "./rishi2.jpg"
+image: "../../2019/11/bike.jpg"
 draft: false
 ---
 After a long wait, it was time for my first long ride. It wasn't very long to be
