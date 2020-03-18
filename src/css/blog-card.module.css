@@ -1,6 +1,9 @@
 .blog {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  height: 800px;
+  display: flex;
+  flex-direction: column;
 }
 .blog:hover {
   box-shadow: var(--darkShadow);
@@ -10,9 +13,11 @@
   position: relative;
   background: var(--primaryColor);
   transition: var(--mainTransition);
+  height: 300px;
 }
 .img {
   transition: var(--mainTransition);
+  height: 300px;
 }
 .img-container:hover .img {
   opacity: 0.3;
@@ -44,6 +49,10 @@
 .footer {
   padding: 1rem;
   text-align: left;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .date {
   position: absolute;
@@ -65,51 +74,57 @@
   margin-bottom: 0;
 }
 .info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-transform: uppercase;
-  align-items: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* text-transform: uppercase; */
+  /* align-items: center; */
   margin-top: 1rem;
+  height: 100%;
+  position: relative;
 }
 .info h6,
 .info h4 {
   margin-bottom: 0;
 }
 .details {
-  text-transform: capitalize;
-  letter-spacing: 0.2rem;
-  color: var(--mainBlack);
-  display: flex;
-  opacity: 0.7;
-  align-items: center;
-  text-align: justify;
+  /* text-transform: capitalize; */
+  /* letter-spacing: 0.2rem; */
+  /* color: var(--mainBlack); */
+  /* display: flex; */
+  /* font-weight: 300; */
+  /* opacity: 0.7; */
+  /* align-items: center; */
+  /* text-align: justify; */
+  letter-spacing: 1.3px;
+  font-size: 1.05rem;
 }
 .icon {
   margin-right: 0.4rem;
 }
 .meta {
+  align-items: flex-end;
   color: var(--primaryColor);
   text-transform: uppercase;
   text-align: right;
   margin-top: 1rem;
   width: 100%;
-
+  position: absolute;
+  bottom: 0;
 }
-.meta div{
+.meta div {
   display: inline-block;
 }
-.readingTime{
+.readingTime {
   float: left;
 }
-.readingTime svg{
+.readingTime svg {
   margin-bottom: -2px;
   margin-right: 5px;
 }
-.categories{
+.categories {
   float: right;
   letter-spacing: 0.2rem;
 }
-.categories a{
+.categories a {
   display: block;
 }

@@ -13,21 +13,23 @@ const Tour = (props) => {
         <h6 className={styles.date}>{props.edge.node.frontmatter.date}</h6>
       </div>
       <div className={styles.footer}>
-        <h3>{props.edge.node.frontmatter.title}</h3>
-        <div className={styles.info}>
-          <h4 className={styles.details}>
-            {props.edge.node.frontmatter.description}
-          </h4>
-          <div className={styles.meta}>
-            <div className={styles.readingTime}>
-              <FaClock />{props.edge.node.fields.readingTime.text}
-            </div>
-            <div className={styles.categories}>
-              {props.edge.node.frontmatter.categories &&
-                props.edge.node.frontmatter.categories.map((tag, index) => {
-                  return <AniLink key={index} fade to={`/categories/${tag}`}>#{tag}</AniLink>
-                })}
-            </div>
+        <div>
+          <h3>{props.edge.node.frontmatter.title}</h3>
+        </div>
+          <div className={styles.info}>
+            <p className={styles.details}>
+              {props.edge.node.frontmatter.description}
+            </p>
+            <div className={styles.meta}>
+              <div className={styles.readingTime}>
+                <FaClock />{props.edge.node.fields.readingTime.text}
+              </div>
+              <div className={styles.categories}>
+                {props.edge.node.frontmatter.categories &&
+                  props.edge.node.frontmatter.categories.map((tag, index) => {
+                    return <AniLink key={index} fade to={`/categories/${tag}`}>#{tag}</AniLink>
+                  })}
+              </div>
           </div>
         </div>
       </div>
