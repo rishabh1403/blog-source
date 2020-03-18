@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap');
 :root {
   --primaryColor: #3fd0d4;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
+  --mainBlack: #212529;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
@@ -19,12 +18,21 @@
   box-sizing: border-box;
 }
 
+body,html{
+  font-size: 1rem;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  line-height: 1.4;
-  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -32,11 +40,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Merriweather', serif;
   margin-bottom: 1.25rem;
-  letter-spacing: var(--mainSpacing);
+  font-weight: 400;
+  /* letter-spacing: var(--mainSpacing); */
 }
-a{
+a {
   text-decoration: none;
   color: var(--primaryColor);
 }
@@ -47,7 +56,7 @@ p {
 .btn-primary {
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: var(--mainSpacing);
+  /* letter-spacing: var(--mainSpacing); */
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
   padding: 0.9rem 1.6rem;
@@ -118,54 +127,53 @@ main {
 .gatsby-highlight pre {
   overflow-x: auto !important;
 }
-.language-text{
+.language-text {
   padding: 5px 5px !important;
 }
 
-div.blogHolder .gatsby-resp-image-wrapper{
+div.blogHolder .gatsby-resp-image-wrapper {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
-blockquote{
+blockquote {
   font-size: 1.2rem;
-  width:90%;
-  margin:10px auto;
-  font-family:Open Sans;
-  font-style:italic;
+  width: 90%;
+  margin: 10px auto;
+  font-family: Open Sans;
+  font-style: italic;
   color: #555555;
-  padding:1.2em 3rem 1.2em 3rem;
-  border-left:8px solid #78C0A8 ;
-  line-height:1.6;
+  padding: 1.2em 3rem 1.2em 3rem;
+  border-left: 8px solid #78c0a8;
+  line-height: 1.6;
   position: relative;
-  background:#EDEDED;
+  background: #ededed;
 }
 
-blockquote::before{
-  font-family:Arial;
+blockquote::before {
+  font-family: Arial;
   content: "\201C";
-  color:#78C0A8;
-  font-size:4rem;
+  color: #78c0a8;
+  font-size: 4rem;
   position: absolute;
   left: 10px;
-  top:-10px;
+  top: -10px;
 }
 
-blockquote::after{
-  content: '';
+blockquote::after {
+  content: "";
 }
 
-blockquote span{
-  display:block;
-  color:#333333;
+blockquote span {
+  display: block;
+  color: #333333;
   font-style: normal;
   font-weight: bold;
-  margin-top:1em;
+  margin-top: 1em;
 }
 
-
-figcaption{
+figcaption {
   text-align: center;
   margin-top: -20px;
   opacity: 0.8;
