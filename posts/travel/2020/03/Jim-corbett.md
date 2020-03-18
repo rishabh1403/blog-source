@@ -9,8 +9,8 @@ corbett bike trip", "solo trip"]
 tags: ["life","travel","biking"]
 categories: ["life", "travel", "biking"]
 path: "posts/life/2020/03/jim-corbett-bike-ride"
-date: 2019-11-27T17:17:37+05:30
-image: "../../2019/11/bike.jpg"
+date: 2020-17-03T20:17:37+05:30
+image: "./jim.jpg"
 draft: false
 ---
 
@@ -31,6 +31,8 @@ even the highways were pathetic. People didn't follow rules in lots of areas,
 which forced us to drive slower than usual and be more mindful of the
 surroundings. 
 
+![brunch](./startj.jpg "brunch")
+
 The weather was very pleasant. Just right for the ride. Neither too hot, nor
 too cold. We started getting hungry soon and were struggling to find any
 restaurants to eat. At last, we found a small eatery and everyone ate their hearts
@@ -43,10 +45,14 @@ The resort was the most pleasing part of this trip. It was a big resort in the
 middle of the jungle. There was a river flowing behind it and we decided to
 walk to the river bank and spend some time there.
 
+![the river](./river.jpg "the river")
+
 The river didn't have much water, so we walked till almost the middle of it. The
 currents were strong beyond that and we wanted to stay out of danger. We spent
 a good time there, shared some stories, had some snacks along with drinks. The evening
 was pretty chilled out and everyone was enjoying the stay.
+
+![chilling](./chill.jpg "chilling")
 
 Dinner was arranged in a big dining hall along with a bonfire. It wasn't very
 cold there, but a warm room felt very comfy. We slept early being tired of a
@@ -59,12 +65,20 @@ swim, someone wanted to go for a trek, others just felt like chilling in their
 rooms with a nice view. We had a very heavy breakfast and everyone dispersed to
 put their plan to action. We decided we would leave by 11 Am. 
 
+![breakfast](./breakfast.jpg "breakfast")
+
+![playing](./playing.jpg "playing")
+
+![playing](./play2.jpg "playing")
+
 We went around the kids' area, had some fun with swings, played table tennis,
 carrom, and other indoor games. In the late morning, almost everyone was in the pool,
 struggling in the icy cold water and had their share of fun. It was almost 11
 and it was time to leave. I could see, no one wanted to leave, but we
 had to reach Delhi just in time to be able to go to the office next Day. How good it
 would have been if Monday were a holiday. A man can only wish:laughing:.
+
+![returning](./jimend.jpg "returning")
 
 # The return journey
 

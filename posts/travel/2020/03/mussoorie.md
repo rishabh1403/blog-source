@@ -8,7 +8,7 @@ keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking", "Muss
 tags: ["life","travel"]
 categories: ["life", "travel"]
 path: "posts/life/2020/03/mussoorie-trip"
-date: 2019-11-27T17:17:37+05:30
+date: 2020-17-03T20:17:37+05:30
 image: "../../2019/11/bike.jpg"
 draft: false
 ---

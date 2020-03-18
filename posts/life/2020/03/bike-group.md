@@ -9,7 +9,7 @@ keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking","suzuk
 tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/joined-biking-group"
-date: 2019-11-27T17:17:37+05:30
+date: 2020-17-03T20:17:37+05:30
 image: "./group.jpg"
 draft: false
 ---
@@ -59,6 +59,8 @@ I learned a lot about safe riding and group riding from him and other members of
 the group. We did many smaller rides followed by some long rides. I'll tell
 you guys all about it later. For now, I'd like to take this moment alone to
 thank Kartik and Sankalp for being a mentor and a really good friend. 
+
+![Our Biking Group](./groups.jpg "Our Biking Group")
 
 That's it for this one guys, stay tuned for the next one, where I'll tell you
 guys about some of our short rides and take you guys along me on my biking
