@@ -9,7 +9,7 @@ keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking","suzuk
 tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/joined-biking-group"
-date: 2020-17-03T20:17:37+05:30
+date: 2020-03-18T04:37:22.726Z
 image: "./group.jpg"
 draft: false
 ---

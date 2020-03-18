@@ -1,5 +1,5 @@
 ---
-title: "Jim corbett"
+title: "Jim corbett bike trip"
 description: "After a long wait, it was time for our second bike trip. I was excited as I had
 developed more experience since my last long trip and was much more comfortable
 riding long distances. "
@@ -9,7 +9,7 @@ corbett bike trip", "solo trip"]
 tags: ["life","travel","biking"]
 categories: ["life", "travel", "biking"]
 path: "posts/life/2020/03/jim-corbett-bike-ride"
-date: 2020-17-03T20:17:37+05:30
+date: 2020-03-18T04:43:22.726Z
 image: "./jim.jpg"
 draft: false
 ---

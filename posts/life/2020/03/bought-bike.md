@@ -10,7 +10,7 @@ keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking",
 tags: ["life","biking"]
 categories: ["life", "biking"]
 path: "posts/life/2020/03/bought-a-new-bike"
-date: 2020-17-03T20:17:37+05:30
+date: 2020-03-18T04:35:22.726Z
 image: "./bike.jpg"
 draft: false
 ---

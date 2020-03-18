@@ -11,7 +11,7 @@ keywords: ["rishabh","rishabh jain","life","rishabh1403","blog", "biking",
 tags: ["life", "travel","biking"]
 categories: ["life", "travel", "biking"]
 path: "posts/life/2020/03/lansdowne-bike-trip"
-date: 2020-17-03T20:17:37+05:30
+date: 2020-03-18T04:41:22.726Z
 image: "./lansdowne.jpg"
 draft: false
 ---
