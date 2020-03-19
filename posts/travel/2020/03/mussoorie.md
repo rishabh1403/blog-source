@@ -1,5 +1,5 @@
 ---
-title: "Mussoorie"
+title: "Mussoorie Trip"
 description: "In November I got another opportunity to travel and spend a fine weekend at Mussoorie.
 It's a nice settlement on a hilltop, with cold weather round the year and snow in
 the winters. "
