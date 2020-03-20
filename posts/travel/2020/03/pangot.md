@@ -52,6 +52,8 @@ dangerous and troublesome very often. We had started losing our cellular signals
 and it was getting difficult to navigate. Luckily for us, it was a single path,
 no turns no confusions.
 
+!["Snow drive"](./snow.jpeg "snow drive")
+
 We stopped around 3 km before our camp because of heavy snow on the road. An open
 jeep from our camp had come to receive us. We put all our stuff in the back,
 boarded it and was on our way to the camp. The best part of the trip was our ride
@@ -65,6 +67,8 @@ reached the camp. The ride along with the sceneries along the way was breathtaki
 The camp was beautiful with nice cute little cottages. Each cottage had two
 double beds. One of them was little elevated had was accessible via a ladder. A
 bunk bed!!!. I love bunk beds. I wanted to sleep in one. 
+
+!["cute cottages"](./cute.jpeg "cute cottages")
 
 It was morning already and we headed to have our breakfast. The food there was
 surprisingly good, and best of all, there was no cellular connection. The camp
