@@ -64,7 +64,7 @@ const About = () => {
             })}
           </div>
           <div className={styles.description}>
-            <h4>{frontmatter.description}</h4>
+            <p>{frontmatter.description}</p>
           </div>
 
           <AniLink to={`/${frontmatter.path}`} fade className="btn-primary" >Read More</AniLink>
