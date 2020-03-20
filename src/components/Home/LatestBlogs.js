@@ -14,6 +14,7 @@ query someImage{
           date(formatString: "MMM Do, YYYY")
           description
           path
+          draft
           categories
           image{
             childImageSharp{
@@ -39,7 +40,7 @@ const FeaturedTours = () => {
   return (
     <section className={styles.blogs}>
       <div className={styles.center}>
-        {blogs.edges.map((edge, index) => {
+        {blogs.edges.filter(edge => edge.node.frontmatter.draft === false).map((edge, index) => {
           return <BlogCard edge={edge} key={index} />
         })}
       </div>

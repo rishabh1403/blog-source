@@ -17,6 +17,7 @@ query aboutImage{
           description
           categories
           path
+          draft
           image{
             childImageSharp{
               fluid(maxWidth:800){
@@ -36,7 +37,8 @@ query aboutImage{
 }
 `;
 const About = () => {
-  const {  blogs: { edges } } = useStaticQuery(getAbout);
+  let {  blogs: { edges } } = useStaticQuery(getAbout);
+  edges = edges.filter(edge => edge.node.frontmatter.draft === false);
   const { node: { frontmatter, fields } } = edges[0];
   return (
     <section className={styles.about}>

@@ -30,6 +30,7 @@ query{
         frontmatter{
           title
           path
+          draft
           shortDate:date(formatString: "MMM Do")
           year:date(formatString: "YYYY")
         }

@@ -29,6 +29,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
             shortDate:date(formatString: "MMM Do")
             year:date(formatString: "YYYY")
             path
+            draft
           }
           fields{
             readingTime{
@@ -40,20 +41,22 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }
   }
   `)
-  edges.forEach((edge, index) => {
+  const filteredEdge = edges.filter(edge => edge.node.frontmatter.draft === false);
+  
+  filteredEdge.forEach((edge, index) => {
     createPage({
       path: edge.node.frontmatter.path,
       component: require.resolve("./src/templates/blog.js"),
       context: {
         slug: edge.node.frontmatter.path,
-        prev: index === 0 ? null : edges[index - 1].node,
-        next: index === (edges.length - 1) ? null : edges[index + 1].node
+        prev: index === 0 ? null : filteredEdge[index - 1].node,
+        next: index === (filteredEdge.length - 1) ? null : filteredEdge[index + 1].node
       },
     })
   });
 
   const postByCategory = {}
-  edges.forEach(({ node }) => {
+  filteredEdge.forEach(({ node }) => {
     node.frontmatter.categories.forEach(category => {
       if (!postByCategory[category]) {
         postByCategory[category] = [];
@@ -101,6 +104,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         ) {
           edges {
             node {
+              frontmatter{
+                draft
+              }
               fields {
                 slug
               }
@@ -109,7 +115,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         }
       }
     `)
-  const paginatedposts = paginated.data.allMarkdownRemark.edges
+  const paginatedposts = paginated.data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.draft === false);
+  
   const postsPerPage = 9
   const numPages = Math.ceil(paginatedposts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {

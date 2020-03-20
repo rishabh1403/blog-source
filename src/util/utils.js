@@ -4,6 +4,7 @@ export const groupByYear = (data) => {
   //   '2018': [],
     
   // }
+  data = data.filter(edge => edge.node.frontmatter.draft === false)
   const ans = data.reduce((acc,el) => {
     // console.log(acc);
     let year = el.node.frontmatter.year
