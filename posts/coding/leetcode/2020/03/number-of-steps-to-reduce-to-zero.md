@@ -8,7 +8,7 @@ categories: ["leetcode","coding","javascript"]
 date: 2019-09-27T23:16:18.404Z
 path: "posts/coding/leetcode/2020/03/leetcode-number-of-steps-to-reduce-a-number-to-zero"
 image: "./valid-parentheses.png"
-draft: false
+draft: true
 ---
 
 In this post, we will solve number of steps to reduce a number to zero from leetcode and compute the time and space complexities. Let's begin.
