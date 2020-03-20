@@ -7,7 +7,7 @@ tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-09-27T23:16:18.404Z
 path: "posts/coding/leetcode/2020/03/leetcode-number-of-steps-to-reduce-a-number-to-zero"
-image: "../../2019/09/valid-parentheses.png"
+image: "./steps.png"
 draft: true
 ---
 
@@ -23,8 +23,8 @@ reduce a number to zero based on given constraints
 # Constraints and challenges
 
 The following operations should be applied to the number
-- if the number is even, divide it by 2
-- if it's odd, subtract it by 1
+- if the number is even, ***divide it by 2***
+- if it's odd, ***subtract it by 1***
 
 # Solution
 
@@ -97,3 +97,4 @@ I hope you enjoyed solving this question. This is it for this one, complete sour
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
+`youtube: sQYhrMf1VMc`
