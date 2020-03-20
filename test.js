@@ -470,15 +470,15 @@ let datas = {
   '2017': [],
   '2018': []
 }
-const ans = data.reduce((acc,el) => {
+const ans = data.reduce((acc, el) => {
   // console.log(acc);
   let year = el.node.frontmatter.year
-  if(acc[year]){
+  if (acc[year]) {
     acc[year].push(el.node.frontmatter.date);
   }
   return acc;
-},datas);
+}, datas);
 
 
-
+// 1108
 // console.log(ans);
