@@ -5,10 +5,10 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","Solution of Number of Steps to Reduce a Number to Zero","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-09-27T23:16:18.404Z
+date: 2020-03-21T07:46:33.144Z
 path: "posts/coding/leetcode/2020/03/leetcode-number-of-steps-to-reduce-a-number-to-zero"
 image: "./steps.png"
-draft: true
+draft: false
 ---
 
 In this post, we will solve number of steps to reduce a number to zero from leetcode and compute the time and space complexities. Let's begin.
