@@ -5,10 +5,10 @@ author: "Rishabh Jain"
 keywords: ["leetcode","js","javascript","Solution of jewels and stones","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2020-03-21T07:46:33.144Z
+date: 2020-03-24T07:42:44.675Z
 path: "posts/coding/leetcode/2020/03/leetcode-jewels-and-stones"
 image: "./jewels.png"
-draft: true
+draft: false
 ---
 
 In this post, we will solve problem jewels and stones from leetcode and compute the time and space complexities. Let's begin.
@@ -103,4 +103,4 @@ I hope you enjoyed solving this question. This is it for this one, complete sour
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: sQYhrMf1VMc`
+`youtube: cNVJZF5UT1w`
