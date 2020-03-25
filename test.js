@@ -478,8 +478,3 @@ const ans = data.reduce((acc, el) => {
   }
   return acc;
 }, datas);
-
-
-// 1108
-// console.log(ans);
-
