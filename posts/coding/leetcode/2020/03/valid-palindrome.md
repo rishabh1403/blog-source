@@ -8,10 +8,10 @@ jain","rishabh1403","blog","competitive","coding","programming","tech","technolo
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2020-03-21T07:46:33.144Z
+date: 2020-03-28T05:50:22.539Z
 path: "posts/coding/leetcode/2020/03/leetcode-valid-palindrome"
-image: "./steps.png"
-draft: true
+image: "./palindrome.png"
+draft: false
 ---
 
 In this post, we will solve valid palindrome from leetcode and compute it's time and space complexities. Let's begin.
@@ -26,8 +26,8 @@ is a palindrome or not.
 # Constraints and challenges
 
 The following constraints are given in the question
-- We only need to consider alphanumeric characters (A-Z, a-z, 0-9) and ignore
-  case 
+- We only need to consider **alphanumeric characters (A-Z, a-z, 0-9)** and **ignore
+  case**
 - An empty string is a valid palindrome
 
 We'll see a solution using two pointers.
@@ -37,10 +37,10 @@ We'll see a solution using two pointers.
 We'll take the following approach
 
 - First, convert the whole string to lower case (can convert to uppercase too)
-- We'll place two pointers, at the beginning and end of the string
+- We'll place two pointers, one at the beginning and other at end of the string
 - We'll check characters at both pointers.
-- If the characters are alphanumeric, we'll check if the characters are the same
-  else will move characters inwards.
+- If the characters are alphanumeric, we'll check for the equality of the
+  characters at both pointers
 
 
 We have discussed the approach, **I urge you to go ahead on leetcode and give it another try**. :smile:
@@ -92,11 +92,11 @@ index as the question ignores anything that is not alphanumeric.
 In case both of the characters are alphanumeric, we check for their equality and
 return false if the characters are not equal.
 
-Next, we update our pointers. Once we jump out of the loop, it means, everything
-the character was equal and the string is a palindrome, so we return true.
+Next, we update our pointers. Once we jump out of the loop, it means, every time
+the characterers were equal and the string is a palindrome, so we return true.
 
 We can solve the question using a regex too but wanted to discuss a solution
-like to explain that we can do logical operations on characters too.
+like this to explain that we can do logical operations on characters too.
 
 Here are the stats
 
@@ -123,12 +123,11 @@ complexity is linear, **O(n)**.
 
 # Summary
 
-So, we solved the search insert position problem by using a
-simple while loop and calculated the time and space complexities.
+So, we solved the valid palindrome problem by using two pointer method and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: sQYhrMf1VMc`
+`youtube: zqQRjBbwRew`
