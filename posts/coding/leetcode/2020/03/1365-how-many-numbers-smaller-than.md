@@ -8,7 +8,7 @@ tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2020-03-24T07:42:44.675Z
 path: "posts/coding/leetcode/2020/03/leetcode-jewels-and-stones"
-image: "./jewels.png"
+image: "./numsmaller.png"
 draft: true
 ---
 
