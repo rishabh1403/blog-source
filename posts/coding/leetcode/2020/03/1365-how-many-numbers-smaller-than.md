@@ -7,7 +7,7 @@ keywords: ["leetcode","js","javascript","Solution of how many numbers are smalle
 than the current number","rishabh","jain","rishabh jain","rishabh1403","blog","competitive","coding","programming","tech","technology", interview", "interview questions"]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2020-03-24T07:42:44.675Z
+date: 2020-03-29T09:04:37.695Z
 path: "posts/coding/leetcode/2020/03/leetcode-how-many-numbers-smaller-than-current-number"
 image: "./numsmaller.png"
 draft: false
