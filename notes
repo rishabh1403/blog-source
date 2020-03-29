@@ -2,6 +2,8 @@ images needs to be relative and at same place near folder in MD files for respon
 
 to put ads save this file as html.js in src
 
+cp .cache/default-html.js src/html.js
+
 import React from "react"
 import PropTypes from "prop-types"
 
