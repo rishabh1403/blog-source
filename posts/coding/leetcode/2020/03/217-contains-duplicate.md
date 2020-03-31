@@ -6,7 +6,7 @@ keywords: ["leetcode","js","javascript","solution of contains duplicate problem"
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2020-03-31T05:16:27.535Z
-path: "posts/coding/leetcode/2019/09/leetcode-contains-duplicate"
+path: "posts/coding/leetcode/2020/03/leetcode-contains-duplicate"
 image: "./duplicate.png"
 draft: false
 ---
