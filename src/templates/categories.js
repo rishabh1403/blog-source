@@ -4,11 +4,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import SEO from '../components/SEO';
 
 const categories = ({ data, pageContext }) => {
   // console.log(pageContext)
   return (
     <Layout>
+      <SEO title="Categories" description="Categories page of Rishabh Jain's blog. Shows all the categories of blogs" />
       <StyledHero home={true} img={data.stubImage.childImageSharp.fluid}>
         </StyledHero>
       <section className={styles.blogs}>
