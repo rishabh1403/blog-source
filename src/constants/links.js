@@ -15,8 +15,8 @@ export default [
     path: "about",
     text: "about",
   },
-  {
-    path: "index.xml",
-    text: "rss",
-  },
+  // {
+  //   path: "index.xml",
+  //   text: "rss",
+  // },
 ]
