@@ -2,50 +2,50 @@
 title: "Leetcode | Solution of Unique Email Address in JavaScript"
 description: "In this post, we will solve unique email address from leetcode and compute it's time and space complexities. Let's begin."
 author: "Rishabh Jain"
-keywords: ["leetcode","js","javascript","Solution of reverse string","rishabh","jain","rishabh
+keywords: ["leetcode","js","javascript","Solution of unique email address","rishabh","jain","rishabh
 jain","rishabh1403","blog","competitive","coding","programming","tech","technology",
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2020-04-01T05:08:30.428Z
+date: 2020-04-03T07:06:25.435Z
 path: "posts/coding/leetcode/2020/04/leetcode-unique-email-address"
-image: "./reversestring.png"
+image: "./unique.png"
 draft: false
 ---
 
-In this post, we will solve unique email address from leetcode and compute it's time and space complexities. Let's begin.
+In this post, we will solve unique email addresses problem from leetcode and compute it's time and space complexities. Let's begin.
 <!--more-->
 
 # Problem Statement
-The question can be found at [leetcode reverse string problem](https://leetcode.com/problems/reverse-string/).
+The question can be found at [leetcode unique email addresses problem](https://leetcode.com/problems/unique-email-addresses/)
 
 The problem states that we are given multiple emails  in an array and we need to
-return the number of unique emails in the array based on following conditions
+return the number of unique emails in the array based on the following conditions
 
 # Constraints and challenges
 
-The following constraints are given in the question for local names
-- The local name of the email can have . or + in them
-- a dot is ignored, so a.b and ab are same 
-- everything  after first plus is ignore, so a+bc and a is same
+The following constraints are given in the question for **local names**
+- The local name of the email can have `.` or `+` in them
+- a dot is ignored, so `a.b and ab` are the same 
+- everything after the first plus is ignored, so `a+bc and a` is same
 
-None of these rules apply on domain name, so a.b and ab are not same when it
-comes to domain names. a+bc and a are also not same.
+None of these rules apply to the domain name, so `a.b and ab` are not the same when it
+comes to domain names. `a+bc and a` are also not the same.
 
 
 # Solution
 
 The solution includes some string/array processing. Here's the approach
-- We'll declare an empty set to store our processed emails
-- Next we'll iterate over all the emails in the array
+- We'll declare an empty **Set** to store our processed emails
+- Next, we'll iterate over all the emails in the array
 - For every email, we'll split the email into local and domain name
-- domain name needs no processing beacuse rules of dot or plus don't apply to
+- The domain name needs no processing because rules of dot or plus don't apply to
   them, so we'll divert our focus to local names
-- first, we'll ignore everything after the first plus
-- next we'll replace every dot with an empty string
+- First, we'll ignore everything after the first plus
+- Next, we'll replace every dot with an empty string
 - This will give us our processed local name
 - At last, we'll join the email back and add to set
-- since set only stores unique values, when the loop exists, the size of set is
+- Since **Set** only stores unique values, when the loop exits, the size of the set is
   the number of unique emails 
 
 We have discussed the approach, **I urge you to go ahead on leetcode and give it another try**. :smile:
@@ -77,12 +77,12 @@ var numUniqueEmails = function (emails) {
 
 ```
 
-Let's discuss the solution. First we declare a set. Next, we loop over all the
+Let's discuss the solution. First, we declare a Set. Next, we loop over all the
 emails and process them according to the logic discussed above. I guess the
-comments are self explanatory in the code snippet about the processing of local
+comments are self-explanatory in the code snippet about the processing of the local
 name.
 
-At the end we return the size of the set, which would only hold unique values.
+In the end, we return the size of the set, which would only hold unique values.
 
 Here are the stats on submission
 
@@ -108,11 +108,11 @@ complexity is linear, **O(n)**.
 
 # Summary
 
-So, we solved the unique email address problem by using two pointer method and calculated the time and space complexities.
+So, we solved the unique email address problem by simple array and string processing and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: 8j24rPjGBwU`
+`youtube: X93pmKET_FY`

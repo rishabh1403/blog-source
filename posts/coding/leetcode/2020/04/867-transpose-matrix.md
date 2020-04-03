@@ -9,7 +9,7 @@ tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-04-01T05:08:30.428Z
 path: "posts/coding/leetcode/2020/04/leetcode-day-of-week"
-image: "./day-of-week.png"
+image: "./transpose.png"
 draft: true
 ---
 
@@ -19,16 +19,21 @@ In this post, we will solve day of week from leetcode and compute it's time and 
 # Problem Statement
 The question can be found at [leetcode day of week problem](https://leetcode.com/problems/day-of-the-week/).
 
-The problem states that we are given a date and we need to identify which day of
-week falls on that particular date.
+The problem states that we are given a two dimensional matrix and we need to
+transpose it and return the new matrix.
 
 # Solution
 
-The approach for this one is pretty simple. We are given a date, so we can use
-the Date function from JavaScript and get the actual day. The only problem is
-the day is represented as numbers from 0 to 6 for Sunday through Saturday. So,
-we'll an array to keep our days and return the day at the index returned from
-the date function.
+Transposing a matrix means, the columns of the matrix become the new rows and
+rows become new columns. So, if the initial matrix was of size n*m, the new
+matrix will be of m*n. 
+
+The approach for this one is simple. We will create an empty array. Then we
+will loop over the given matrix column wise. We will keep on pushing the
+elements in the column to a empty array. Once we are done with the column, we
+will push the array of numbers to the array created. 
+
+Once we are done with all the columns, we will have a new matrix.
 
 We have discussed the approach, **I urge you to go ahead on leetcode and give it another try**. :smile:
 
@@ -38,18 +43,30 @@ If you are here, it means something went wrong in implementation or you are just
 
 ```js
 
-var dayOfTheWeek = function (day, month, year) {
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+var transpose = function (A) {
 
-    return days[(new Date(year, month - 1, day)).getDay()]
+  const result = [];
+
+  for (let i = 0; i < A[0].length; i++) {
+    const col = []
+    for (let j = 0; j < A.length; j++) {
+      col.push(A[j][i]);
+    }
+    result.push(col)
+  }
+
+  return result
 };
 
 ```
 
-The solution is very straight forward. We use the date in the arguments to get
-the day using JavaScript Date function. Notice, month is subtracted by 1,
-because, javascript dates start from 0 as opposed to 1. Next, we return the day
-at the index returned from date function.
+Let's look at the solution. First, we created an empty array. Next we are
+looping over the matrix A column wise. Notice the conditions in both loops.
+A[0].lengh will give the length of all the columns. We keep on pushing all the
+values in a column to an array col. When we are done with one column, we push
+the col array to our result array.
+
+At last we return the result array.
 
 
 Here are the stats on submission
@@ -57,8 +74,8 @@ Here are the stats on submission
 ```yaml
 
 Status: Accepted
-Runtime: 120ms
-Memory: 33.5MB
+Runtime: 72ms
+Memory: 37.5MB
 
 ```
 
@@ -66,16 +83,16 @@ Memory: 33.5MB
 
 ### Time complexity
 
-We are only doing constant operations , so time complexity would be **O(1)**.
+We are looping over all the matrix elements , so time complexity would be **O(n<sup>2</sup>)**.
 
 ### Space complexity
 
-We are using extra space only to store the days, but the length of array is constant. So space
-complexity is constant, **O(1)**.
+We are using extra space to store the new matrix. So space
+complexity is also constant, **O(n<sup>2</sup>)**.
 
 # Summary
 
-So, we solved the day of week problem by using two pointer method and calculated the time and space complexities.
+So, we solved the transpose matrix problem by using two pointer method and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
