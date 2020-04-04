@@ -1,59 +1,61 @@
 ---
-title: "Leetcode | Solution of Day of Week in JavaScript"
-description: "In this post, we will solve day of week from leetcode and compute it's time and space complexities. Let's begin."
+title: "Leetcode | Solution of Cells with Odd Values in a Matrix in JavaScript"
+description: "In this post, we will solve Cells with Odd Values in a Matrix from leetcode and compute it's time and space complexities. Let's begin."
 author: "Rishabh Jain"
-keywords: ["leetcode","js","javascript","Solution of reverse string","rishabh","jain","rishabh
+keywords: ["leetcode","js","javascript","Solution of Cells with Odd Values in a Matrix","rishabh","jain","rishabh
 jain","rishabh1403","blog","competitive","coding","programming","tech","technology",
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-day-of-week"
+date: 2020-04-04T03:56:51.074Z
+path: "posts/coding/leetcode/2020/04/leetcode-cells-with-odd-values-in-a-matrix"
 image: "./cells.png"
-draft: true
+draft: false
 ---
 
-In this post, we will solve day of week from leetcode and compute it's time and space complexities. Let's begin.
+In this post, we will solve Cells with Odd Values in a Matrix from leetcode and compute it's time and space complexities. Let's begin.
 <!--more-->
 
 # Problem Statement
-The question can be found at [leetcode day of week problem](https://leetcode.com/problems/day-of-the-week/).
+The question can be found at [leetcode Cells with Odd Values in a Matrix problem](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/).
 
-The problem states that we are given a size n*m of a matrix and somce indices.
-The initial values at all the indices in the matrix is 0. Every index is in
-format of [r,c] where r represents all the elements of row r and c represents
-all the elements of column c. For every index in
-indices, all the number of a particular row or column is increased by 1. So, id
-an index is [1,1], we not only increse the value at position [1,1] but all the
-elements in row 1 and all the elements in column 1.
+The problem states that we are given size `n*m` of a matrix and some indices.
+The initial values at all the indices in the matrix are `0`. 
+
+Every index is in
+the format of `[ri,ci]` where `ri` represents all the elements of row `r` and `ci` represents
+all the elements of column `c`. For every index in
+indices, all the number of a particular row or column is increased by `1`. So, if
+an index is `[1,1]`, we not only increase the value at position `[1,1]` but all the
+elements in row `1` and all the elements in column `1`.
 
 We need to determine the number of cells which will hold odd values in the
 matrix after all the indices is processed.
 
 # Solution
 
-One very simple solution would be to create a matrix of size n*m and fill it
-with zero. On ever index loop over the entire row and column and keep on
+One very simple solution would be to create a matrix of size `n*m` and fill it
+with zero. On every index loop over the entire row and column and keep on
 incrementing the values. Once we are done with all the values, we can loop over
-the matrix and find the count of odd values. Can we do better?
+the matrix and find the count of odd values. *Can we do better?*
 
 Yes, we can!!!. Let take a closer look and try to find a way where we don't have
-to create a matrix and loop over all the rows and columns m,ultiple times. 
+to create a matrix and loop over all the rows and columns multiple times. 
 
-We can have two arrays called row and col of size n and m respectively and fill
+We can have two arrays called `row` and `col` of size `n` and `m` respectively and fill
 it with zeroes.
 Now, we'll loop over the indices and for every row and column, we will increase
-the count at that index in array row and column. When we have looped over al the
-indices, we will created a nexted loop and run it n*m times. For every value, we
-will find their values in array row and col and add it. If the sum is odd, we
+the count at that index in array `row` and `col`. When we have looped over all the
+indices, we will create a nested loop and run it `n*m` times. For every value, we
+will find their values in array `row` and `col` and add it. If the sum is odd, we
 increase the count of odd values. 
 
-Why would it work? LEt take an example where all the values of row 0 is
-increased by 1. Instead of representing it in a matrix, we represent it in an
-array. Now if row 1 was increased 3 times, the position 3 in array row would be
-3 . If col 4 was increrased 2 times, value in col array for position 4 would be
-2 . So the vcalue at position [1,4] would be summation of values in array row
-and col. It is so because that position falls on row 1 and column 4 which has
+Why would it work? Let take an example where all the values of row `0` are
+increased by `1`. Instead of representing it in a matrix, we represent it in an
+array. Now if row `1` was increased `3` times, the position `3` in array row would be
+`3`. If col `4` was increased `2` times, the value in `col` array for position `4` would be
+`2`. So the value at position `[1,4]` would be the summation of values in array `row`
+and `col`. It is so because that position falls on row `1` and column `4` which has
 been increased those many times.
 
 I hope I was able to clarify it. Please check the video below for more clarification.
@@ -91,10 +93,10 @@ var oddCells = function (n, m, indices) {
 ```
 
 The code here is the counterpart of the solution discussed above. We have
-created two arrays row and col of size na nd m respectively. 
+created two arrays row and col of size `n` and `m` respectively. 
 
-Next, we increment the values of allthe indices. At last, we find the count of
-odd vales and return it.
+Next, we increment the values of all the indices. At last, we find the count of
+odd values and return it.
 
 Here are the stats on submission
 
@@ -110,21 +112,21 @@ Memory: 34.5MB
 
 ### Time complexity
 
-We are looping over all the matrix elements , so time complexity would be **O(n*m)**.
+We are looping over all the matrix elements, so time complexity would be **O(n*m)**.
 
 ### Space complexity
 
 We are using extra space to store two new arrays. So space
-complexity would be, **O(n+m)**. We are no exacly storing n*m values, we are
-storing only n + m values in two arrays.
+complexity would be, **O(n+m)**. We are not exactly storing `n*m` values, we are
+storing only `n + m` values in two arrays.
 
 # Summary
 
-So, we solved the transpose matrix problem by using two pointer method and calculated the time and space complexities.
+So, we solved the Cells with Odd Values in a Matrix problem and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: 8j24rPjGBwU`
+`youtube: PfIdfEH2qMY`

@@ -8,7 +8,7 @@ interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2019-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-day-of-week"
+path: "posts/coding/leetcode/2020/04/leetcode-trabs"
 image: "./transpose.png"
 draft: true
 ---
