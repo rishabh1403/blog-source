@@ -1,33 +1,33 @@
 ---
-title: "Leetcode | Solution of Day of Week in JavaScript"
-description: "In this post, we will solve day of week from leetcode and compute it's time and space complexities. Let's begin."
+title: "Leetcode | Solution of Majority Element in JavaScript"
+description: "In this post, we will solve Majority Element from leetcode and compute it's time and space complexities. Let's begin."
 author: "Rishabh Jain"
-keywords: ["leetcode","js","javascript","Solution of reverse string","rishabh","jain","rishabh
+keywords: ["leetcode","js","javascript","Solution of Majority Element","rishabh","jain","rishabh
 jain","rishabh1403","blog","competitive","coding","programming","tech","technology",
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2019-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-maj"
+date: 2020-04-05T06:36:43.014Z
+path: "posts/coding/leetcode/2020/04/leetcode-majority-element"
 image: "./maj.png"
-draft: true
+draft: false
 ---
 
-In this post, we will solve day of week from leetcode and compute it's time and space complexities. Let's begin.
+In this post, we will solve Majority Element from leetcode and compute it's time and space complexities. Let's begin.
 <!--more-->
 
 # Problem Statement
-The question can be found at [leetcode day of week problem](https://leetcode.com/problems/day-of-the-week/).
+The question can be found at [leetcode Majority Element problem](https://leetcode.com/problems/majority-element/).
 
 The problem states that we are given an array and we need to find the majority
-element in the array. Majority element is the element which is present more than
-n/2 times in the array, where n is the length of the array.
+element in the array. The majority element is the element that is present more than
+`n/2` times in the array, where `n` is the length of the array.
 
 # Solution
 
-Since question mentions that majority element does exist in the array, we can
-sort the array and the middle element is the majority element, since the number
-has to be more than n/2 times, it has to be in the center. A solution would look
+Since the question mentions that majority element does exist in the array, we can
+sort the array and the middle element is the majority element. Since the number
+has to be more than `n/2` times, it has to be in the center. A solution would look
 something like this
 
 ```js
@@ -44,12 +44,12 @@ var majorityElement = function (nums) {
 };
 ```
 
-First we sort the array, and next we find the middle element. If the length is
-even , we find the center by dividing the length by 2 else we subtract 1 from
+First, we sort the array, and next, we find the middle element. If the length is
+even, we find the center by dividing the length by 2 else we subtract 1 from
 length and then find the center.
 
-This would be **O(n<sup>2</sup>)** in worst case due to sorting, in terms of
-time complexity. Can we do better?
+This would be **O(n<sup>2</sup>)** in the worst case due to sorting, in terms of
+time complexity. *Can we do better?*
 
 # Boyer–Moore majority vote algorithm
 
@@ -57,24 +57,24 @@ We will use [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wik
 linear time complexity. 
 
 The algorithm works when there is a guarantee that the majority element exists.
-It is based on a very simple concept that the count of majority will be greater
+It is based on a very simple concept that the count of the majority will be greater
 than the combined count of all the other values in the array. Here's the
 algorithm
 
-- First we assume thet element at index 0 is our majority element
-- We declare two variables maj and count to keep the index of majority element
+- First, we assume that element at index `0` is our majority element
+- We declare two variables `maj` and `count` to keep the index of majority element
   and its count
-- We will initialize these variuables with value 0,1 respectively i.e the index
-  at which majority element exists is 0 and it's count is 1
-- Now we will iterate over the array from index one
+- We will initialize these variables with value `0,1` respectively i.e the index
+  at which majority element exists is `0` and its count is `1`
+- Now we will iterate over the array from index `1`
 - When we encounter an element, if it is same as the number at majority index,
   we increase the count else decrease it
-- If at any point the count becomes 0, we change majority index to that current
-  index and change count back to 1
-- At last, we have our index where majority element exists
+- If at any point the count becomes `0`, we change majority index to that current
+  index and change count back to `1`
+- At last, we have our index where the majority element exists
 
-If majority index exists, it's count will be more than count of all the numbers
-combined. Hence we always get the index at which majority index exists
+If the majority index exists, it's count will be more than count of all the numbers
+combined. Hence we always get the index at which the majority index exists
 
 We have discussed the approach, **I urge you to go ahead on leetcode and give it another try**. :smile:
 
@@ -103,7 +103,7 @@ var majorityElement = function (nums) {
 
 ```
 
-The code here is straight forward implementaion of the algorithm. In case you
+The code here is the straight forward implementation of the algorithm. In case you
 still have doubts, please check the video below.
 
 Here are the stats on submission
@@ -129,11 +129,11 @@ complexity would be constant, **O(1)**.
 
 # Summary
 
-So, we solved the transpose matrix problem by using two pointer method and calculated the time and space complexities.
+So, we solved the Majority Element problem by using Boyer-Moore Majority Voting Algorithm and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: 8j24rPjGBwU`
+`youtube: p0vvs4Gq8qY`
