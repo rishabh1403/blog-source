@@ -8,8 +8,8 @@ interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2020-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-TODO"
-image: "./reversestring.png"
+path: "posts/coding/leetcode/2020/04/leetcode-TODO/"
+image: "./TODO.png"
 draft: false
 ---
 
@@ -77,4 +77,4 @@ I hope you enjoyed solving this question. This is it for this one, complete sour
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: 8j24rPjGBwU`
+`youtube: TODO`
