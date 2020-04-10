@@ -1,25 +1,25 @@
 ---
-title: "Leetcode | Solution of TODO in JavaScript"
-description: "In this post, we will solve TODO from leetcode and compute it's time and space complexities. Let's begin."
+title: "Leetcode | Solution of Ransom Note in JavaScript"
+description: "In this post, we will solve Ransom Note from leetcode and compute it's time and space complexities. Let's begin."
 author: "Rishabh Jain"
-keywords: ["leetcode","js","javascript","Solution of TODO","rishabh","jain","rishabh
+keywords: ["leetcode","js","javascript","Solution of Ransom Note","rishabh","jain","rishabh
 jain","rishabh1403","blog","competitive","coding","programming","tech","technology",
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2020-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-TODO"
-image: "./reversestring.png"
+path: "posts/coding/leetcode/2020/04/leetcode-ransom-note"
+image: "./TODO.png"
 draft: false
 ---
 
-In this post, we will solve TODO from leetcode and compute it's time and space complexities. Let's begin.
+In this post, we will solve Ransom Note from leetcode and compute it's time and space complexities. Let's begin.
 <!--more-->
 
 # Problem Statement
-The question can be found at [leetcode TODO problem](TODO).
+The question can be found at [leetcode Ransom Note problem](https://leetcode.com/problems/ransom-note/).
 
-The problem states that we are given two strings, magazine and a ransomnote. We need to find if the tsring ransom note can be created from the magazine. 
+The problem states that we are given two strings, a magazine, and a ransom note. We need to find if the string ransom note can be created from the magazine. 
 
 # Constraints and challenges
 
@@ -28,11 +28,11 @@ The problem states that we are given two strings, magazine and a ransomnote. We 
 
 # Solution
 
-The approach is very simple. We declare a map and all the characters from the magazine with it's count in the map.
+The approach is very simple. We declare a map and save all the characters from the magazine with its count in the map.
 
-Next we loop over the ransom note and see it the map contains enough chracters to create out ransom note string.
+Next, we loop over the ransom note and see if the map contains enough characters to create out ransom note string.
 
-It's a very simple question with a fancy name that all.
+It's a very simple question with a fancy name, thats all.
 
 
 We have discussed the approach, **I urge you to go ahead on leetcode and give it another try**. :smile:
@@ -42,13 +42,29 @@ We have discussed the approach, **I urge you to go ahead on leetcode and give it
 If you are here, it means something went wrong in implementation or you are just too lazy :smile:. In any case, let's see a simple implementation of the above logic.
 
 ```js
+var canConstruct = function (ransomNote, magazine) {
+  const map = new Map();
 
+  for (let i = 0; i < magazine.length; i++) {
+    if (map.has(magazine[i])) {
+      map.set(magazine[i], map.get(magazine[i]) + 1)
+    } else {
+      map.set(magazine[i], 1)
+    }
+  }
 
+  for (let i = 0; i < ransomNote.length; i++) {
+    if (!map.has(ransomNote[i]) || map.get(ransomNote[i]) === 0) {
+      return false;
+    }
+    map.set(ransomNote[i], map.get(ransomNote[i]) - 1)
+  }
+
+  return true;
 };
-
 ```
 
-Nothing fancy in the code, just simple logic and big variable names.
+Nothing fancy in the code, just simple logic, and big variable names.
 
 
 Here are the stats on submission
@@ -75,11 +91,11 @@ complexity is linear, **O(n)**.
 
 # Summary
 
-So, we solved the TODO problem by using two pointer method and calculated the time and space complexities.
+So, we solved the Ransom Note problem by using two pointer method and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: 8j24rPjGBwU`
+`youtube: TODO`
