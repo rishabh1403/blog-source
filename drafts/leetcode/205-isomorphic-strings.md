@@ -8,7 +8,7 @@ interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2020-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-isomorphic-strings"
+path: "posts/coding/leetcode/2020/05/leetcode-isomorphic-strings"
 image: "./TODO.png"
 draft: false
 ---

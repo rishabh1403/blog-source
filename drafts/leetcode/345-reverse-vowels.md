@@ -8,7 +8,7 @@ interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
 date: 2020-04-01T05:08:30.428Z
-path: "posts/coding/leetcode/2020/04/leetcode-reverse-vowels-of-a-string"
+path: "posts/coding/leetcode/2020/05/leetcode-reverse-vowels-of-a-string"
 image: "./TODO.png"
 draft: false
 ---
