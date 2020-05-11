@@ -7,9 +7,9 @@ jain","rishabh1403","blog","competitive","coding","programming","tech","technolo
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2020-04-01T05:08:30.428Z
+date: 2020-05-11T03:36:47.983Z
 path: "posts/coding/leetcode/2020/05/leetcode-guess-number-higher-or-lower"
-image: "./TODO.png"
+image: "./leet374.png"
 draft: false
 ---
 
@@ -86,11 +86,11 @@ complexity is constant, **O(1)**.
 
 # Summary
 
-So, we solved the Guess Number Higher or Lower problem by using two pointer method and calculated the time and space complexities.
+So, we solved the Guess Number Higher or Lower problem by using binar search and calculated the time and space complexities.
 
 I hope you enjoyed solving this question. This is it for this one, complete source code for this post can be found on my [Github Repo](https://github.com/rishabh1403/leetcode-javascript-solutions). Will see you in the next one.
 
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: TODO`
+`youtube: h0uL59Z9Hoc`
