@@ -9,7 +9,7 @@ const BlogList = ({ edges }) => {
         {Object.keys(edges).sort().reverse().map((edge, index) => {
           return (
             <div key={index}>
-              <h2>{edge}</h2>
+              <h2>{edge}&nbsp;({edges[edge].length})</h2>
               <div className={styles.text}>
                 {edges[edge].map((ed, el) => {
                   return <p key={el}>
