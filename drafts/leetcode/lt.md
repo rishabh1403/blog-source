@@ -39,7 +39,7 @@ If you are here, it means something went wrong in implementation or you are just
 ```js
 
 
-};
+
 
 ```
 
