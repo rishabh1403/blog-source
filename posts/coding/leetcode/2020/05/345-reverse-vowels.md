@@ -7,9 +7,9 @@ jain","rishabh1403","blog","competitive","coding","programming","tech","technolo
 interview", "interview questions", leetcode]
 tags: ["leetcode","coding","javascript"]
 categories: ["leetcode","coding","javascript"]
-date: 2020-04-01T05:08:30.428Z
+date: 2020-05-12T03:06:57.114Z
 path: "posts/coding/leetcode/2020/05/leetcode-reverse-vowels-of-a-string"
-image: "./TODO.png"
+image: "./leet345.png"
 draft: false
 ---
 
@@ -19,7 +19,7 @@ In this post, we will solve Reverse Vowels of a String from leetcode and compute
 # Problem Statement
 The question can be found at [leetcode Reverse Vowels of a String problem](https://leetcode.com/problems/reverse-vowels-of-a-string/).
 
-The problem states that we are given a string and we need to reverse the vowels in the string. The question is very much similar to the reverse string problem we discussed. 
+The problem states that we are given a string and we need to reverse the vowels in the string. The question is very much similar to the [reverse string](https://rishabh1403.com/posts/coding/leetcode/2020/04/leetcode-reverse-string) problem we discussed. 
 
 # Solution
 
@@ -106,4 +106,4 @@ I hope you enjoyed solving this question. This is it for this one, complete sour
 There you go guys, you made it to end of the post.  Subscribe to my [youtube channel](https://www.youtube.com/rishabh1403) for regular updates. Follow me on [twitter](https://www.twitter.com/rishabhjain1403), drop me a mail or leave a comment here if you still have any doubts and I will try my best to help you out. Thanks
 
 Stay tuned and see you around :)
-`youtube: TODO`
+`youtube: 5g6iV76aR-E`
