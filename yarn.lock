@@ -6048,10 +6048,10 @@ gatsby-plugin-styled-components@3.1.9:
   dependencies:
     "@babel/runtime" "^7.6.3"
 
-gatsby-plugin-transition-link@1.16.2:
-  version "1.16.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-transition-link/-/gatsby-plugin-transition-link-1.16.2.tgz#8a4d320604793464db2efeb10f07202460d3ce2c"
-  integrity sha512-cAOkxXrjC/EaIagrOD+gW9nIfNO7Ai1Fa2Gd3Q2r79ytNIPARbu38WTOsUnHZ0dlz8acSR1NquyPl3GlcB57IA==
+gatsby-plugin-transition-link@1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-transition-link/-/gatsby-plugin-transition-link-1.18.0.tgz#85fa875b421915793566230a3dbe20f5280c1071"
+  integrity sha512-fimp3L1RIwD0WN5iX9Yioh/jVSIWCjkRkaTBo4fUoYU6R0Tsg/tKlfd9z3ZbPgOJqixGfDCOgSpkUWpOOO7gJw==
   dependencies:
     babel-preset-gatsby-package "^0.1.2"
     color-convert "^1.9.3"
@@ -10716,10 +10716,10 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
-prismjs@1.19.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.19.0.tgz#713afbd45c3baca4b321569f2df39e17e729d4dc"
-  integrity sha512-IVFtbW9mCWm9eOIaEkNyo2Vl4NnEifis2GQ7/MLRG5TQe6t+4Sj9J5QWI9i3v+SS43uZBlCAOn+zYTVYQcPXJw==
+prismjs@1.20.0:
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
+  integrity sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
   optionalDependencies:
     clipboard "^2.0.0"
 
